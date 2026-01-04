@@ -8,6 +8,7 @@ const PORT = parseInt(process.env.PORT || '3000', 10);
 // Log startup info
 console.log(`🔧 Node environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`🔧 Port: ${PORT}`);
+console.log(`🔧 Using Anthropic SDK v0.32.0`);
 
 // Middleware
 app.use(cors());
