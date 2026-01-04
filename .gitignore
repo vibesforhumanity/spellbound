@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+*.xcuserstate
+*.xcuserdatad
+xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.xcscmblueprint
+*.xccheckout
+build/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Node.js (for spelling-coach-agent)
+node_modules/
+dist/
+.sessions/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude
+.claude/
+.claude-monitor/
+
+# OS
+.DS_Store
+Thumbs.db

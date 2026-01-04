@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		SpellboundApp000001 /* SpellboundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AppFile000001 /* SpellboundApp.swift */; };
+		WordModel0000001 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = WordModelFile001 /* Word.swift */; };
+		SessionModel0001 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = SessionModelFile /* Session.swift */; };
+		RewardModel00001 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = RewardModelFile1 /* Reward.swift */; };
+		WordService00001 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = WordServiceFile /* WordService.swift */; };
+		TTSService000001 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = TTSServiceFile1 /* TTSService.swift */; };
+		StorageServ00001 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = StorageServFile /* StorageService.swift */; };
+		PracticeVM000001 /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PracticeVMFile /* PracticeViewModel.swift */; };
+		PracticeView0001 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PracticeViewF1 /* PracticeView.swift */; };
+		WordInputV000001 /* WordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = WordInputVFile /* WordInputView.swift */; };
+		FeedbackV0000001 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FeedbackVFile1 /* FeedbackView.swift */; };
+		GemCounter000001 /* GemCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GemCounterFile /* GemCounterView.swift */; };
+		ResultsView00001 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ResultsViewF1 /* ResultsView.swift */; };
+		RewardsView00001 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = RewardsViewF1 /* RewardsView.swift */; };
+		WordList00000001 /* wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = WordListFile01 /* wordlist.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AppFile000001 /* SpellboundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellboundApp.swift; sourceTree = "<group>"; };
+		WordModelFile001 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		SessionModelFile /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		RewardModelFile1 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		WordServiceFile /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
+		TTSServiceFile1 /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
+		StorageServFile /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		PracticeVMFile /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
+		PracticeViewF1 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		WordInputVFile /* WordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordInputView.swift; sourceTree = "<group>"; };
+		FeedbackVFile1 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		GemCounterFile /* GemCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemCounterView.swift; sourceTree = "<group>"; };
+		ResultsViewF1 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		RewardsViewF1 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		WordListFile01 /* wordlist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = wordlist.txt; sourceTree = "<group>"; };
+		Spellbound00001 /* Spellbound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellbound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		Frameworks00001 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		RootGroup00001 = {
+			isa = PBXGroup;
+			children = (
+				SpellboundGroup1 /* Spellbound */,
+				WordsGroup00001 /* words */,
+				ProductsGroup01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SpellboundGroup1 = {
+			isa = PBXGroup;
+			children = (
+				AppFile000001 /* SpellboundApp.swift */,
+				ModelsGroup0001 /* Models */,
+				ServicesGroup01 /* Services */,
+				ViewModelsGrp01 /* ViewModels */,
+				ViewsGroup00001 /* Views */,
+			);
+			path = Spellbound;
+			sourceTree = "<group>";
+		};
+		ModelsGroup0001 = {
+			isa = PBXGroup;
+			children = (
+				WordModelFile001 /* Word.swift */,
+				SessionModelFile /* Session.swift */,
+				RewardModelFile1 /* Reward.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ServicesGroup01 = {
+			isa = PBXGroup;
+			children = (
+				WordServiceFile /* WordService.swift */,
+				TTSServiceFile1 /* TTSService.swift */,
+				StorageServFile /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ViewModelsGrp01 = {
+			isa = PBXGroup;
+			children = (
+				PracticeVMFile /* PracticeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ViewsGroup00001 = {
+			isa = PBXGroup;
+			children = (
+				PracticeViewF1 /* PracticeView.swift */,
+				ResultsViewF1 /* ResultsView.swift */,
+				RewardsViewF1 /* RewardsView.swift */,
+				ComponentsGrp01 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ComponentsGrp01 = {
+			isa = PBXGroup;
+			children = (
+				WordInputVFile /* WordInputView.swift */,
+				FeedbackVFile1 /* FeedbackView.swift */,
+				GemCounterFile /* GemCounterView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		WordsGroup00001 = {
+			isa = PBXGroup;
+			children = (
+				WordListFile01 /* wordlist.txt */,
+			);
+			path = words;
+			sourceTree = "<group>";
+		};
+		ProductsGroup01 = {
+			isa = PBXGroup;
+			children = (
+				Spellbound00001 /* Spellbound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		SpellboundTarget = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BuildConfigList1;
+			buildPhases = (
+				SourcesBuildPh01,
+				Frameworks00001,
+				ResourcesBuildPh,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spellbound;
+			productName = Spellbound;
+			productReference = Spellbound00001 /* Spellbound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ProjectObject001 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					SpellboundTarget = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BuildConfigList2;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = RootGroup00001;
+			productRefGroup = ProductsGroup01;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				SpellboundTarget,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ResourcesBuildPh = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				WordList00000001 /* wordlist.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SourcesBuildPh01 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SpellboundApp000001 /* SpellboundApp.swift in Sources */,
+				WordModel0000001 /* Word.swift in Sources */,
+				SessionModel0001 /* Session.swift in Sources */,
+				RewardModel00001 /* Reward.swift in Sources */,
+				WordService00001 /* WordService.swift in Sources */,
+				TTSService000001 /* TTSService.swift in Sources */,
+				StorageServ00001 /* StorageService.swift in Sources */,
+				PracticeVM000001 /* PracticeViewModel.swift in Sources */,
+				PracticeView0001 /* PracticeView.swift in Sources */,
+				WordInputV000001 /* WordInputView.swift in Sources */,
+				FeedbackV0000001 /* FeedbackView.swift in Sources */,
+				GemCounter000001 /* GemCounterView.swift in Sources */,
+				ResultsView00001 /* ResultsView.swift in Sources */,
+				RewardsView00001 /* RewardsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DebugConfig00001 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ReleaseConfig001 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DebugAppConfig01 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spellbound;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spellbound.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ReleaseAppCfg01 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spellbound;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spellbound.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BuildConfigList1 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DebugAppConfig01,
+				ReleaseAppCfg01,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BuildConfigList2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DebugConfig00001,
+				ReleaseConfig001,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ProjectObject001 /* Project object */;
+}

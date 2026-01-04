@@ -1,0 +1,5952 @@
+[
+  {
+    "text": "able",
+    "sentence": "I am able to ride my bike without training wheels.",
+    "definition": "Having the skill or power to do something"
+  },
+  {
+    "text": "about",
+    "sentence": "The book is about a brave knight and a dragon.",
+    "definition": "Relating to or concerning something"
+  },
+  {
+    "text": "above",
+    "sentence": "The airplane flew above the fluffy white clouds.",
+    "definition": "Higher than something else"
+  },
+  {
+    "text": "according",
+    "sentence": "According to the weather report, it will rain tomorrow.",
+    "definition": "As stated by someone or something"
+  },
+  {
+    "text": "across",
+    "sentence": "We walked across the wooden bridge over the river.",
+    "definition": "From one side to the other side"
+  },
+  {
+    "text": "act",
+    "sentence": "In the school play, I will act as a pirate.",
+    "definition": "To perform a role or take action"
+  },
+  {
+    "text": "action",
+    "sentence": "Jumping rope is a fun action that gets you moving.",
+    "definition": "Something you do, a deed or activity"
+  },
+  {
+    "text": "add",
+    "sentence": "If you add five and three, you get eight.",
+    "definition": "To put things together to make more"
+  },
+  {
+    "text": "addition",
+    "sentence": "In addition to my sandwich, I brought an apple.",
+    "definition": "Something extra, or putting numbers together"
+  },
+  {
+    "text": "afraid",
+    "sentence": "My little brother is afraid of the dark.",
+    "definition": "Feeling scared or frightened"
+  },
+  {
+    "text": "after",
+    "sentence": "We can play outside after we finish homework.",
+    "definition": "Following in time or order"
+  },
+  {
+    "text": "afternoon",
+    "sentence": "We have recess in the afternoon after lunch.",
+    "definition": "The time between noon and evening"
+  },
+  {
+    "text": "again",
+    "sentence": "Can you read that story again, please?",
+    "definition": "One more time, another time"
+  },
+  {
+    "text": "against",
+    "sentence": "The ladder leaned against the brick wall.",
+    "definition": "Touching or pressing on something"
+  },
+  {
+    "text": "age",
+    "sentence": "My sister is seven years of age.",
+    "definition": "How old someone or something is"
+  },
+  {
+    "text": "ago",
+    "sentence": "Dinosaurs lived millions of years ago.",
+    "definition": "In the past, before now"
+  },
+  {
+    "text": "ahead",
+    "sentence": "The finish line is just ahead of us.",
+    "definition": "In front, toward the future"
+  },
+  {
+    "text": "air",
+    "sentence": "Birds fly through the air with their wings.",
+    "definition": "The invisible gas we breathe"
+  },
+  {
+    "text": "airplane",
+    "sentence": "The airplane flew high above the clouds.",
+    "definition": "A flying vehicle with wings and engines"
+  },
+  {
+    "text": "airport",
+    "sentence": "We picked up Grandma at the airport yesterday.",
+    "definition": "A place where airplanes take off and land"
+  },
+  {
+    "text": "alive",
+    "sentence": "All plants and animals are alive and growing.",
+    "definition": "Living, not dead"
+  },
+  {
+    "text": "all",
+    "sentence": "All of my friends came to my birthday party.",
+    "definition": "Every one, the whole amount"
+  },
+  {
+    "text": "almost",
+    "sentence": "I almost caught the ball but it slipped away.",
+    "definition": "Very close to, nearly"
+  },
+  {
+    "text": "along",
+    "sentence": "We walked along the beach collecting seashells.",
+    "definition": "Moving forward beside something"
+  },
+  {
+    "text": "already",
+    "sentence": "I already ate breakfast, so I'm not hungry.",
+    "definition": "Before now, by this time"
+  },
+  {
+    "text": "also",
+    "sentence": "I like pizza, and I also enjoy tacos.",
+    "definition": "In addition, too"
+  },
+  {
+    "text": "although",
+    "sentence": "Although it was raining, we still played outside.",
+    "definition": "Even though, despite"
+  },
+  {
+    "text": "always",
+    "sentence": "The sun always rises in the morning.",
+    "definition": "Every time, all the time"
+  },
+  {
+    "text": "am",
+    "sentence": "I am happy to see you today.",
+    "definition": "A form of 'be' - I exist or feel this way"
+  },
+  {
+    "text": "America",
+    "sentence": "I need to practice the word America.",
+    "definition": "The word America is an English word."
+  },
+  {
+    "text": "American",
+    "sentence": "I need to practice the word American.",
+    "definition": "The word American is an English word."
+  },
+  {
+    "text": "among",
+    "sentence": "I found my lost toy among the pile of clothes.",
+    "definition": "In the middle of, surrounded by"
+  },
+  {
+    "text": "amount",
+    "sentence": "She poured a small amount of milk into her bowl.",
+    "definition": "How much of something there is"
+  },
+  {
+    "text": "an",
+    "sentence": "I saw an elephant at the zoo.",
+    "definition": "One (used before words starting with vowels)"
+  },
+  {
+    "text": "ancient",
+    "sentence": "The ancient pyramid was built thousands of years ago.",
+    "definition": "Very old, from long ago"
+  },
+  {
+    "text": "and",
+    "sentence": "I like apples and bananas for snack time.",
+    "definition": "Plus, together with"
+  },
+  {
+    "text": "angry",
+    "sentence": "Mom was angry when I broke her favorite vase.",
+    "definition": "Mad, feeling upset or annoyed"
+  },
+  {
+    "text": "animal",
+    "sentence": "A zebra is my favorite animal at the zoo.",
+    "definition": "A living creature like a dog, cat, or bird"
+  },
+  {
+    "text": "another",
+    "sentence": "May I have another cookie, please?",
+    "definition": "One more, a different one"
+  },
+  {
+    "text": "answer",
+    "sentence": "I raised my hand to answer the teacher's question.",
+    "definition": "A reply or solution to a question"
+  },
+  {
+    "text": "any",
+    "sentence": "Do you have any crayons I can borrow?",
+    "definition": "Some, one or more"
+  },
+  {
+    "text": "anyone",
+    "sentence": "Can anyone help me carry these books?",
+    "definition": "Any person at all"
+  },
+  {
+    "text": "anything",
+    "sentence": "Is there anything good on TV tonight?",
+    "definition": "Any thing at all"
+  },
+  {
+    "text": "apart",
+    "sentence": "The puzzle pieces fell apart on the table.",
+    "definition": "Separated, not together"
+  },
+  {
+    "text": "appear",
+    "sentence": "Stars appear in the sky when it gets dark.",
+    "definition": "To come into view, to show up"
+  },
+  {
+    "text": "apple",
+    "sentence": "I packed a red apple in my lunch box.",
+    "definition": "A round fruit that grows on trees"
+  },
+  {
+    "text": "are",
+    "sentence": "You are my best friend in the whole world.",
+    "definition": "A form of 'be' - you exist or feel"
+  },
+  {
+    "text": "area",
+    "sentence": "The play area has swings and a slide.",
+    "definition": "A particular space or region"
+  },
+  {
+    "text": "arm",
+    "sentence": "I broke my arm when I fell off my scooter.",
+    "definition": "The body part between your shoulder and hand"
+  },
+  {
+    "text": "army",
+    "sentence": "Soldiers in the army protect our country.",
+    "definition": "A large group of soldiers"
+  },
+  {
+    "text": "around",
+    "sentence": "We walked around the entire playground twice.",
+    "definition": "On all sides, in a circle"
+  },
+  {
+    "text": "arrive",
+    "sentence": "What time will the train arrive at the station?",
+    "definition": "To reach a place, to get there"
+  },
+  {
+    "text": "art",
+    "sentence": "In art class we painted pictures of flowers.",
+    "definition": "Creative work like drawing and painting"
+  },
+  {
+    "text": "as",
+    "sentence": "She runs as fast as a cheetah.",
+    "definition": "In the same way, while"
+  },
+  {
+    "text": "ask",
+    "sentence": "Please ask your teacher if you have questions.",
+    "definition": "To say a question to get information"
+  },
+  {
+    "text": "at",
+    "sentence": "We will meet at the park after school.",
+    "definition": "In a place or time"
+  },
+  {
+    "text": "ate",
+    "sentence": "I ate three slices of pizza for dinner.",
+    "definition": "Put food in your mouth (past tense)"
+  },
+  {
+    "text": "attention",
+    "sentence": "Please pay attention while I explain the game.",
+    "definition": "Watching or listening carefully"
+  },
+  {
+    "text": "aunt",
+    "sentence": "My aunt is my mom's sister and she's very nice.",
+    "definition": "Your parent's sister"
+  },
+  {
+    "text": "average",
+    "sentence": "The average height of our class is four feet.",
+    "definition": "The normal or usual amount"
+  },
+  {
+    "text": "away",
+    "sentence": "The bird flew away when I got too close.",
+    "definition": "To a different place, not here"
+  },
+  {
+    "text": "awhile",
+    "sentence": "Let's rest awhile before we continue hiking.",
+    "definition": "For a short time"
+  },
+  {
+    "text": "baby",
+    "sentence": "The baby is sleeping peacefully in the crib.",
+    "definition": "A very young child"
+  },
+  {
+    "text": "back",
+    "sentence": "We drove all the way back home after our trip.",
+    "definition": "The rear part, or returning to a place"
+  },
+  {
+    "text": "bad",
+    "sentence": "Stealing is a bad thing to do.",
+    "definition": "Not good, wrong or harmful"
+  },
+  {
+    "text": "bag",
+    "sentence": "I carry my lunch in a brown paper bag.",
+    "definition": "A container made of paper, cloth, or plastic"
+  },
+  {
+    "text": "balloon",
+    "sentence": "The red balloon floated up to the ceiling.",
+    "definition": "A rubber bag that fills with air"
+  },
+  {
+    "text": "band",
+    "sentence": "The marching band played music at the parade.",
+    "definition": "A group of musicians who play together"
+  },
+  {
+    "text": "bank",
+    "sentence": "Mom went to the bank to get some money.",
+    "definition": "A place that keeps money safe"
+  },
+  {
+    "text": "bare",
+    "sentence": "I like to walk with my bare feet in the grass.",
+    "definition": "Not covered, naked"
+  },
+  {
+    "text": "barn",
+    "sentence": "The farmer keeps hay and animals in the barn.",
+    "definition": "A large farm building for animals and equipment"
+  },
+  {
+    "text": "base",
+    "sentence": "The base of the mountain is where we started hiking.",
+    "definition": "The bottom or foundation of something"
+  },
+  {
+    "text": "baseball",
+    "sentence": "We played baseball in the park all afternoon.",
+    "definition": "A sport with a bat, ball, and bases"
+  },
+  {
+    "text": "basket",
+    "sentence": "Grandma filled the basket with fresh apples.",
+    "definition": "A container made of woven material"
+  },
+  {
+    "text": "bat",
+    "sentence": "I hit the ball with my wooden bat.",
+    "definition": "A stick used in baseball, or a flying mammal"
+  },
+  {
+    "text": "be",
+    "sentence": "I want to be a doctor when I grow up.",
+    "definition": "To exist or live"
+  },
+  {
+    "text": "beach",
+    "sentence": "We built sandcastles at the beach near the ocean.",
+    "definition": "Sandy land beside the sea"
+  },
+  {
+    "text": "bear",
+    "sentence": "A big brown bear lives in the forest.",
+    "definition": "A large furry animal with sharp claws"
+  },
+  {
+    "text": "beat",
+    "sentence": "My heart began to beat faster when I ran.",
+    "definition": "To hit repeatedly, or to win against"
+  },
+  {
+    "text": "beautiful",
+    "sentence": "The sunset painted beautiful colors across the sky.",
+    "definition": "Very pretty or lovely to look at"
+  },
+  {
+    "text": "became",
+    "sentence": "The caterpillar became a beautiful butterfly.",
+    "definition": "Changed into (past tense)"
+  },
+  {
+    "text": "because",
+    "sentence": "I wore a coat because it was cold outside.",
+    "definition": "For the reason that"
+  },
+  {
+    "text": "bed",
+    "sentence": "I sleep in my cozy bed every night.",
+    "definition": "Furniture you sleep on"
+  },
+  {
+    "text": "bee",
+    "sentence": "A fuzzy bee was buzzing around the flowers.",
+    "definition": "A flying insect that makes honey"
+  },
+  {
+    "text": "been",
+    "sentence": "I have been to the zoo three times this year.",
+    "definition": "Existed or visited (past tense)"
+  },
+  {
+    "text": "before",
+    "sentence": "Wash your hands before you eat dinner.",
+    "definition": "Earlier than, ahead of time"
+  },
+  {
+    "text": "began",
+    "sentence": "The movie began at seven o'clock sharp.",
+    "definition": "Started (past tense)"
+  },
+  {
+    "text": "behind",
+    "sentence": "I hid behind the big tree during hide and seek.",
+    "definition": "At the back of something"
+  },
+  {
+    "text": "believe",
+    "sentence": "I believe that unicorns are magical creatures.",
+    "definition": "To think something is true"
+  },
+  {
+    "text": "below",
+    "sentence": "The fish swam below the surface of the water.",
+    "definition": "Lower than, underneath"
+  },
+  {
+    "text": "belt",
+    "sentence": "Dad wore a leather belt to hold up his pants.",
+    "definition": "A strap worn around the waist"
+  },
+  {
+    "text": "beneath",
+    "sentence": "The cat hid beneath the bed during the storm.",
+    "definition": "Under or below something"
+  },
+  {
+    "text": "beside",
+    "sentence": "Please sit beside me on the bench.",
+    "definition": "Next to, at the side of"
+  },
+  {
+    "text": "best",
+    "sentence": "Pizza is the best food in the whole world.",
+    "definition": "Better than all others"
+  },
+  {
+    "text": "better",
+    "sentence": "This new bike is better than my old one.",
+    "definition": "More good, improved"
+  },
+  {
+    "text": "between",
+    "sentence": "The secret is just between you and me.",
+    "definition": "In the space separating two things"
+  },
+  {
+    "text": "beyond",
+    "sentence": "The mountains lie beyond the green valley.",
+    "definition": "Farther away than, past"
+  },
+  {
+    "text": "big",
+    "sentence": "The elephant is a very big animal.",
+    "definition": "Large in size"
+  },
+  {
+    "text": "bike",
+    "sentence": "I ride my bike to school when it's sunny.",
+    "definition": "A vehicle with two wheels you pedal"
+  },
+  {
+    "text": "bill",
+    "sentence": "The duck has an orange bill for catching fish.",
+    "definition": "A bird's beak, or paper money"
+  },
+  {
+    "text": "bird",
+    "sentence": "A blue bird sang sweetly in the tree.",
+    "definition": "An animal with feathers and wings"
+  },
+  {
+    "text": "birthday",
+    "sentence": "My birthday is in July and I turn eight.",
+    "definition": "The day you were born each year"
+  },
+  {
+    "text": "bit",
+    "sentence": "May I have just a little bit of cake?",
+    "definition": "A small piece or amount"
+  },
+  {
+    "text": "black",
+    "sentence": "The night sky was deep black with tiny stars.",
+    "definition": "The darkest color, opposite of white"
+  },
+  {
+    "text": "blow",
+    "sentence": "Blow out the candles and make a wish.",
+    "definition": "To push air from your mouth"
+  },
+  {
+    "text": "blue",
+    "sentence": "The ocean water was a beautiful shade of blue.",
+    "definition": "The color of the sky"
+  },
+  {
+    "text": "board",
+    "sentence": "We wrote our names on the white board.",
+    "definition": "A flat piece of wood or a group of leaders"
+  },
+  {
+    "text": "boat",
+    "sentence": "The little boat sailed across the calm lake.",
+    "definition": "A vehicle that floats on water"
+  },
+  {
+    "text": "body",
+    "sentence": "Your body needs food, water, and rest.",
+    "definition": "The physical part of a person"
+  },
+  {
+    "text": "bones",
+    "sentence": "We have 206 bones inside our body.",
+    "definition": "Hard parts inside your body that make the skeleton"
+  },
+  {
+    "text": "book",
+    "sentence": "My favorite book has pictures of dinosaurs.",
+    "definition": "Pages with words and stories bound together"
+  },
+  {
+    "text": "born",
+    "sentence": "I was born in a hospital seven years ago.",
+    "definition": "Came into life, brought into the world"
+  },
+  {
+    "text": "both",
+    "sentence": "Both of my hands are dirty from playing.",
+    "definition": "The two together, each of two"
+  },
+  {
+    "text": "bottle",
+    "sentence": "Pour the juice into a clean glass bottle.",
+    "definition": "A container for liquids"
+  },
+  {
+    "text": "bottom",
+    "sentence": "The treasure chest sank to the bottom of the sea.",
+    "definition": "The lowest part"
+  },
+  {
+    "text": "bought",
+    "sentence": "Mom bought fresh bread from the bakery.",
+    "definition": "Paid money for something (past tense)"
+  },
+  {
+    "text": "box",
+    "sentence": "I packed my toys in a cardboard box.",
+    "definition": "A container with four sides and a lid"
+  },
+  {
+    "text": "boy",
+    "sentence": "The little boy laughed as he played with his dog.",
+    "definition": "A young male child"
+  },
+  {
+    "text": "bread",
+    "sentence": "I like to eat warm bread with butter.",
+    "definition": "Food made from flour and baked"
+  },
+  {
+    "text": "breakfast",
+    "sentence": "I ate pancakes and eggs for breakfast.",
+    "definition": "The first meal of the day"
+  },
+  {
+    "text": "breath",
+    "sentence": "Take a deep breath before you jump in the pool.",
+    "definition": "Air going in and out of your lungs"
+  },
+  {
+    "text": "bring",
+    "sentence": "Please bring your permission slip tomorrow.",
+    "definition": "To carry something to a place"
+  },
+  {
+    "text": "broke",
+    "sentence": "I accidentally broke my favorite toy car.",
+    "definition": "Made something come apart (past tense)"
+  },
+  {
+    "text": "broken",
+    "sentence": "The broken vase cannot be fixed.",
+    "definition": "In pieces, damaged"
+  },
+  {
+    "text": "brother",
+    "sentence": "My older brother teaches me how to play soccer.",
+    "definition": "A boy who has the same parents as you"
+  },
+  {
+    "text": "brought",
+    "sentence": "She brought cupcakes to share with the class.",
+    "definition": "Carried something here (past tense)"
+  },
+  {
+    "text": "brown",
+    "sentence": "The puppy has soft brown fur.",
+    "definition": "The color of chocolate or wood"
+  },
+  {
+    "text": "build",
+    "sentence": "Let's build a tall tower with these blocks.",
+    "definition": "To make or construct something"
+  },
+  {
+    "text": "built",
+    "sentence": "Workers built a new playground in our neighborhood.",
+    "definition": "Made or constructed (past tense)"
+  },
+  {
+    "text": "bus",
+    "sentence": "The yellow school bus picks me up at eight.",
+    "definition": "A large vehicle that carries many people"
+  },
+  {
+    "text": "business",
+    "sentence": "My dad owns a business that sells flowers.",
+    "definition": "A company or store"
+  },
+  {
+    "text": "busy",
+    "sentence": "Mom is busy cooking dinner in the kitchen.",
+    "definition": "Having lots to do, not free"
+  },
+  {
+    "text": "but",
+    "sentence": "I wanted to play, but it started raining.",
+    "definition": "However, except"
+  },
+  {
+    "text": "buy",
+    "sentence": "We will buy groceries at the store today.",
+    "definition": "To pay money to get something"
+  },
+  {
+    "text": "by",
+    "sentence": "The dog is sleeping by the warm fireplace.",
+    "definition": "Near, beside, or past"
+  },
+  {
+    "text": "cabin",
+    "sentence": "We stayed in a cozy cabin in the woods.",
+    "definition": "A small house, usually made of wood"
+  },
+  {
+    "text": "cage",
+    "sentence": "The hamster sleeps in its cage at night.",
+    "definition": "A container with bars to hold animals"
+  },
+  {
+    "text": "cake",
+    "sentence": "Birthday cake with chocolate frosting is my favorite.",
+    "definition": "A sweet dessert often eaten at celebrations"
+  },
+  {
+    "text": "call",
+    "sentence": "Please call me when you get home safely.",
+    "definition": "To speak to someone using a phone"
+  },
+  {
+    "text": "came",
+    "sentence": "My friends came to my house after school.",
+    "definition": "Arrived here (past tense)"
+  },
+  {
+    "text": "camp",
+    "sentence": "We went to summer camp and slept in tents.",
+    "definition": "A place where you stay outdoors"
+  },
+  {
+    "text": "can",
+    "sentence": "I can swim across the pool by myself now.",
+    "definition": "To be able to do something"
+  },
+  {
+    "text": "can't",
+    "sentence": "I can't reach the top shelf because I'm too short.",
+    "definition": "Cannot, not able to"
+  },
+  {
+    "text": "candy",
+    "sentence": "I got lots of candy when trick-or-treating.",
+    "definition": "Sweet treats like chocolate or lollipops"
+  },
+  {
+    "text": "cannot",
+    "sentence": "We cannot go outside when it's thundering.",
+    "definition": "Not able to, can't"
+  },
+  {
+    "text": "capital",
+    "sentence": "Sacramento is the capital city of California.",
+    "definition": "The main city where government works"
+  },
+  {
+    "text": "captain",
+    "sentence": "The captain steered the ship through the waves.",
+    "definition": "The leader of a team or ship"
+  },
+  {
+    "text": "car",
+    "sentence": "Our family car is red with four doors.",
+    "definition": "A vehicle with four wheels"
+  },
+  {
+    "text": "care",
+    "sentence": "I take good care of my pet fish.",
+    "definition": "To look after or protect"
+  },
+  {
+    "text": "careful",
+    "sentence": "Be careful not to spill your juice.",
+    "definition": "Paying close attention to avoid danger"
+  },
+  {
+    "text": "carried",
+    "sentence": "I carried the heavy box up the stairs.",
+    "definition": "Held and moved something (past tense)"
+  },
+  {
+    "text": "carry",
+    "sentence": "Can you help me carry these books?",
+    "definition": "To hold and move something"
+  },
+  {
+    "text": "case",
+    "sentence": "In case it rains, bring an umbrella.",
+    "definition": "A situation, or a container"
+  },
+  {
+    "text": "cat",
+    "sentence": "Our orange cat likes to sleep in the sunshine.",
+    "definition": "A small furry pet that meows"
+  },
+  {
+    "text": "catch",
+    "sentence": "Try to catch the ball when I throw it.",
+    "definition": "To grab something moving through the air"
+  },
+  {
+    "text": "cattle",
+    "sentence": "The farmer raises cattle for milk and meat.",
+    "definition": "Cows and bulls on a farm"
+  },
+  {
+    "text": "caught",
+    "sentence": "I caught a big fish at the lake.",
+    "definition": "Grabbed something (past tense)"
+  },
+  {
+    "text": "cause",
+    "sentence": "Heavy rain can cause flooding in the streets.",
+    "definition": "To make something happen"
+  },
+  {
+    "text": "cave",
+    "sentence": "Bats live inside the dark, cool cave.",
+    "definition": "A large hole in the side of a hill"
+  },
+  {
+    "text": "cent",
+    "sentence": "A penny is worth one cent.",
+    "definition": "One hundredth of a dollar"
+  },
+  {
+    "text": "center",
+    "sentence": "The fountain is in the center of the park.",
+    "definition": "The middle point"
+  },
+  {
+    "text": "century",
+    "sentence": "A century has one hundred years in it.",
+    "definition": "A period of one hundred years"
+  },
+  {
+    "text": "certain",
+    "sentence": "I am certain that tomorrow is Tuesday.",
+    "definition": "Sure about something, positive"
+  },
+  {
+    "text": "chair",
+    "sentence": "Please sit down in that empty chair.",
+    "definition": "Furniture with a seat and back for sitting"
+  },
+  {
+    "text": "chance",
+    "sentence": "This is my last chance to win the game.",
+    "definition": "An opportunity to do something"
+  },
+  {
+    "text": "change",
+    "sentence": "Seasons change from summer to fall.",
+    "definition": "To become different or make different"
+  },
+  {
+    "text": "chart",
+    "sentence": "The chart shows how tall each student is.",
+    "definition": "A diagram with information"
+  },
+  {
+    "text": "check",
+    "sentence": "Let me check if the door is locked.",
+    "definition": "To look at or examine something"
+  },
+  {
+    "text": "chicken",
+    "sentence": "The chicken laid three eggs in her nest.",
+    "definition": "A farm bird that lays eggs"
+  },
+  {
+    "text": "chief",
+    "sentence": "The fire chief leads all the firefighters.",
+    "definition": "The main leader or most important"
+  },
+  {
+    "text": "child",
+    "sentence": "Every child deserves love and kindness.",
+    "definition": "A young person, a boy or girl"
+  },
+  {
+    "text": "children",
+    "sentence": "The children played happily at recess.",
+    "definition": "More than one child"
+  },
+  {
+    "text": "choose",
+    "sentence": "You can choose any book you want to read.",
+    "definition": "To pick or select from options"
+  },
+  {
+    "text": "church",
+    "sentence": "We go to church every Sunday morning.",
+    "definition": "A building where people worship"
+  },
+  {
+    "text": "circle",
+    "sentence": "Draw a perfect circle with a compass.",
+    "definition": "A round shape like a ring"
+  },
+  {
+    "text": "circus",
+    "sentence": "At the circus, clowns made us laugh.",
+    "definition": "A show with acrobats, animals, and clowns"
+  },
+  {
+    "text": "city",
+    "sentence": "The city has tall buildings and busy streets.",
+    "definition": "A large town with many people"
+  },
+  {
+    "text": "class",
+    "sentence": "Our class has twenty-five students this year.",
+    "definition": "A group of students who learn together"
+  },
+  {
+    "text": "clean",
+    "sentence": "Please clean your messy room before dinner.",
+    "definition": "Free from dirt, tidy"
+  },
+  {
+    "text": "clear",
+    "sentence": "The sky is clear without any clouds today.",
+    "definition": "Easy to see through, not blocked"
+  },
+  {
+    "text": "climb",
+    "sentence": "I can climb all the way to the top.",
+    "definition": "To go up using hands and feet"
+  },
+  {
+    "text": "close",
+    "sentence": "Please close the door quietly when you leave.",
+    "definition": "To shut, or near in distance"
+  },
+  {
+    "text": "cloth",
+    "sentence": "She wiped the table with a damp cloth.",
+    "definition": "Fabric or material"
+  },
+  {
+    "text": "clothes",
+    "sentence": "I need to pack clean clothes for my trip.",
+    "definition": "Things you wear like shirts and pants"
+  },
+  {
+    "text": "cloud",
+    "sentence": "That fluffy white cloud looks like a bunny.",
+    "definition": "A white mass floating in the sky"
+  },
+  {
+    "text": "club",
+    "sentence": "I joined the art club after school.",
+    "definition": "A group that meets for activities"
+  },
+  {
+    "text": "coal",
+    "sentence": "Long ago, people burned coal to stay warm.",
+    "definition": "A black rock that can be burned"
+  },
+  {
+    "text": "coast",
+    "sentence": "We walked along the rocky coast by the ocean.",
+    "definition": "Land next to the sea"
+  },
+  {
+    "text": "cold",
+    "sentence": "Put on a jacket because it's cold outside.",
+    "definition": "Not warm, having a low temperature"
+  },
+  {
+    "text": "collect",
+    "sentence": "I collect shiny rocks from the beach.",
+    "definition": "To gather things together"
+  },
+  {
+    "text": "color",
+    "sentence": "Red is my favorite color to wear.",
+    "definition": "What something looks like - red, blue, etc."
+  },
+  {
+    "text": "column",
+    "sentence": "The newspaper has three columns of text.",
+    "definition": "A vertical section or tall structure"
+  },
+  {
+    "text": "come",
+    "sentence": "Please come to my house to play tomorrow.",
+    "definition": "To move toward this place"
+  },
+  {
+    "text": "coming",
+    "sentence": "Spring is coming soon with flowers and warmth.",
+    "definition": "Moving toward, approaching"
+  },
+  {
+    "text": "common",
+    "sentence": "The common cold makes your nose run.",
+    "definition": "Usual, happening often"
+  },
+  {
+    "text": "community",
+    "sentence": "Our community gathered for the town picnic.",
+    "definition": "A group of people living in the same area"
+  },
+  {
+    "text": "company",
+    "sentence": "The toy company makes dolls and games.",
+    "definition": "A business that makes or sells things"
+  },
+  {
+    "text": "compare",
+    "sentence": "Let's compare these apples to see which is bigger.",
+    "definition": "To look at how things are alike or different"
+  },
+  {
+    "text": "complete",
+    "sentence": "I will complete my homework before dinner.",
+    "definition": "To finish all the way"
+  },
+  {
+    "text": "compound",
+    "sentence": "Water is a compound made of hydrogen and oxygen.",
+    "definition": "Something made of two or more parts"
+  },
+  {
+    "text": "consider",
+    "sentence": "Please consider my idea for the school play.",
+    "definition": "To think about carefully"
+  },
+  {
+    "text": "contain",
+    "sentence": "This jar can contain twenty marbles.",
+    "definition": "To hold something inside"
+  },
+  {
+    "text": "control",
+    "sentence": "I can control my bike by steering the handlebars.",
+    "definition": "To direct or manage something"
+  },
+  {
+    "text": "cool",
+    "sentence": "A cool breeze made the hot day feel better.",
+    "definition": "Somewhat cold, or very good"
+  },
+  {
+    "text": "copy",
+    "sentence": "Please copy these spelling words in your notebook.",
+    "definition": "To make something that's the same"
+  },
+  {
+    "text": "corn",
+    "sentence": "We ate sweet corn on the cob for dinner.",
+    "definition": "A vegetable with yellow kernels"
+  },
+  {
+    "text": "corner",
+    "sentence": "The bookstore is on the corner of Main Street.",
+    "definition": "Where two sides or streets meet"
+  },
+  {
+    "text": "correct",
+    "sentence": "All of my math answers were correct.",
+    "definition": "Right, without mistakes"
+  },
+  {
+    "text": "cost",
+    "sentence": "How much does that toy cost at the store?",
+    "definition": "The price or amount to pay"
+  },
+  {
+    "text": "cotton",
+    "sentence": "My soft T-shirt is made of cotton.",
+    "definition": "A soft plant fiber used to make cloth"
+  },
+  {
+    "text": "could",
+    "sentence": "I could see the stars twinkling in the sky.",
+    "definition": "Was able to, might"
+  },
+  {
+    "text": "couldn't",
+    "sentence": "I couldn't lift the heavy box by myself.",
+    "definition": "Could not, was not able to"
+  },
+  {
+    "text": "count",
+    "sentence": "Can you count to one hundred by tens?",
+    "definition": "To say numbers in order"
+  },
+  {
+    "text": "country",
+    "sentence": "Canada is the country north of the United States.",
+    "definition": "A nation with its own government"
+  },
+  {
+    "text": "course",
+    "sentence": "Of course you can come to my party!",
+    "definition": "Naturally, or a path or series"
+  },
+  {
+    "text": "cousin",
+    "sentence": "My cousin lives in another state far away.",
+    "definition": "A child of your aunt or uncle"
+  },
+  {
+    "text": "cover",
+    "sentence": "Please cover your mouth when you cough.",
+    "definition": "To put something over"
+  },
+  {
+    "text": "cow",
+    "sentence": "The black and white cow gives us fresh milk.",
+    "definition": "A large farm animal that gives milk"
+  },
+  {
+    "text": "cowboy",
+    "sentence": "The cowboy rode his horse across the prairie.",
+    "definition": "A person who works with cattle"
+  },
+  {
+    "text": "cross",
+    "sentence": "Look both ways before you cross the street.",
+    "definition": "To go from one side to the other"
+  },
+  {
+    "text": "crowd",
+    "sentence": "A big crowd gathered to watch the parade.",
+    "definition": "A large group of people"
+  },
+  {
+    "text": "cry",
+    "sentence": "The baby started to cry when she was hungry.",
+    "definition": "To have tears fall from your eyes"
+  },
+  {
+    "text": "cup",
+    "sentence": "Pour some orange juice into my cup.",
+    "definition": "A small container for drinking"
+  },
+  {
+    "text": "current",
+    "sentence": "The strong current pulled the boat downstream.",
+    "definition": "Water or air moving, or happening now"
+  },
+  {
+    "text": "cut",
+    "sentence": "Be careful not to cut yourself with those scissors.",
+    "definition": "To divide with something sharp"
+  },
+  {
+    "text": "dad",
+    "sentence": "My dad taught me how to ride a bike.",
+    "definition": "Father, a male parent"
+  },
+  {
+    "text": "daddy",
+    "sentence": "Daddy reads me a bedtime story every night.",
+    "definition": "Father, an informal word for dad"
+  },
+  {
+    "text": "dance",
+    "sentence": "I love to dance to my favorite songs.",
+    "definition": "To move your body to music"
+  },
+  {
+    "text": "danger",
+    "sentence": "Stay away from the edge because of the danger.",
+    "definition": "Something that could hurt you"
+  },
+  {
+    "text": "dark",
+    "sentence": "When the sun sets, it gets dark outside.",
+    "definition": "Without light, not bright"
+  },
+  {
+    "text": "day",
+    "sentence": "Today is a beautiful sunny day.",
+    "definition": "A 24-hour period or when it's light out"
+  },
+  {
+    "text": "dead",
+    "sentence": "The old tree is dead and has no leaves.",
+    "definition": "No longer alive"
+  },
+  {
+    "text": "deal",
+    "sentence": "I made a deal with my sister to share toys.",
+    "definition": "An agreement or arrangement"
+  },
+  {
+    "text": "dear",
+    "sentence": "You are very dear to me and I love you.",
+    "definition": "Loved or valued, precious"
+  },
+  {
+    "text": "death",
+    "sentence": "The death of the plant happened without water.",
+    "definition": "When something stops living"
+  },
+  {
+    "text": "decide",
+    "sentence": "I can't decide between chocolate or vanilla.",
+    "definition": "To make a choice"
+  },
+  {
+    "text": "deep",
+    "sentence": "The swimming pool is six feet deep.",
+    "definition": "Far down or far in"
+  },
+  {
+    "text": "deer",
+    "sentence": "A graceful deer ran through the quiet forest.",
+    "definition": "A wild animal with antlers"
+  },
+  {
+    "text": "describe",
+    "sentence": "Can you describe what your lost dog looks like?",
+    "definition": "To tell what something is like"
+  },
+  {
+    "text": "desert",
+    "sentence": "Camels can survive in the hot, dry desert.",
+    "definition": "A very dry place with little rain"
+  },
+  {
+    "text": "desk",
+    "sentence": "I keep my pencils and paper on my desk.",
+    "definition": "A table for writing and working"
+  },
+  {
+    "text": "develop",
+    "sentence": "Tadpoles develop into frogs as they grow.",
+    "definition": "To grow or change over time"
+  },
+  {
+    "text": "did",
+    "sentence": "I did all my chores before going out to play.",
+    "definition": "Performed an action (past tense)"
+  },
+  {
+    "text": "didn't",
+    "sentence": "We didn't have school because of the snow.",
+    "definition": "Did not"
+  },
+  {
+    "text": "difference",
+    "sentence": "Can you spot the difference between these pictures?",
+    "definition": "How things are not the same"
+  },
+  {
+    "text": "different",
+    "sentence": "My shirt is different from yours in color.",
+    "definition": "Not the same"
+  },
+  {
+    "text": "difficult",
+    "sentence": "That math problem was difficult to solve.",
+    "definition": "Hard to do or understand"
+  },
+  {
+    "text": "dinner",
+    "sentence": "We eat dinner together as a family each night.",
+    "definition": "The evening meal"
+  },
+  {
+    "text": "direction",
+    "sentence": "We walked in the direction of the library.",
+    "definition": "The way something is going"
+  },
+  {
+    "text": "discover",
+    "sentence": "Scientists discover new things all the time.",
+    "definition": "To find something for the first time"
+  },
+  {
+    "text": "dishes",
+    "sentence": "After dinner, I help wash the dishes.",
+    "definition": "Plates, bowls, and cups for eating"
+  },
+  {
+    "text": "distance",
+    "sentence": "The distance from my house to school is two miles.",
+    "definition": "How far apart things are"
+  },
+  {
+    "text": "divide",
+    "sentence": "Let's divide the pizza into eight equal slices.",
+    "definition": "To separate into parts"
+  },
+  {
+    "text": "do",
+    "sentence": "I do my homework right after school.",
+    "definition": "To perform an action or task"
+  },
+  {
+    "text": "doctor",
+    "sentence": "The doctor checked my ears and throat.",
+    "definition": "A person who helps sick people get better"
+  },
+  {
+    "text": "does",
+    "sentence": "My cat does funny tricks for treats.",
+    "definition": "Performs or acts (third person)"
+  },
+  {
+    "text": "doesn't",
+    "sentence": "The broken toy doesn't work anymore.",
+    "definition": "Does not"
+  },
+  {
+    "text": "dog",
+    "sentence": "My dog wags its tail when it's happy.",
+    "definition": "A furry pet that barks"
+  },
+  {
+    "text": "doll",
+    "sentence": "My doll has curly hair and a pretty dress.",
+    "definition": "A toy that looks like a person"
+  },
+  {
+    "text": "dollar",
+    "sentence": "This candy bar costs one dollar.",
+    "definition": "Paper money worth 100 cents"
+  },
+  {
+    "text": "don't",
+    "sentence": "Please don't run in the hallway.",
+    "definition": "Do not"
+  },
+  {
+    "text": "done",
+    "sentence": "I am done with my homework now.",
+    "definition": "Finished, completed"
+  },
+  {
+    "text": "door",
+    "sentence": "Please knock on the door before entering.",
+    "definition": "An opening that swings to let you in"
+  },
+  {
+    "text": "double",
+    "sentence": "I got a double scoop of ice cream.",
+    "definition": "Two times as much, twice"
+  },
+  {
+    "text": "down",
+    "sentence": "The leaves floated down from the tree.",
+    "definition": "Toward a lower place"
+  },
+  {
+    "text": "Dr.",
+    "sentence": "I need to practice the word Dr..",
+    "definition": "The word Dr. is an English word."
+  },
+  {
+    "text": "dragon",
+    "sentence": "The dragon breathed fire in the fairy tale.",
+    "definition": "A mythical flying creature that breathes fire"
+  },
+  {
+    "text": "draw",
+    "sentence": "I like to draw pictures of animals.",
+    "definition": "To make pictures with a pencil or crayon"
+  },
+  {
+    "text": "dream",
+    "sentence": "Last night I had a dream about flying.",
+    "definition": "Images in your mind while sleeping"
+  },
+  {
+    "text": "dress",
+    "sentence": "She wore a beautiful blue dress to the party.",
+    "definition": "A piece of clothing for girls"
+  },
+  {
+    "text": "drink",
+    "sentence": "I drink a glass of milk with breakfast.",
+    "definition": "To swallow liquid"
+  },
+  {
+    "text": "drive",
+    "sentence": "Mom will drive us to the soccer game.",
+    "definition": "To control and steer a vehicle"
+  },
+  {
+    "text": "drop",
+    "sentence": "Be careful not to drop the eggs.",
+    "definition": "To let something fall"
+  },
+  {
+    "text": "drove",
+    "sentence": "We drove three hours to reach the beach.",
+    "definition": "Controlled a vehicle (past tense)"
+  },
+  {
+    "text": "dry",
+    "sentence": "After washing your hands, dry them with a towel.",
+    "definition": "Not wet, without moisture"
+  },
+  {
+    "text": "duck",
+    "sentence": "The yellow duck swam in the pond.",
+    "definition": "A water bird that quacks"
+  },
+  {
+    "text": "during",
+    "sentence": "During the movie, we ate popcorn.",
+    "definition": "Throughout the time of"
+  },
+  {
+    "text": "dust",
+    "sentence": "Please wipe the dust off the bookshelf.",
+    "definition": "Tiny dirt particles in the air"
+  },
+  {
+    "text": "each",
+    "sentence": "Each student gets one piece of candy.",
+    "definition": "Every one separately"
+  },
+  {
+    "text": "ear",
+    "sentence": "Sound goes into your ear so you can hear.",
+    "definition": "The body part used for hearing"
+  },
+  {
+    "text": "early",
+    "sentence": "We woke up early to watch the sunrise.",
+    "definition": "Near the beginning, before the usual time"
+  },
+  {
+    "text": "earth",
+    "sentence": "Planet Earth is our home in space.",
+    "definition": "The planet we live on"
+  },
+  {
+    "text": "east",
+    "sentence": "The sun rises in the east every morning.",
+    "definition": "The direction where the sun comes up"
+  },
+  {
+    "text": "easy",
+    "sentence": "That puzzle was easy to complete.",
+    "definition": "Not hard, simple"
+  },
+  {
+    "text": "eat",
+    "sentence": "We eat three meals every day.",
+    "definition": "To put food in your mouth and swallow"
+  },
+  {
+    "text": "eating",
+    "sentence": "I am eating a peanut butter sandwich.",
+    "definition": "Putting food in your mouth (present tense)"
+  },
+  {
+    "text": "edge",
+    "sentence": "Don't stand too close to the edge of the cliff.",
+    "definition": "The outer border or limit"
+  },
+  {
+    "text": "effect",
+    "sentence": "The medicine had a good effect on my headache.",
+    "definition": "A result or change that happens"
+  },
+  {
+    "text": "egg",
+    "sentence": "A chicken laid a brown egg in the nest.",
+    "definition": "What baby birds hatch from"
+  },
+  {
+    "text": "eight",
+    "sentence": "A spider has eight long legs.",
+    "definition": "The number 8"
+  },
+  {
+    "text": "eighth",
+    "sentence": "August is the eighth month of the year.",
+    "definition": "Number 8 in order"
+  },
+  {
+    "text": "either",
+    "sentence": "You can have either the red one or the blue one.",
+    "definition": "One or the other of two choices"
+  },
+  {
+    "text": "electric",
+    "sentence": "The electric train runs on battery power.",
+    "definition": "Powered by electricity"
+  },
+  {
+    "text": "electricity",
+    "sentence": "Electricity makes our lights turn on.",
+    "definition": "Energy that powers things"
+  },
+  {
+    "text": "else",
+    "sentence": "What else would you like for your birthday?",
+    "definition": "In addition, other"
+  },
+  {
+    "text": "empty",
+    "sentence": "My glass is empty and needs more juice.",
+    "definition": "Containing nothing, not full"
+  },
+  {
+    "text": "end",
+    "sentence": "The credits roll at the end of the movie.",
+    "definition": "The last part, finish"
+  },
+  {
+    "text": "energy",
+    "sentence": "After breakfast, I have lots of energy to play.",
+    "definition": "The power to do things and be active"
+  },
+  {
+    "text": "engine",
+    "sentence": "The car's engine makes it go forward.",
+    "definition": "The machine that makes vehicles move"
+  },
+  {
+    "text": "English",
+    "sentence": "I need to practice the word English.",
+    "definition": "The word English is an English word."
+  },
+  {
+    "text": "enjoy",
+    "sentence": "I really enjoy playing soccer with friends.",
+    "definition": "To like or take pleasure in"
+  },
+  {
+    "text": "enough",
+    "sentence": "Do we have enough cookies for everyone?",
+    "definition": "As much as needed"
+  },
+  {
+    "text": "entire",
+    "sentence": "I read the entire book in just one day.",
+    "definition": "The whole thing, all of it"
+  },
+  {
+    "text": "equal",
+    "sentence": "Five plus five is equal to ten.",
+    "definition": "The same amount or value"
+  },
+  {
+    "text": "especially",
+    "sentence": "I love all fruits, especially strawberries.",
+    "definition": "More than others, particularly"
+  },
+  {
+    "text": "even",
+    "sentence": "Even my little sister can count to twenty.",
+    "definition": "Also, including, or flat"
+  },
+  {
+    "text": "evening",
+    "sentence": "The stars come out in the evening sky.",
+    "definition": "The time between afternoon and night"
+  },
+  {
+    "text": "ever",
+    "sentence": "Have you ever been to Disneyland?",
+    "definition": "At any time"
+  },
+  {
+    "text": "every",
+    "sentence": "Every single student passed the spelling test.",
+    "definition": "Each one, all"
+  },
+  {
+    "text": "everybody",
+    "sentence": "Everybody in the class got a gold star.",
+    "definition": "Every person, all people"
+  },
+  {
+    "text": "everyone",
+    "sentence": "Everyone clapped when the show ended.",
+    "definition": "Every person, all people"
+  },
+  {
+    "text": "everything",
+    "sentence": "Put everything back where it belongs.",
+    "definition": "All things"
+  },
+  {
+    "text": "everywhere",
+    "sentence": "I looked everywhere for my missing shoe.",
+    "definition": "In every place"
+  },
+  {
+    "text": "exact",
+    "sentence": "Can you tell me the exact time?",
+    "definition": "Precisely correct, perfect"
+  },
+  {
+    "text": "example",
+    "sentence": "An apple is an example of a fruit.",
+    "definition": "One thing that shows what others are like"
+  },
+  {
+    "text": "except",
+    "sentence": "Everyone came to the party except Maria.",
+    "definition": "Not including, leaving out"
+  },
+  {
+    "text": "excuse",
+    "sentence": "Please excuse me for being late to class.",
+    "definition": "To forgive or pardon"
+  },
+  {
+    "text": "exercise",
+    "sentence": "Running is good exercise for your body.",
+    "definition": "Physical activity to stay healthy"
+  },
+  {
+    "text": "experiment",
+    "sentence": "Our science experiment tested how plants grow.",
+    "definition": "A test to learn something new"
+  },
+  {
+    "text": "explain",
+    "sentence": "Can you explain how this game works?",
+    "definition": "To help someone understand"
+  },
+  {
+    "text": "express",
+    "sentence": "I like to express my feelings through art.",
+    "definition": "To show or communicate"
+  },
+  {
+    "text": "eye",
+    "sentence": "I can wink one eye while keeping the other open.",
+    "definition": "The body part you see with"
+  },
+  {
+    "text": "face",
+    "sentence": "Wash your face before going to bed.",
+    "definition": "The front part of your head"
+  },
+  {
+    "text": "fact",
+    "sentence": "It's a fact that the Earth is round.",
+    "definition": "Something that is true"
+  },
+  {
+    "text": "fair",
+    "sentence": "Taking turns on the swing is fair to everyone.",
+    "definition": "Treating people equally and justly"
+  },
+  {
+    "text": "fall",
+    "sentence": "Leaves change colors and fall in autumn.",
+    "definition": "To drop down, or the season after summer"
+  },
+  {
+    "text": "familiar",
+    "sentence": "That song sounds familiar to me.",
+    "definition": "Something you know or recognize"
+  },
+  {
+    "text": "family",
+    "sentence": "My family includes Mom, Dad, and my sister.",
+    "definition": "Parents, children, and relatives together"
+  },
+  {
+    "text": "famous",
+    "sentence": "The famous singer performed for thousands of fans.",
+    "definition": "Known by many people"
+  },
+  {
+    "text": "far",
+    "sentence": "The mountains are far away in the distance.",
+    "definition": "A long way, not near"
+  },
+  {
+    "text": "farm",
+    "sentence": "The farmer grows corn and wheat on his farm.",
+    "definition": "Land where crops and animals are raised"
+  },
+  {
+    "text": "farmer",
+    "sentence": "The farmer wakes up early to feed the animals.",
+    "definition": "A person who grows crops or raises animals"
+  },
+  {
+    "text": "fast",
+    "sentence": "The cheetah is the fastest animal on land.",
+    "definition": "Moving quickly, rapid"
+  },
+  {
+    "text": "fat",
+    "sentence": "The fat cat barely fits through the door.",
+    "definition": "Having lots of body weight"
+  },
+  {
+    "text": "father",
+    "sentence": "My father works as a teacher at the high school.",
+    "definition": "A male parent, dad"
+  },
+  {
+    "text": "fear",
+    "sentence": "She has a fear of spiders and won't touch them.",
+    "definition": "Being afraid of something"
+  },
+  {
+    "text": "feed",
+    "sentence": "I need to feed my goldfish every morning.",
+    "definition": "To give food to"
+  },
+  {
+    "text": "feel",
+    "sentence": "I feel happy when I'm playing with friends.",
+    "definition": "To sense with your body or emotions"
+  },
+  {
+    "text": "feeling",
+    "sentence": "Happiness is a wonderful feeling.",
+    "definition": "An emotion or physical sensation"
+  },
+  {
+    "text": "feet",
+    "sentence": "I have two feet with five toes on each.",
+    "definition": "More than one foot, plural"
+  },
+  {
+    "text": "fell",
+    "sentence": "The branch fell from the tree during the storm.",
+    "definition": "Dropped down (past tense)"
+  },
+  {
+    "text": "felt",
+    "sentence": "I felt nervous before my piano recital.",
+    "definition": "Sensed or experienced (past tense)"
+  },
+  {
+    "text": "few",
+    "sentence": "Only a few people showed up to the meeting.",
+    "definition": "A small number, not many"
+  },
+  {
+    "text": "field",
+    "sentence": "Cows graze in the green grass field.",
+    "definition": "An open area of land"
+  },
+  {
+    "text": "fifth",
+    "sentence": "May is the fifth month of the year.",
+    "definition": "Number 5 in order"
+  },
+  {
+    "text": "fight",
+    "sentence": "It's not nice to fight with your friends.",
+    "definition": "To struggle or argue with someone"
+  },
+  {
+    "text": "fighting",
+    "sentence": "The two boys were fighting over a toy.",
+    "definition": "Struggling or arguing"
+  },
+  {
+    "text": "fill",
+    "sentence": "Please fill this cup with cold water.",
+    "definition": "To make full"
+  },
+  {
+    "text": "finally",
+    "sentence": "After waiting all day, the mail finally came.",
+    "definition": "At last, in the end"
+  },
+  {
+    "text": "find",
+    "sentence": "Can you help me find my lost pencil?",
+    "definition": "To discover or locate"
+  },
+  {
+    "text": "fine",
+    "sentence": "I'm feeling just fine, thank you for asking.",
+    "definition": "Good, well, or very thin"
+  },
+  {
+    "text": "finger",
+    "sentence": "I cut my finger on the sharp paper.",
+    "definition": "One of the five parts at the end of your hand"
+  },
+  {
+    "text": "finish",
+    "sentence": "Let's finish this puzzle before bedtime.",
+    "definition": "To complete, to end"
+  },
+  {
+    "text": "fire",
+    "sentence": "The campfire kept us warm and cozy.",
+    "definition": "Flames that give heat and light"
+  },
+  {
+    "text": "first",
+    "sentence": "I was the first person to finish the race.",
+    "definition": "Before all others, number one"
+  },
+  {
+    "text": "fish",
+    "sentence": "Goldfish swim in circles in their bowl.",
+    "definition": "An animal that lives in water"
+  },
+  {
+    "text": "fishing",
+    "sentence": "Grandpa and I went fishing at the lake.",
+    "definition": "Trying to catch fish"
+  },
+  {
+    "text": "fit",
+    "sentence": "These shoes fit my feet perfectly.",
+    "definition": "To be the right size"
+  },
+  {
+    "text": "five",
+    "sentence": "I have five fingers on each hand.",
+    "definition": "The number 5"
+  },
+  {
+    "text": "fix",
+    "sentence": "Can you fix my broken toy truck?",
+    "definition": "To repair something that's broken"
+  },
+  {
+    "text": "flag",
+    "sentence": "The American flag waves in the wind.",
+    "definition": "A piece of cloth that represents a country"
+  },
+  {
+    "text": "flat",
+    "sentence": "A pancake is round and flat.",
+    "definition": "Level and smooth, not bumpy"
+  },
+  {
+    "text": "flew",
+    "sentence": "The bird flew high above the trees.",
+    "definition": "Moved through the air (past tense)"
+  },
+  {
+    "text": "flight",
+    "sentence": "Our flight to Florida takes three hours.",
+    "definition": "A trip in an airplane"
+  },
+  {
+    "text": "floor",
+    "sentence": "Don't leave your toys on the floor.",
+    "definition": "The surface you walk on inside"
+  },
+  {
+    "text": "flower",
+    "sentence": "A beautiful red flower bloomed in the garden.",
+    "definition": "The colorful part of a plant"
+  },
+  {
+    "text": "fly",
+    "sentence": "Birds can fly because they have wings.",
+    "definition": "To move through the air"
+  },
+  {
+    "text": "flying",
+    "sentence": "I saw an airplane flying across the sky.",
+    "definition": "Moving through the air"
+  },
+  {
+    "text": "follow",
+    "sentence": "Follow me and I'll show you the way.",
+    "definition": "To go after or come behind"
+  },
+  {
+    "text": "following",
+    "sentence": "The following day, we went to the zoo.",
+    "definition": "Coming after, next"
+  },
+  {
+    "text": "food",
+    "sentence": "Pizza is my favorite food to eat.",
+    "definition": "Things we eat to stay alive and grow"
+  },
+  {
+    "text": "foot",
+    "sentence": "I hurt my foot when I stepped on a rock.",
+    "definition": "The part of your leg you stand on"
+  },
+  {
+    "text": "for",
+    "sentence": "This present is for you on your birthday.",
+    "definition": "Meant to be given to"
+  },
+  {
+    "text": "force",
+    "sentence": "You need force to push the heavy door open.",
+    "definition": "Strength or power"
+  },
+  {
+    "text": "forest",
+    "sentence": "Tall trees grow close together in the forest.",
+    "definition": "A large area covered with trees"
+  },
+  {
+    "text": "forgot",
+    "sentence": "I forgot to bring my lunch to school.",
+    "definition": "Did not remember (past tense)"
+  },
+  {
+    "text": "form",
+    "sentence": "Please form a straight line at the door.",
+    "definition": "To make or create, or a shape"
+  },
+  {
+    "text": "forth",
+    "sentence": "The swing goes back and forth.",
+    "definition": "Forward, onward"
+  },
+  {
+    "text": "forward",
+    "sentence": "Take two steps forward and one step back.",
+    "definition": "Toward the front, ahead"
+  },
+  {
+    "text": "fought",
+    "sentence": "The brave soldiers fought for their country.",
+    "definition": "Struggled or battled (past tense)"
+  },
+  {
+    "text": "found",
+    "sentence": "I found a shiny penny on the sidewalk.",
+    "definition": "Discovered (past tense)"
+  },
+  {
+    "text": "four",
+    "sentence": "A dog has four legs and a wagging tail.",
+    "definition": "The number 4"
+  },
+  {
+    "text": "fourth",
+    "sentence": "April is the fourth month of the year.",
+    "definition": "Number 4 in order"
+  },
+  {
+    "text": "fox",
+    "sentence": "The clever fox has thick red fur.",
+    "definition": "A wild animal like a small dog"
+  },
+  {
+    "text": "free",
+    "sentence": "Admission to the museum is free on Sundays.",
+    "definition": "Not costing money, or not trapped"
+  },
+  {
+    "text": "fresh",
+    "sentence": "I love the smell of fresh-baked cookies.",
+    "definition": "New, just made, not old"
+  },
+  {
+    "text": "friend",
+    "sentence": "My best friend lives right next door.",
+    "definition": "Someone you like and enjoy time with"
+  },
+  {
+    "text": "from",
+    "sentence": "I am from California originally.",
+    "definition": "Starting at a place or person"
+  },
+  {
+    "text": "front",
+    "sentence": "Stand at the front of the line, please.",
+    "definition": "The forward part, not the back"
+  },
+  {
+    "text": "fruit",
+    "sentence": "Apples and oranges are my favorite fruits.",
+    "definition": "The sweet part of a plant with seeds"
+  },
+  {
+    "text": "full",
+    "sentence": "My cup is completely full of juice.",
+    "definition": "Holding as much as possible"
+  },
+  {
+    "text": "fun",
+    "sentence": "Playing at the park is so much fun.",
+    "definition": "Enjoyable, entertaining"
+  },
+  {
+    "text": "funny",
+    "sentence": "The clown told funny jokes that made us laugh.",
+    "definition": "Causing laughter, amusing"
+  },
+  {
+    "text": "further",
+    "sentence": "How much further until we reach home?",
+    "definition": "More distance, additional"
+  },
+  {
+    "text": "future",
+    "sentence": "In the future, I want to be an astronaut.",
+    "definition": "The time that hasn't happened yet"
+  },
+  {
+    "text": "game",
+    "sentence": "We played a fun game of tag at recess.",
+    "definition": "An activity with rules that people play for fun"
+  },
+  {
+    "text": "garden",
+    "sentence": "Mom planted tomatoes and flowers in the garden.",
+    "definition": "A piece of ground where plants, vegetables, or flowers are grown"
+  },
+  {
+    "text": "gas",
+    "sentence": "We stopped at the station to put gas in the car.",
+    "definition": "A substance like air that has no fixed shape, or fuel for vehicles"
+  },
+  {
+    "text": "gave",
+    "sentence": "She gave me a birthday present yesterday.",
+    "definition": "Past tense of give; to hand something to someone"
+  },
+  {
+    "text": "general",
+    "sentence": "In general, I like to read books before bedtime.",
+    "definition": "Usual or common; affecting most people or things"
+  },
+  {
+    "text": "get",
+    "sentence": "Can you get the ball from under the table?",
+    "definition": "To obtain, receive, or go and bring something"
+  },
+  {
+    "text": "getting",
+    "sentence": "I am getting better at riding my bike.",
+    "definition": "The act of obtaining or becoming something"
+  },
+  {
+    "text": "girl",
+    "sentence": "The girl wore a red dress to the party.",
+    "definition": "A female child or young woman"
+  },
+  {
+    "text": "give",
+    "sentence": "Please give me a chance to explain.",
+    "definition": "To hand something to someone or let them have it"
+  },
+  {
+    "text": "gives",
+    "sentence": "My teacher gives us homework every Friday.",
+    "definition": "Third person singular of give; hands something to someone"
+  },
+  {
+    "text": "glad",
+    "sentence": "I am glad that you came to my birthday party.",
+    "definition": "Happy or pleased about something"
+  },
+  {
+    "text": "glass",
+    "sentence": "I drink water from a glass at dinner.",
+    "definition": "A hard, clear material used for windows, or a drinking container"
+  },
+  {
+    "text": "go",
+    "sentence": "Let's go to the park and play.",
+    "definition": "To move from one place to another"
+  },
+  {
+    "text": "goat",
+    "sentence": "The goat climbed up the rocky hill.",
+    "definition": "A farm animal with horns and a beard"
+  },
+  {
+    "text": "goes",
+    "sentence": "My brother goes to school every morning.",
+    "definition": "Third person singular of go; moves from one place to another"
+  },
+  {
+    "text": "going",
+    "sentence": "We are going to the zoo tomorrow.",
+    "definition": "Moving toward a place; in the process of traveling"
+  },
+  {
+    "text": "gold",
+    "sentence": "The treasure chest was filled with gold coins.",
+    "definition": "A valuable shiny yellow metal"
+  },
+  {
+    "text": "gone",
+    "sentence": "The cookies are all gone because we ate them.",
+    "definition": "No longer here; left or disappeared"
+  },
+  {
+    "text": "good",
+    "sentence": "You did a good job on your homework.",
+    "definition": "Of high quality; pleasant or favorable"
+  },
+  {
+    "text": "good-by",
+    "sentence": "I waved good-by to my friend as the bus left.",
+    "definition": "A farewell; something you say when leaving someone"
+  },
+  {
+    "text": "got",
+    "sentence": "I got a new bike for my birthday.",
+    "definition": "Past tense of get; received or obtained something"
+  },
+  {
+    "text": "government",
+    "sentence": "The government makes laws for our country.",
+    "definition": "The group of people who run a country or state"
+  },
+  {
+    "text": "grade",
+    "sentence": "I am in third grade at school.",
+    "definition": "A level in school or a score on schoolwork"
+  },
+  {
+    "text": "grandmother",
+    "sentence": "My grandmother bakes delicious cookies.",
+    "definition": "Your mother's mother or your father's mother"
+  },
+  {
+    "text": "grass",
+    "sentence": "The grass in our yard is soft and green.",
+    "definition": "Green plants that cover the ground in yards and fields"
+  },
+  {
+    "text": "gray",
+    "sentence": "The sky turned gray before the rain started.",
+    "definition": "A color that is a mix of black and white"
+  },
+  {
+    "text": "great",
+    "sentence": "We had a great time at the amusement park.",
+    "definition": "Very good, large, or important"
+  },
+  {
+    "text": "green",
+    "sentence": "The leaves on the tree are bright green.",
+    "definition": "The color of grass and leaves"
+  },
+  {
+    "text": "grew",
+    "sentence": "The sunflower grew taller every day.",
+    "definition": "Past tense of grow; became bigger or taller"
+  },
+  {
+    "text": "ground",
+    "sentence": "The ball rolled across the ground.",
+    "definition": "The surface of the earth; the floor or soil"
+  },
+  {
+    "text": "group",
+    "sentence": "Our group of friends played together at the park.",
+    "definition": "A number of people or things that are together"
+  },
+  {
+    "text": "grow",
+    "sentence": "Plants need water and sunlight to grow.",
+    "definition": "To get bigger or taller over time"
+  },
+  {
+    "text": "grown",
+    "sentence": "My puppy has grown into a big dog.",
+    "definition": "Past participle of grow; has become bigger or older"
+  },
+  {
+    "text": "guess",
+    "sentence": "Can you guess how many jellybeans are in the jar?",
+    "definition": "To try to answer without knowing for sure"
+  },
+  {
+    "text": "guide",
+    "sentence": "The tour guide showed us around the museum.",
+    "definition": "A person who shows the way or helps you learn something"
+  },
+  {
+    "text": "gun",
+    "sentence": "The starting gun signaled the beginning of the race.",
+    "definition": "A weapon that shoots bullets or a device that shoots something"
+  },
+  {
+    "text": "had",
+    "sentence": "I had pancakes for breakfast this morning.",
+    "definition": "Past tense of have; owned or experienced something"
+  },
+  {
+    "text": "hair",
+    "sentence": "I brushed my hair before school.",
+    "definition": "The strands that grow on your head and body"
+  },
+  {
+    "text": "half",
+    "sentence": "I ate half of the sandwich and saved the rest.",
+    "definition": "One of two equal parts of something"
+  },
+  {
+    "text": "hand",
+    "sentence": "I raised my hand to answer the question.",
+    "definition": "The part of your body at the end of your arm with fingers"
+  },
+  {
+    "text": "happen",
+    "sentence": "What will happen if it rains during the picnic?",
+    "definition": "To take place or occur"
+  },
+  {
+    "text": "happened",
+    "sentence": "Something funny happened at school today.",
+    "definition": "Past tense of happen; took place or occurred"
+  },
+  {
+    "text": "happiest",
+    "sentence": "This is the happiest day of my life!",
+    "definition": "Most happy; feeling the greatest amount of joy"
+  },
+  {
+    "text": "happiness",
+    "sentence": "Her smile was full of happiness and joy.",
+    "definition": "The feeling of being happy and content"
+  },
+  {
+    "text": "happy",
+    "sentence": "I feel happy when I play with my friends.",
+    "definition": "Feeling or showing pleasure and joy"
+  },
+  {
+    "text": "hard",
+    "sentence": "The math test was very hard.",
+    "definition": "Difficult to do or solid and firm to touch"
+  },
+  {
+    "text": "harden",
+    "sentence": "The clay will harden when it dries in the sun.",
+    "definition": "To become hard or make something hard"
+  },
+  {
+    "text": "has",
+    "sentence": "My sister has a new puppy.",
+    "definition": "Third person singular of have; owns or possesses"
+  },
+  {
+    "text": "hat",
+    "sentence": "I wear a hat to keep the sun out of my eyes.",
+    "definition": "A covering for your head"
+  },
+  {
+    "text": "have",
+    "sentence": "I have two cats and one dog.",
+    "definition": "To own, possess, or experience something"
+  },
+  {
+    "text": "haven't",
+    "sentence": "I haven't finished my homework yet.",
+    "definition": "Have not; do not have or has not happened"
+  },
+  {
+    "text": "having",
+    "sentence": "We are having pizza for dinner tonight.",
+    "definition": "The act of possessing or experiencing something"
+  },
+  {
+    "text": "he",
+    "sentence": "He is my best friend from school.",
+    "definition": "A word used to refer to a male person or animal"
+  },
+  {
+    "text": "he's",
+    "sentence": "He's coming to my party on Saturday.",
+    "definition": "He is or he has"
+  },
+  {
+    "text": "head",
+    "sentence": "I bumped my head on the low ceiling.",
+    "definition": "The top part of your body that has your brain, eyes, and mouth"
+  },
+  {
+    "text": "hear",
+    "sentence": "I can hear the birds singing outside.",
+    "definition": "To sense sounds with your ears"
+  },
+  {
+    "text": "heard",
+    "sentence": "I heard a strange noise coming from the basement.",
+    "definition": "Past tense of hear; sensed sounds with your ears"
+  },
+  {
+    "text": "heart",
+    "sentence": "My heart beats faster when I run.",
+    "definition": "The organ in your chest that pumps blood through your body"
+  },
+  {
+    "text": "heat",
+    "sentence": "The heat from the fire kept us warm.",
+    "definition": "Warmth or high temperature"
+  },
+  {
+    "text": "heavy",
+    "sentence": "The box was too heavy for me to lift.",
+    "definition": "Weighing a lot; hard to lift or carry"
+  },
+  {
+    "text": "held",
+    "sentence": "She held the baby gently in her arms.",
+    "definition": "Past tense of hold; grasped or carried something"
+  },
+  {
+    "text": "hello",
+    "sentence": "I said hello to my neighbor this morning.",
+    "definition": "A greeting you say when you meet someone"
+  },
+  {
+    "text": "help",
+    "sentence": "Can you help me carry these books?",
+    "definition": "To assist or make something easier for someone"
+  },
+  {
+    "text": "hen",
+    "sentence": "The hen laid three eggs in the nest.",
+    "definition": "A female chicken"
+  },
+  {
+    "text": "her",
+    "sentence": "I gave her a birthday card.",
+    "definition": "Belonging to or referring to a female person or animal"
+  },
+  {
+    "text": "here",
+    "sentence": "Come here and sit next to me.",
+    "definition": "In this place or at this location"
+  },
+  {
+    "text": "herself",
+    "sentence": "She built the treehouse by herself.",
+    "definition": "Used to refer to a female person as both subject and object"
+  },
+  {
+    "text": "high",
+    "sentence": "The kite flew high in the sky.",
+    "definition": "Far above the ground or at a great distance up"
+  },
+  {
+    "text": "hill",
+    "sentence": "We rolled down the grassy hill.",
+    "definition": "A raised area of land, smaller than a mountain"
+  },
+  {
+    "text": "him",
+    "sentence": "I saw him at the store yesterday.",
+    "definition": "Used to refer to a male person or animal as the object"
+  },
+  {
+    "text": "himself",
+    "sentence": "He made lunch for himself.",
+    "definition": "Used to refer to a male person as both subject and object"
+  },
+  {
+    "text": "his",
+    "sentence": "That is his backpack on the chair.",
+    "definition": "Belonging to a male person or animal"
+  },
+  {
+    "text": "history",
+    "sentence": "We learned about ancient history in class.",
+    "definition": "The study of past events and people"
+  },
+  {
+    "text": "hit",
+    "sentence": "I hit the ball with the bat.",
+    "definition": "To strike or make contact with force"
+  },
+  {
+    "text": "hold",
+    "sentence": "Please hold my hand when we cross the street.",
+    "definition": "To grasp, carry, or keep something in your hands"
+  },
+  {
+    "text": "hole",
+    "sentence": "The rabbit dug a hole in the ground.",
+    "definition": "An opening or empty space in something"
+  },
+  {
+    "text": "home",
+    "sentence": "I walked home from school today.",
+    "definition": "The place where you live"
+  },
+  {
+    "text": "hope",
+    "sentence": "I hope it will be sunny tomorrow.",
+    "definition": "To want something to happen and believe it might"
+  },
+  {
+    "text": "horse",
+    "sentence": "The brown horse galloped across the field.",
+    "definition": "A large animal with four legs that people can ride"
+  },
+  {
+    "text": "hospital",
+    "sentence": "The doctor works at the hospital downtown.",
+    "definition": "A place where sick or injured people get medical care"
+  },
+  {
+    "text": "hot",
+    "sentence": "The soup is too hot to eat right now.",
+    "definition": "Having a high temperature; very warm"
+  },
+  {
+    "text": "hour",
+    "sentence": "The movie lasts for one hour.",
+    "definition": "A period of time that equals 60 minutes"
+  },
+  {
+    "text": "house",
+    "sentence": "We live in a blue house on the corner.",
+    "definition": "A building where people live"
+  },
+  {
+    "text": "how",
+    "sentence": "How do you make a paper airplane?",
+    "definition": "In what way or by what means"
+  },
+  {
+    "text": "however",
+    "sentence": "I wanted to play outside; however, it started raining.",
+    "definition": "But or on the other hand; despite this"
+  },
+  {
+    "text": "huge",
+    "sentence": "The elephant is a huge animal.",
+    "definition": "Very large or enormous"
+  },
+  {
+    "text": "human",
+    "sentence": "Every human needs food and water to live.",
+    "definition": "A person; relating to people"
+  },
+  {
+    "text": "hundred",
+    "sentence": "There are one hundred pennies in a dollar.",
+    "definition": "The number 100"
+  },
+  {
+    "text": "hungry",
+    "sentence": "I am hungry and ready for lunch.",
+    "definition": "Feeling the need to eat food"
+  },
+  {
+    "text": "hurt",
+    "sentence": "I hurt my knee when I fell off my bike.",
+    "definition": "To cause pain or injury to someone or something"
+  },
+  {
+    "text": "I",
+    "sentence": "I love to read books.",
+    "definition": "The word you use to talk about yourself"
+  },
+  {
+    "text": "I'd",
+    "sentence": "I'd like to have some ice cream, please.",
+    "definition": "I would or I had"
+  },
+  {
+    "text": "I'll",
+    "sentence": "I'll see you at school tomorrow.",
+    "definition": "I will or I shall"
+  },
+  {
+    "text": "I'm",
+    "sentence": "I'm very excited about the field trip.",
+    "definition": "I am"
+  },
+  {
+    "text": "I've",
+    "sentence": "I've finished all my homework.",
+    "definition": "I have"
+  },
+  {
+    "text": "ice",
+    "sentence": "The ice in my drink is melting.",
+    "definition": "Frozen water that is hard and cold"
+  },
+  {
+    "text": "idea",
+    "sentence": "I have a great idea for our project.",
+    "definition": "A thought or plan in your mind"
+  },
+  {
+    "text": "if",
+    "sentence": "If it rains, we will stay inside.",
+    "definition": "Used to talk about something that might happen"
+  },
+  {
+    "text": "imagine",
+    "sentence": "Imagine what it would be like to fly.",
+    "definition": "To picture something in your mind"
+  },
+  {
+    "text": "important",
+    "sentence": "It is important to brush your teeth every day.",
+    "definition": "Very valuable, useful, or necessary"
+  },
+  {
+    "text": "in",
+    "sentence": "The toys are in the box.",
+    "definition": "Inside or within something"
+  },
+  {
+    "text": "inch",
+    "sentence": "The caterpillar is one inch long.",
+    "definition": "A unit of measurement equal to 1/12 of a foot"
+  },
+  {
+    "text": "inches",
+    "sentence": "The ruler is twelve inches long.",
+    "definition": "Plural of inch; more than one inch"
+  },
+  {
+    "text": "include",
+    "sentence": "The box will include all the pieces you need.",
+    "definition": "To have something as a part of a group or whole"
+  },
+  {
+    "text": "indeed",
+    "sentence": "It is indeed a beautiful day outside.",
+    "definition": "Used to emphasize that something is true; really"
+  },
+  {
+    "text": "industry",
+    "sentence": "My dad works in the car industry.",
+    "definition": "The making of products or services in factories and businesses"
+  },
+  {
+    "text": "information",
+    "sentence": "The library has information about dinosaurs.",
+    "definition": "Facts or knowledge about something"
+  },
+  {
+    "text": "insect",
+    "sentence": "A butterfly is a type of insect.",
+    "definition": "A small animal with six legs and usually wings"
+  },
+  {
+    "text": "inside",
+    "sentence": "Let's go inside the house where it's warm.",
+    "definition": "In or into the inner part of something"
+  },
+  {
+    "text": "instead",
+    "sentence": "I chose juice instead of milk.",
+    "definition": "In place of something else; as an alternative"
+  },
+  {
+    "text": "interest",
+    "sentence": "I have an interest in learning about space.",
+    "definition": "A feeling of wanting to know or learn about something"
+  },
+  {
+    "text": "into",
+    "sentence": "I jumped into the swimming pool.",
+    "definition": "Moving to the inside of something"
+  },
+  {
+    "text": "iron",
+    "sentence": "The gate is made of iron.",
+    "definition": "A strong, heavy metal or a device used to smooth wrinkles from clothes"
+  },
+  {
+    "text": "is",
+    "sentence": "The sky is blue today.",
+    "definition": "A form of 'be' used with he, she, or it"
+  },
+  {
+    "text": "island",
+    "sentence": "We took a boat to reach the island.",
+    "definition": "A piece of land completely surrounded by water"
+  },
+  {
+    "text": "isn't",
+    "sentence": "That isn't my backpack; mine is red.",
+    "definition": "Is not; a shorter way to say is not"
+  },
+  {
+    "text": "it",
+    "sentence": "I found a shell and put it in my pocket.",
+    "definition": "Used to refer to a thing, animal, or situation"
+  },
+  {
+    "text": "it's",
+    "sentence": "It's time to go to bed now.",
+    "definition": "It is or it has"
+  },
+  {
+    "text": "itself",
+    "sentence": "The cat can clean itself.",
+    "definition": "Used to refer to a thing or animal as both subject and object"
+  },
+  {
+    "text": "job",
+    "sentence": "It is my job to feed the dog every morning.",
+    "definition": "A task or work that someone does"
+  },
+  {
+    "text": "join",
+    "sentence": "Would you like to join our team?",
+    "definition": "To become part of a group or connect things together"
+  },
+  {
+    "text": "jump",
+    "sentence": "I can jump over the puddle.",
+    "definition": "To push yourself off the ground with your legs"
+  },
+  {
+    "text": "just",
+    "sentence": "I just finished my snack a minute ago.",
+    "definition": "A short time ago or only"
+  },
+  {
+    "text": "keep",
+    "sentence": "Please keep your room clean.",
+    "definition": "To have and continue to hold something"
+  },
+  {
+    "text": "kept",
+    "sentence": "I kept my promise to help you.",
+    "definition": "Past tense of keep; had and held something"
+  },
+  {
+    "text": "key",
+    "sentence": "I need a key to unlock the door.",
+    "definition": "A metal tool used to open locks"
+  },
+  {
+    "text": "kids",
+    "sentence": "All the kids are playing at the park.",
+    "definition": "Children; young people"
+  },
+  {
+    "text": "kind",
+    "sentence": "She is a kind and helpful person.",
+    "definition": "Friendly, generous, and caring or a type of something"
+  },
+  {
+    "text": "king",
+    "sentence": "The king ruled the kingdom fairly.",
+    "definition": "A male ruler of a country"
+  },
+  {
+    "text": "kitchen",
+    "sentence": "Mom is cooking dinner in the kitchen.",
+    "definition": "The room where food is prepared and cooked"
+  },
+  {
+    "text": "knew",
+    "sentence": "I knew the answer to the question.",
+    "definition": "Past tense of know; had information or understanding"
+  },
+  {
+    "text": "knife",
+    "sentence": "Use a knife to cut your food carefully.",
+    "definition": "A tool with a sharp blade used for cutting"
+  },
+  {
+    "text": "know",
+    "sentence": "I know how to tie my shoes.",
+    "definition": "To have information or understanding about something"
+  },
+  {
+    "text": "knowledge",
+    "sentence": "Reading books gives you knowledge about the world.",
+    "definition": "Information, understanding, and skills gained through learning"
+  },
+  {
+    "text": "lady",
+    "sentence": "The kind lady helped us find our way.",
+    "definition": "A polite word for a woman"
+  },
+  {
+    "text": "laid",
+    "sentence": "She laid the book on the table.",
+    "definition": "Past tense of lay; put something down carefully"
+  },
+  {
+    "text": "lake",
+    "sentence": "We went swimming in the lake.",
+    "definition": "A large body of water surrounded by land"
+  },
+  {
+    "text": "land",
+    "sentence": "The airplane will land at the airport soon.",
+    "definition": "The solid ground of Earth or to come down to the ground"
+  },
+  {
+    "text": "language",
+    "sentence": "I am learning a new language at school.",
+    "definition": "The words and grammar that people use to communicate"
+  },
+  {
+    "text": "large",
+    "sentence": "That is a large pizza with eight slices.",
+    "definition": "Big in size or amount"
+  },
+  {
+    "text": "largest",
+    "sentence": "The elephant is the largest animal at the zoo.",
+    "definition": "Biggest in size or amount"
+  },
+  {
+    "text": "last",
+    "sentence": "I was the last person to leave the party.",
+    "definition": "Coming at the end or final"
+  },
+  {
+    "text": "late",
+    "sentence": "Don't be late for school tomorrow.",
+    "definition": "After the expected or usual time"
+  },
+  {
+    "text": "later",
+    "sentence": "I will do my homework later this afternoon.",
+    "definition": "At a time in the future or after something else"
+  },
+  {
+    "text": "laugh",
+    "sentence": "The funny joke made me laugh out loud.",
+    "definition": "To make sounds and movements that show you think something is funny"
+  },
+  {
+    "text": "law",
+    "sentence": "There is a law that says we must wear seatbelts.",
+    "definition": "A rule made by the government that everyone must follow"
+  },
+  {
+    "text": "lay",
+    "sentence": "Please lay the blanket on the bed.",
+    "definition": "To put something down in a flat position"
+  },
+  {
+    "text": "lead",
+    "sentence": "The guide will lead us through the museum.",
+    "definition": "To show the way or be in charge"
+  },
+  {
+    "text": "learn",
+    "sentence": "I want to learn how to play the piano.",
+    "definition": "To get knowledge or skill by studying or practicing"
+  },
+  {
+    "text": "least",
+    "sentence": "This is the least expensive toy in the store.",
+    "definition": "Smallest in amount, size, or importance"
+  },
+  {
+    "text": "leave",
+    "sentence": "We will leave for the airport at noon.",
+    "definition": "To go away from a place"
+  },
+  {
+    "text": "led",
+    "sentence": "The teacher led the students to the playground.",
+    "definition": "Past tense of lead; showed the way or was in charge"
+  },
+  {
+    "text": "left",
+    "sentence": "Turn left at the next corner.",
+    "definition": "The opposite direction of right or past tense of leave"
+  },
+  {
+    "text": "leg",
+    "sentence": "I hurt my leg when I fell down.",
+    "definition": "One of the body parts you use to stand and walk"
+  },
+  {
+    "text": "length",
+    "sentence": "What is the length of this table?",
+    "definition": "How long something is from one end to the other"
+  },
+  {
+    "text": "less",
+    "sentence": "I have less money than my brother.",
+    "definition": "A smaller amount or not as much"
+  },
+  {
+    "text": "let",
+    "sentence": "Please let me help you with that.",
+    "definition": "To allow or permit something to happen"
+  },
+  {
+    "text": "let's",
+    "sentence": "Let's go to the park and play.",
+    "definition": "Let us; a suggestion to do something together"
+  },
+  {
+    "text": "letter",
+    "sentence": "I wrote a letter to my grandmother.",
+    "definition": "A written message or one symbol in the alphabet"
+  },
+  {
+    "text": "level",
+    "sentence": "We are on the second level of the building.",
+    "definition": "A position or height in relation to the ground or a floor"
+  },
+  {
+    "text": "lie",
+    "sentence": "It is wrong to lie and not tell the truth.",
+    "definition": "To say something that is not true or to rest in a flat position"
+  },
+  {
+    "text": "life",
+    "sentence": "My grandmother has had a long and happy life.",
+    "definition": "The time when a person or animal is alive"
+  },
+  {
+    "text": "light",
+    "sentence": "Turn on the light so we can see better.",
+    "definition": "Brightness that lets you see or not heavy"
+  },
+  {
+    "text": "like",
+    "sentence": "I like ice cream and cake.",
+    "definition": "To enjoy or feel good about something, or similar to"
+  },
+  {
+    "text": "line",
+    "sentence": "Draw a straight line across the page.",
+    "definition": "A long, thin mark or a row of people or things"
+  },
+  {
+    "text": "liquid",
+    "sentence": "Water is a liquid that we drink.",
+    "definition": "A substance that flows and is not solid or gas"
+  },
+  {
+    "text": "list",
+    "sentence": "I made a list of things to buy at the store.",
+    "definition": "A series of names or items written down"
+  },
+  {
+    "text": "listen",
+    "sentence": "Please listen carefully to the instructions.",
+    "definition": "To pay attention and try to hear something"
+  },
+  {
+    "text": "little",
+    "sentence": "The little puppy is so cute.",
+    "definition": "Small in size or amount"
+  },
+  {
+    "text": "live",
+    "sentence": "I live in a house with my family.",
+    "definition": "To have your home in a place or to be alive"
+  },
+  {
+    "text": "liven",
+    "sentence": "Music can liven up a party.",
+    "definition": "To make something more exciting or energetic"
+  },
+  {
+    "text": "living",
+    "sentence": "All living things need water to survive.",
+    "definition": "Being alive or the way you earn money to support yourself"
+  },
+  {
+    "text": "long",
+    "sentence": "The snake was very long.",
+    "definition": "Measuring a great distance from end to end"
+  },
+  {
+    "text": "longer",
+    "sentence": "My hair is longer than yours.",
+    "definition": "More in length than something else"
+  },
+  {
+    "text": "look",
+    "sentence": "Look at the beautiful rainbow in the sky!",
+    "definition": "To use your eyes to see something"
+  },
+  {
+    "text": "looking",
+    "sentence": "I am looking for my lost toy.",
+    "definition": "The act of using your eyes to see or search for something"
+  },
+  {
+    "text": "lot",
+    "sentence": "I have a lot of homework to do tonight.",
+    "definition": "A large number or amount of something"
+  },
+  {
+    "text": "loud",
+    "sentence": "The music is too loud; please turn it down.",
+    "definition": "Making a lot of noise or sound"
+  },
+  {
+    "text": "love",
+    "sentence": "I love my family very much.",
+    "definition": "A very strong feeling of caring about someone or something"
+  },
+  {
+    "text": "lovely",
+    "sentence": "What a lovely day for a picnic!",
+    "definition": "Beautiful, pleasant, or delightful"
+  },
+  {
+    "text": "loving",
+    "sentence": "She has a loving and caring personality.",
+    "definition": "Showing love and affection"
+  },
+  {
+    "text": "low",
+    "sentence": "The shelf is too low for me to reach.",
+    "definition": "Close to the ground or bottom"
+  },
+  {
+    "text": "lunch",
+    "sentence": "We eat lunch at noon every day.",
+    "definition": "The meal eaten in the middle of the day"
+  },
+  {
+    "text": "machine",
+    "sentence": "The washing machine cleans our clothes.",
+    "definition": "A device with moving parts that does work"
+  },
+  {
+    "text": "mad",
+    "sentence": "I was mad when my toy broke.",
+    "definition": "Angry or upset"
+  },
+  {
+    "text": "made",
+    "sentence": "I made a card for my friend's birthday.",
+    "definition": "Past tense of make; created or built something"
+  },
+  {
+    "text": "main",
+    "sentence": "The main reason I'm here is to help you.",
+    "definition": "Most important or largest"
+  },
+  {
+    "text": "major",
+    "sentence": "This is a major problem that needs fixing.",
+    "definition": "Very important, serious, or large"
+  },
+  {
+    "text": "make",
+    "sentence": "Let's make cookies together.",
+    "definition": "To create, build, or cause something to happen"
+  },
+  {
+    "text": "making",
+    "sentence": "I am making a sandwich for lunch.",
+    "definition": "The act of creating or building something"
+  },
+  {
+    "text": "man",
+    "sentence": "The man walked his dog in the park.",
+    "definition": "An adult male person"
+  },
+  {
+    "text": "many",
+    "sentence": "There are many stars in the sky tonight.",
+    "definition": "A large number of things or people"
+  },
+  {
+    "text": "map",
+    "sentence": "We used a map to find our way to the museum.",
+    "definition": "A drawing that shows where places are located"
+  },
+  {
+    "text": "mark",
+    "sentence": "I got a good mark on my spelling test.",
+    "definition": "A symbol or grade that shows how well you did"
+  },
+  {
+    "text": "market",
+    "sentence": "We buy fresh fruit at the farmer's market.",
+    "definition": "A place where people buy and sell things"
+  },
+  {
+    "text": "mass",
+    "sentence": "The elephant has a large mass.",
+    "definition": "The amount of matter in an object; how much something weighs"
+  },
+  {
+    "text": "master",
+    "sentence": "She worked hard to master the piano.",
+    "definition": "To become very skilled at something"
+  },
+  {
+    "text": "match",
+    "sentence": "These socks match because they are both blue.",
+    "definition": "To go well together or be the same"
+  },
+  {
+    "text": "material",
+    "sentence": "Cotton is a soft material used to make clothes.",
+    "definition": "What something is made of; fabric or substance"
+  },
+  {
+    "text": "matter",
+    "sentence": "It doesn't matter which color you choose.",
+    "definition": "To be important or make a difference"
+  },
+  {
+    "text": "may",
+    "sentence": "You may have a cookie after dinner.",
+    "definition": "A word that shows permission or possibility"
+  },
+  {
+    "text": "maybe",
+    "sentence": "Maybe we can go to the park tomorrow.",
+    "definition": "A word that means something might happen but you're not sure"
+  },
+  {
+    "text": "me",
+    "sentence": "My friend gave the book to me.",
+    "definition": "A word you use to talk about yourself"
+  },
+  {
+    "text": "mean",
+    "sentence": "What does this word mean?",
+    "definition": "To explain what something is; or to be unkind"
+  },
+  {
+    "text": "meant",
+    "sentence": "I meant to call you yesterday but I forgot.",
+    "definition": "Past tense of mean; intended to do something"
+  },
+  {
+    "text": "measure",
+    "sentence": "I need to measure the flour for the recipe.",
+    "definition": "To find out the size, amount, or weight of something"
+  },
+  {
+    "text": "meat",
+    "sentence": "We had chicken for dinner because it's my favorite meat.",
+    "definition": "Food that comes from animals like beef, chicken, or pork"
+  },
+  {
+    "text": "meet",
+    "sentence": "Let's meet at the playground after school.",
+    "definition": "To come together with someone or see them for the first time"
+  },
+  {
+    "text": "member",
+    "sentence": "She is a member of the soccer team.",
+    "definition": "A person who belongs to a group or club"
+  },
+  {
+    "text": "men",
+    "sentence": "The men are playing basketball in the park.",
+    "definition": "More than one adult male person"
+  },
+  {
+    "text": "mental",
+    "sentence": "Math problems require mental effort.",
+    "definition": "Having to do with the mind or thinking"
+  },
+  {
+    "text": "met",
+    "sentence": "I met my best friend in first grade.",
+    "definition": "Past tense of meet; saw or came together with someone"
+  },
+  {
+    "text": "method",
+    "sentence": "My teacher showed us a new method for solving problems.",
+    "definition": "A way of doing something; a process or technique"
+  },
+  {
+    "text": "middle",
+    "sentence": "The toy is in the middle of the room.",
+    "definition": "The center or halfway point between two things"
+  },
+  {
+    "text": "might",
+    "sentence": "It might rain later, so bring an umbrella.",
+    "definition": "A word that shows something is possible but not certain"
+  },
+  {
+    "text": "mile",
+    "sentence": "The school is one mile away from my house.",
+    "definition": "A unit of distance equal to 5,280 feet"
+  },
+  {
+    "text": "milk",
+    "sentence": "I drink a glass of milk with breakfast.",
+    "definition": "A white liquid that comes from cows and is good to drink"
+  },
+  {
+    "text": "million",
+    "sentence": "There are over a million people in our city.",
+    "definition": "The number 1,000,000; a very large amount"
+  },
+  {
+    "text": "mind",
+    "sentence": "I can't make up my mind about which book to read.",
+    "definition": "The part of you that thinks, feels, and remembers"
+  },
+  {
+    "text": "mine",
+    "sentence": "This backpack is mine, not yours.",
+    "definition": "Belonging to me; something that is my own"
+  },
+  {
+    "text": "minute",
+    "sentence": "Wait just one minute and I'll be ready.",
+    "definition": "A unit of time equal to 60 seconds"
+  },
+  {
+    "text": "miss",
+    "sentence": "I miss my grandma when she's not here.",
+    "definition": "To feel sad when someone is gone; or to fail to catch or hit something"
+  },
+  {
+    "text": "modern",
+    "sentence": "Our school has modern computers and tablets.",
+    "definition": "New and up-to-date; from the present time"
+  },
+  {
+    "text": "mom",
+    "sentence": "My mom makes the best cookies.",
+    "definition": "A casual word for mother"
+  },
+  {
+    "text": "moment",
+    "sentence": "Please wait a moment while I get my shoes.",
+    "definition": "A very short amount of time"
+  },
+  {
+    "text": "money",
+    "sentence": "I saved my money to buy a new toy.",
+    "definition": "Coins and bills used to buy things"
+  },
+  {
+    "text": "month",
+    "sentence": "My birthday is next month in December.",
+    "definition": "One of the twelve parts of a year, like January or July"
+  },
+  {
+    "text": "moon",
+    "sentence": "The moon shines brightly in the night sky.",
+    "definition": "The large round object that orbits Earth and glows at night"
+  },
+  {
+    "text": "more",
+    "sentence": "Can I have more juice, please?",
+    "definition": "A greater amount or number of something"
+  },
+  {
+    "text": "morning",
+    "sentence": "I eat breakfast in the morning before school.",
+    "definition": "The early part of the day, from sunrise until noon"
+  },
+  {
+    "text": "most",
+    "sentence": "Pizza is the food I like most of all.",
+    "definition": "The greatest amount or number; almost all"
+  },
+  {
+    "text": "mother",
+    "sentence": "My mother reads me a story every night.",
+    "definition": "A female parent"
+  },
+  {
+    "text": "motion",
+    "sentence": "The motion of the swing makes me feel happy.",
+    "definition": "The act of moving or changing position"
+  },
+  {
+    "text": "mountain",
+    "sentence": "We hiked up the tall mountain to see the view.",
+    "definition": "A very high and large natural hill of rock and earth"
+  },
+  {
+    "text": "mouse",
+    "sentence": "The little mouse ran across the floor.",
+    "definition": "A small furry animal with a long tail; or a device used to control a computer"
+  },
+  {
+    "text": "mouth",
+    "sentence": "I brush my teeth and clean my mouth every morning.",
+    "definition": "The opening in your face that you use to eat and speak"
+  },
+  {
+    "text": "move",
+    "sentence": "Please move your chair closer to the table.",
+    "definition": "To change position or go from one place to another"
+  },
+  {
+    "text": "movement",
+    "sentence": "I saw the movement of leaves in the wind.",
+    "definition": "The act of moving; a change in position"
+  },
+  {
+    "text": "Mr.",
+    "sentence": "Mr. Smith is my teacher.",
+    "definition": "A title used before a man's name"
+  },
+  {
+    "text": "Mrs.",
+    "sentence": "Mrs. Johnson lives next door to us.",
+    "definition": "A title used before a married woman's name"
+  },
+  {
+    "text": "Ms.",
+    "sentence": "Ms. Davis teaches art at our school.",
+    "definition": "A title used before a woman's name"
+  },
+  {
+    "text": "much",
+    "sentence": "Thank you so much for helping me.",
+    "definition": "A large amount of something"
+  },
+  {
+    "text": "music",
+    "sentence": "I love to listen to music while I draw.",
+    "definition": "Sounds made by singing or playing instruments that are pleasant to hear"
+  },
+  {
+    "text": "must",
+    "sentence": "I must finish my homework before I can play.",
+    "definition": "A word that shows something is necessary or required"
+  },
+  {
+    "text": "my",
+    "sentence": "This is my favorite book.",
+    "definition": "Belonging to me"
+  },
+  {
+    "text": "myself",
+    "sentence": "I made this picture all by myself.",
+    "definition": "Used to refer to yourself, often for emphasis"
+  },
+  {
+    "text": "nail",
+    "sentence": "I hammered the nail into the wood.",
+    "definition": "A small metal spike used to fasten things together; or the hard covering at the end of your finger"
+  },
+  {
+    "text": "name",
+    "sentence": "My name is Sarah and I am seven years old.",
+    "definition": "What someone or something is called"
+  },
+  {
+    "text": "narrow",
+    "sentence": "The path was too narrow for two people to walk side by side.",
+    "definition": "Not wide; having only a small distance from one side to the other"
+  },
+  {
+    "text": "nation",
+    "sentence": "The United States is a large nation.",
+    "definition": "A country with its own government and people"
+  },
+  {
+    "text": "natural",
+    "sentence": "It's natural to feel nervous before a test.",
+    "definition": "Found in nature; normal or expected"
+  },
+  {
+    "text": "nature",
+    "sentence": "I love being outside in nature, surrounded by trees and animals.",
+    "definition": "All the plants, animals, and things in the world not made by people"
+  },
+  {
+    "text": "near",
+    "sentence": "The library is near my house.",
+    "definition": "Close to; not far away"
+  },
+  {
+    "text": "nearly",
+    "sentence": "It's nearly bedtime, so put on your pajamas.",
+    "definition": "Almost; very close to"
+  },
+  {
+    "text": "necessary",
+    "sentence": "It is necessary to wear a coat when it's cold outside.",
+    "definition": "Needed; must be done or must have"
+  },
+  {
+    "text": "neck",
+    "sentence": "I wore a warm scarf around my neck.",
+    "definition": "The part of your body that connects your head to your shoulders"
+  },
+  {
+    "text": "need",
+    "sentence": "Plants need sunlight and water to grow.",
+    "definition": "To require something essential"
+  },
+  {
+    "text": "neither",
+    "sentence": "Neither the red shirt nor the blue one fits me.",
+    "definition": "Not the one or the other; not either"
+  },
+  {
+    "text": "nest",
+    "sentence": "The bird built a cozy nest for its eggs.",
+    "definition": "A home built by birds to lay eggs in"
+  },
+  {
+    "text": "never",
+    "sentence": "I have never been to the moon.",
+    "definition": "At no time; not ever"
+  },
+  {
+    "text": "new",
+    "sentence": "I got a new pair of shoes for school.",
+    "definition": "Recently made, bought, or discovered"
+  },
+  {
+    "text": "news",
+    "sentence": "We watched the news on TV to see what happened today.",
+    "definition": "Information about recent events"
+  },
+  {
+    "text": "next",
+    "sentence": "I am next in line for the slide.",
+    "definition": "Coming immediately after the present one"
+  },
+  {
+    "text": "nice",
+    "sentence": "It was very nice of you to share your toys.",
+    "definition": "Kind, pleasant, or enjoyable"
+  },
+  {
+    "text": "night",
+    "sentence": "Owls are awake during the night.",
+    "definition": "The time of darkness between sunset and sunrise"
+  },
+  {
+    "text": "nine",
+    "sentence": "A baseball team has nine players on the field.",
+    "definition": "The number 9"
+  },
+  {
+    "text": "ninth",
+    "sentence": "September is the ninth month of the year.",
+    "definition": "Number 9 in order"
+  },
+  {
+    "text": "no",
+    "sentence": "I said no when they asked if I wanted to leave.",
+    "definition": "A word used to refuse or deny something"
+  },
+  {
+    "text": "noise",
+    "sentence": "The construction work made a loud noise.",
+    "definition": "A sound, especially one that is loud or unpleasant"
+  },
+  {
+    "text": "none",
+    "sentence": "There were none left after the party.",
+    "definition": "Not any; not one"
+  },
+  {
+    "text": "nor",
+    "sentence": "I can neither sing nor dance well.",
+    "definition": "Used to introduce a negative statement after neither"
+  },
+  {
+    "text": "north",
+    "sentence": "A compass needle always points north.",
+    "definition": "The direction opposite to south"
+  },
+  {
+    "text": "northern",
+    "sentence": "Polar bears live in the northern part of the world.",
+    "definition": "Located in or toward the north"
+  },
+  {
+    "text": "nose",
+    "sentence": "I use my nose to smell the flowers.",
+    "definition": "The part of the face used for smelling and breathing"
+  },
+  {
+    "text": "not",
+    "sentence": "I am not going to school today because it is Saturday.",
+    "definition": "Used to make a sentence negative"
+  },
+  {
+    "text": "note",
+    "sentence": "I wrote a thank you note to my teacher.",
+    "definition": "A short letter or message"
+  },
+  {
+    "text": "nothing",
+    "sentence": "There is nothing in the empty box.",
+    "definition": "Not anything; no thing"
+  },
+  {
+    "text": "notice",
+    "sentence": "Did you notice the new haircut I got?",
+    "definition": "To become aware of something"
+  },
+  {
+    "text": "noun",
+    "sentence": "A noun is a person, place, or thing.",
+    "definition": "A word that names something"
+  },
+  {
+    "text": "now",
+    "sentence": "It is time to go to sleep now.",
+    "definition": "At this present time"
+  },
+  {
+    "text": "number",
+    "sentence": "My favorite number is seven.",
+    "definition": "A symbol used to count or measure"
+  },
+  {
+    "text": "nut",
+    "sentence": "The squirrel hid a nut for winter.",
+    "definition": "A dry fruit with a hard shell"
+  },
+  {
+    "text": "o'clock",
+    "sentence": "School starts at eight o'clock in the morning.",
+    "definition": "Used to tell time on the hour"
+  },
+  {
+    "text": "object",
+    "sentence": "A heavy object is hard to lift.",
+    "definition": "A material thing that can be seen and touched"
+  },
+  {
+    "text": "ocean",
+    "sentence": "Whales swim in the deep blue ocean.",
+    "definition": "A very large body of salt water"
+  },
+  {
+    "text": "of",
+    "sentence": "I would like a glass of water.",
+    "definition": "Belonging to or coming from"
+  },
+  {
+    "text": "off",
+    "sentence": "Please turn off the lights when you leave.",
+    "definition": "Away from a place or position"
+  },
+  {
+    "text": "office",
+    "sentence": "My dad works in an office building.",
+    "definition": "A room or building where business work is done"
+  },
+  {
+    "text": "often",
+    "sentence": "I often visit my grandmother on weekends.",
+    "definition": "Happening many times; frequently"
+  },
+  {
+    "text": "oh",
+    "sentence": "Oh, I didn't see you there!",
+    "definition": "A word used to express surprise or emotion"
+  },
+  {
+    "text": "oil",
+    "sentence": "We use oil to cook food in the pan.",
+    "definition": "A thick liquid used for fuel or cooking"
+  },
+  {
+    "text": "old",
+    "sentence": "The old car needs a new engine.",
+    "definition": "Having lived or existed for a long time"
+  },
+  {
+    "text": "on",
+    "sentence": "The book is on the table.",
+    "definition": "Touching and being supported by a surface"
+  },
+  {
+    "text": "once",
+    "sentence": "I visited the zoo once last year.",
+    "definition": "One time"
+  },
+  {
+    "text": "one",
+    "sentence": "I have one brother and two sisters.",
+    "definition": "The number 1"
+  },
+  {
+    "text": "only",
+    "sentence": "I have only one pencil left.",
+    "definition": "Alone of its kind; single or few"
+  },
+  {
+    "text": "onto",
+    "sentence": "The cat jumped onto the table.",
+    "definition": "Moving to a position on something"
+  },
+  {
+    "text": "open",
+    "sentence": "Please open the door for me.",
+    "definition": "Not closed or shut"
+  },
+  {
+    "text": "opposite",
+    "sentence": "Hot is the opposite of cold.",
+    "definition": "Completely different; on the other side"
+  },
+  {
+    "text": "or",
+    "sentence": "Do you want an apple or a banana?",
+    "definition": "Used to link alternatives"
+  },
+  {
+    "text": "orange",
+    "sentence": "I peeled an orange for a snack.",
+    "definition": "A round citrus fruit with thick skin"
+  },
+  {
+    "text": "order",
+    "sentence": "The teacher put the books in alphabetical order.",
+    "definition": "The arrangement of people or things"
+  },
+  {
+    "text": "original",
+    "sentence": "This is the original painting, not a copy.",
+    "definition": "The first or earliest"
+  },
+  {
+    "text": "other",
+    "sentence": "I have one shoe, but where is the other one?",
+    "definition": "Different or remaining"
+  },
+  {
+    "text": "out",
+    "sentence": "We went out to play in the snow.",
+    "definition": "Away from the inside"
+  },
+  {
+    "text": "outside",
+    "sentence": "It is sunny outside today.",
+    "definition": "The external side or surface of something"
+  },
+  {
+    "text": "over",
+    "sentence": "The cow jumped over the moon.",
+    "definition": "Above or higher than something"
+  },
+  {
+    "text": "own",
+    "sentence": "I have my very own room.",
+    "definition": "Belonging to oneself"
+  },
+  {
+    "text": "oxygen",
+    "sentence": "We breathe oxygen to stay alive.",
+    "definition": "A gas that is essential for life"
+  },
+  {
+    "text": "page",
+    "sentence": "Turn to the next page in your book.",
+    "definition": "One side of a sheet of paper"
+  },
+  {
+    "text": "paid",
+    "sentence": "I paid two dollars for the candy bar.",
+    "definition": "Past tense of pay; gave money for something"
+  },
+  {
+    "text": "paint",
+    "sentence": "I like to paint pictures of flowers.",
+    "definition": "Colorful liquid used to make pictures or cover walls"
+  },
+  {
+    "text": "pair",
+    "sentence": "I bought a new pair of shoes.",
+    "definition": "Two things that go together"
+  },
+  {
+    "text": "pan",
+    "sentence": "Mom cooked eggs in a frying pan.",
+    "definition": "A metal container used for cooking"
+  },
+  {
+    "text": "paper",
+    "sentence": "I write on paper with a pencil.",
+    "definition": "Material used for writing or drawing"
+  },
+  {
+    "text": "paragraph",
+    "sentence": "I wrote a paragraph about my summer vacation.",
+    "definition": "A group of sentences about one idea"
+  },
+  {
+    "text": "parent",
+    "sentence": "A mother or father is a parent.",
+    "definition": "A person who has a child"
+  },
+  {
+    "text": "park",
+    "sentence": "We played on the swings at the park.",
+    "definition": "A public area with grass and trees for playing"
+  },
+  {
+    "text": "part",
+    "sentence": "I ate part of my sandwich but saved the rest.",
+    "definition": "Some but not all of something"
+  },
+  {
+    "text": "particular",
+    "sentence": "I am looking for a particular book.",
+    "definition": "Specific; distinct from others"
+  },
+  {
+    "text": "party",
+    "sentence": "I had a birthday party with cake and balloons.",
+    "definition": "A social gathering to have fun"
+  },
+  {
+    "text": "pass",
+    "sentence": "Please pass the salt to me.",
+    "definition": "To move past or hand something to someone"
+  },
+  {
+    "text": "past",
+    "sentence": "Dinosaurs lived in the distant past.",
+    "definition": "Time that has already happened"
+  },
+  {
+    "text": "path",
+    "sentence": "We walked along the winding path in the woods.",
+    "definition": "A track or way for walking"
+  },
+  {
+    "text": "pattern",
+    "sentence": "The shirt has a striped pattern.",
+    "definition": "A repeated design or arrangement"
+  },
+  {
+    "text": "pay",
+    "sentence": "I need to pay for the groceries.",
+    "definition": "To give money for goods or services"
+  },
+  {
+    "text": "peanut",
+    "sentence": "I like peanut butter on my toast.",
+    "definition": "A nut that grows underground"
+  },
+  {
+    "text": "pencil",
+    "sentence": "I sharpened my pencil before the test.",
+    "definition": "A tool used for writing or drawing"
+  },
+  {
+    "text": "penny",
+    "sentence": "I found a lucky penny on the sidewalk.",
+    "definition": "A copper coin worth one cent"
+  },
+  {
+    "text": "people",
+    "sentence": "Many people live in the city.",
+    "definition": "Human beings; persons"
+  },
+  {
+    "text": "perhaps",
+    "sentence": "Perhaps it will rain tomorrow.",
+    "definition": "Maybe; possibly"
+  },
+  {
+    "text": "period",
+    "sentence": "Put a period at the end of the sentence.",
+    "definition": "A punctuation mark used to end a sentence"
+  },
+  {
+    "text": "person",
+    "sentence": "Each person must wait their turn.",
+    "definition": "A human being"
+  },
+  {
+    "text": "pet",
+    "sentence": "My pet dog loves to play fetch.",
+    "definition": "An animal kept for companionship"
+  },
+  {
+    "text": "phrase",
+    "sentence": "The phrase 'once upon a time' starts many stories.",
+    "definition": "A group of words that express an idea"
+  },
+  {
+    "text": "pick",
+    "sentence": "Please pick up your toys.",
+    "definition": "To choose or gather something"
+  },
+  {
+    "text": "picture",
+    "sentence": "I drew a picture of my house.",
+    "definition": "A drawing, painting, or photograph"
+  },
+  {
+    "text": "piece",
+    "sentence": "May I have a piece of cake?",
+    "definition": "A part of something larger"
+  },
+  {
+    "text": "pig",
+    "sentence": "The pink pig rolled in the mud.",
+    "definition": "A farm animal with a curly tail"
+  },
+  {
+    "text": "place",
+    "sentence": "This is a great place for a picnic.",
+    "definition": "A particular position or location"
+  },
+  {
+    "text": "plain",
+    "sentence": "I like plain yogurt with no fruit.",
+    "definition": "Simple, without decoration or flavor"
+  },
+  {
+    "text": "plan",
+    "sentence": "We made a plan to build a fort.",
+    "definition": "An idea about how to do something"
+  },
+  {
+    "text": "plane",
+    "sentence": "We flew on a plane to visit grandma.",
+    "definition": "An airplane; a flying vehicle"
+  },
+  {
+    "text": "planet",
+    "sentence": "Earth is the third planet from the sun.",
+    "definition": "A large object in space that orbits a star"
+  },
+  {
+    "text": "plant",
+    "sentence": "I will plant a seed in the garden.",
+    "definition": "A living thing that grows in the ground"
+  },
+  {
+    "text": "please",
+    "sentence": "Can I have a cookie, please?",
+    "definition": "A polite word used when asking for something"
+  },
+  {
+    "text": "pocket",
+    "sentence": "I keep my hands warm in my jacket pocket.",
+    "definition": "A small bag sewn into clothing"
+  },
+  {
+    "text": "poem",
+    "sentence": "We read a funny poem in English class.",
+    "definition": "Writing that uses rhythm and often rhyme"
+  },
+  {
+    "text": "point",
+    "sentence": "Please point to the correct answer.",
+    "definition": "To show where something is with your finger"
+  },
+  {
+    "text": "pony",
+    "sentence": "The little girl rode a pony at the fair.",
+    "definition": "A small horse"
+  },
+  {
+    "text": "poor",
+    "sentence": "The poor dog was hungry and cold.",
+    "definition": "Having little money or needing help"
+  },
+  {
+    "text": "popular",
+    "sentence": "Soccer is a popular sport in many countries.",
+    "definition": "Liked by many people"
+  },
+  {
+    "text": "population",
+    "sentence": "The population of our town is growing.",
+    "definition": "The number of people living in a place"
+  },
+  {
+    "text": "position",
+    "sentence": "She plays the goalie position in soccer.",
+    "definition": "The place where someone or something is"
+  },
+  {
+    "text": "possible",
+    "sentence": "It is possible to walk to school from here.",
+    "definition": "Able to be done or happen"
+  },
+  {
+    "text": "post",
+    "sentence": "I will post a letter to my friend.",
+    "definition": "To send mail or put up a notice"
+  },
+  {
+    "text": "pound",
+    "sentence": "A bag of sugar weighs one pound.",
+    "definition": "A unit of weight"
+  },
+  {
+    "text": "power",
+    "sentence": "The storm knocked out the power in our house.",
+    "definition": "Energy or strength to do something"
+  },
+  {
+    "text": "practice",
+    "sentence": "I need to practice piano every day.",
+    "definition": "To do something repeatedly to get better"
+  },
+  {
+    "text": "present",
+    "sentence": "I opened my birthday present.",
+    "definition": "A gift given to someone"
+  },
+  {
+    "text": "president",
+    "sentence": "The president leads the country.",
+    "definition": "The elected leader of a country or group"
+  },
+  {
+    "text": "pressure",
+    "sentence": "The water pressure in the hose was strong.",
+    "definition": "Force applied against something"
+  },
+  {
+    "text": "pretty",
+    "sentence": "She wore a pretty dress with flowers.",
+    "definition": "Pleasant to look at or beautiful"
+  },
+  {
+    "text": "principal",
+    "sentence": "The principal announced the winner of the contest.",
+    "definition": "The head of a school"
+  },
+  {
+    "text": "prize",
+    "sentence": "I won a prize at the carnival.",
+    "definition": "Something given to a winner"
+  },
+  {
+    "text": "probably",
+    "sentence": "I will probably go to the park later.",
+    "definition": "Likely to happen or be true"
+  },
+  {
+    "text": "problem",
+    "sentence": "I solved the math problem quickly.",
+    "definition": "Something that is difficult to deal with or solve"
+  },
+  {
+    "text": "process",
+    "sentence": "Learning to read is a process that takes time.",
+    "definition": "A series of actions to achieve a result"
+  },
+  {
+    "text": "produce",
+    "sentence": "Cows produce milk for us to drink.",
+    "definition": "To make or create something"
+  },
+  {
+    "text": "product",
+    "sentence": "This toy is a new product from the company.",
+    "definition": "Something that is made to be sold"
+  },
+  {
+    "text": "proper",
+    "sentence": "It is proper to say thank you when receiving a gift.",
+    "definition": "Correct or appropriate for the situation"
+  },
+  {
+    "text": "protect",
+    "sentence": "Helmets protect our heads when we ride bikes.",
+    "definition": "To keep safe from harm"
+  },
+  {
+    "text": "proud",
+    "sentence": "Mom was proud of me for getting an A.",
+    "definition": "Feeling happy about an achievement"
+  },
+  {
+    "text": "provide",
+    "sentence": "Trees provide shade on a hot day.",
+    "definition": "To give or supply something needed"
+  },
+  {
+    "text": "public",
+    "sentence": "The library is a public place for everyone.",
+    "definition": "For all people to use"
+  },
+  {
+    "text": "pull",
+    "sentence": "Pull the door handle to open it.",
+    "definition": "To move something toward you"
+  },
+  {
+    "text": "purpose",
+    "sentence": "The purpose of a pencil is to write.",
+    "definition": "The reason why something is done or used"
+  },
+  {
+    "text": "push",
+    "sentence": "Push the swing to make it go higher.",
+    "definition": "To move something away from you"
+  },
+  {
+    "text": "put",
+    "sentence": "Please put your toys in the box.",
+    "definition": "To place or set something somewhere"
+  },
+  {
+    "text": "question",
+    "sentence": "Raise your hand if you have a question.",
+    "definition": "A sentence that asks for information"
+  },
+  {
+    "text": "quick",
+    "sentence": "Be quick or we will be late.",
+    "definition": "Fast; moving with speed"
+  },
+  {
+    "text": "quiet",
+    "sentence": "Please be quiet in the library.",
+    "definition": "Making very little or no noise"
+  },
+  {
+    "text": "quite",
+    "sentence": "It is quite cold outside today.",
+    "definition": "Very or completely; to a degree"
+  },
+  {
+    "text": "rabbit",
+    "sentence": "The white rabbit hopped across the grass.",
+    "definition": "A small animal with long ears"
+  },
+  {
+    "text": "race",
+    "sentence": "I ran a race with my friend.",
+    "definition": "A competition to see who is fastest"
+  },
+  {
+    "text": "radio",
+    "sentence": "We listened to music on the radio.",
+    "definition": "A device that plays sounds from airwaves"
+  },
+  {
+    "text": "rain",
+    "sentence": "I used an umbrella in the rain.",
+    "definition": "Water falling from the clouds"
+  },
+  {
+    "text": "raise",
+    "sentence": "Please raise your hand to speak.",
+    "definition": "To lift up or move higher"
+  },
+  {
+    "text": "ran",
+    "sentence": "I ran all the way home from school.",
+    "definition": "Past tense of run; moved fast on foot"
+  },
+  {
+    "text": "range",
+    "sentence": "The store sells a wide range of toys.",
+    "definition": "A variety of things; limits"
+  },
+  {
+    "text": "rate",
+    "sentence": "The car moved at a slow rate of speed.",
+    "definition": "How fast something happens"
+  },
+  {
+    "text": "rather",
+    "sentence": "I would rather have pizza than tacos.",
+    "definition": "Used to show a preference"
+  },
+  {
+    "text": "reach",
+    "sentence": "I cannot reach the top shelf.",
+    "definition": "To stretch out to touch or grab"
+  },
+  {
+    "text": "read",
+    "sentence": "I like to read books about animals.",
+    "definition": "To look at words and understand them"
+  },
+  {
+    "text": "reading",
+    "sentence": "She is reading a fairy tale.",
+    "definition": "The act of looking at and understanding written words"
+  },
+  {
+    "text": "ready",
+    "sentence": "Are you ready to go to school?",
+    "definition": "Prepared for something"
+  },
+  {
+    "text": "real",
+    "sentence": "Is that a real dinosaur bone?",
+    "definition": "Actually existing; not fake"
+  },
+  {
+    "text": "really",
+    "sentence": "I am really happy to see you.",
+    "definition": "Very; in fact"
+  },
+  {
+    "text": "reason",
+    "sentence": "The reason I am late is because of traffic.",
+    "definition": "A cause or explanation for something"
+  },
+  {
+    "text": "receive",
+    "sentence": "I will receive a letter in the mail.",
+    "definition": "To get or be given something"
+  },
+  {
+    "text": "record",
+    "sentence": "I will record my voice singing a song.",
+    "definition": "To store sound or information for later"
+  },
+  {
+    "text": "red",
+    "sentence": "My favorite apple is bright red.",
+    "definition": "The color of strawberries and fire trucks"
+  },
+  {
+    "text": "region",
+    "sentence": "Camels live in a desert region.",
+    "definition": "A large area of land"
+  },
+  {
+    "text": "regular",
+    "sentence": "We have our regular meeting on Mondays.",
+    "definition": "Happening at the same time or way often"
+  },
+  {
+    "text": "remember",
+    "sentence": "Please remember to brush your teeth.",
+    "definition": "To keep something in your mind"
+  },
+  {
+    "text": "report",
+    "sentence": "I wrote a book report for school.",
+    "definition": "A spoken or written description"
+  },
+  {
+    "text": "represent",
+    "sentence": "The stars on the flag represent the states.",
+    "definition": "To stand for or be a symbol of"
+  },
+  {
+    "text": "rest",
+    "sentence": "I need to rest after running so fast.",
+    "definition": "To relax or stop working"
+  },
+  {
+    "text": "result",
+    "sentence": "The result of the game was a tie.",
+    "definition": "Something that happens because of something else"
+  },
+  {
+    "text": "return",
+    "sentence": "Please return the book to the library.",
+    "definition": "To give back or go back"
+  },
+  {
+    "text": "rich",
+    "sentence": "The king was very rich and had a lot of gold.",
+    "definition": "Having a lot of money or valuable things"
+  },
+  {
+    "text": "ride",
+    "sentence": "Can I ride on the merry-go-round?",
+    "definition": "To sit on something and travel"
+  },
+  {
+    "text": "riding",
+    "sentence": "I like riding my bike in the park.",
+    "definition": "Traveling on a horse, bike, or vehicle"
+  },
+  {
+    "text": "right",
+    "sentence": "Turn right at the stop sign.",
+    "definition": "The opposite of left; correct"
+  },
+  {
+    "text": "ring",
+    "sentence": "She wore a gold ring on her finger.",
+    "definition": "A round band of metal worn on a finger"
+  },
+  {
+    "text": "rise",
+    "sentence": "The sun will rise in the morning.",
+    "definition": "To go up or come up"
+  },
+  {
+    "text": "river",
+    "sentence": "Fish swim in the river.",
+    "definition": "A large natural stream of water"
+  },
+  {
+    "text": "road",
+    "sentence": "Cars drive on the road.",
+    "definition": "A path for vehicles to travel on"
+  },
+  {
+    "text": "rock",
+    "sentence": "I found a shiny rock in the dirt.",
+    "definition": "A hard solid material from the earth"
+  },
+  {
+    "text": "rocket",
+    "sentence": "The rocket blasted off into space.",
+    "definition": "A vehicle used for space travel"
+  },
+  {
+    "text": "rode",
+    "sentence": "I rode my bike to school yesterday.",
+    "definition": "Past tense of ride; traveled on something"
+  },
+  {
+    "text": "roll",
+    "sentence": "Roll the ball to me.",
+    "definition": "To move by turning over and over"
+  },
+  {
+    "text": "roof",
+    "sentence": "The cat climbed onto the roof of the house.",
+    "definition": "The top covering of a building"
+  },
+  {
+    "text": "room",
+    "sentence": "I have my own room with a bed and a desk.",
+    "definition": "A space inside a building with walls"
+  },
+  {
+    "text": "rope",
+    "sentence": "We used a rope to play tug-of-war.",
+    "definition": "A strong, thick cord"
+  },
+  {
+    "text": "rose",
+    "sentence": "The red rose smells beautiful.",
+    "definition": "A flower with thorns on its stem"
+  },
+  {
+    "text": "round",
+    "sentence": "A ball is round.",
+    "definition": "Shaped like a circle or ball"
+  },
+  {
+    "text": "row",
+    "sentence": "We sat in the front row at the movie theater.",
+    "definition": "A line of things or people"
+  },
+  {
+    "text": "rubber",
+    "sentence": "The tire is made of black rubber.",
+    "definition": "A strong, elastic material"
+  },
+  {
+    "text": "rule",
+    "sentence": "It is a rule to raise your hand in class.",
+    "definition": "An instruction about what must be done"
+  },
+  {
+    "text": "run",
+    "sentence": "I can run very fast.",
+    "definition": "To move quickly on foot"
+  },
+  {
+    "text": "running",
+    "sentence": "The dog is running in the park.",
+    "definition": "Moving quickly on foot"
+  },
+  {
+    "text": "sad",
+    "sentence": "I felt sad when my balloon popped.",
+    "definition": "Unhappy or feeling sorrow"
+  },
+  {
+    "text": "safe",
+    "sentence": "Wear a helmet to stay safe.",
+    "definition": "Free from danger or harm"
+  },
+  {
+    "text": "said",
+    "sentence": "My teacher said I did a good job.",
+    "definition": "Past tense of say; spoke words"
+  },
+  {
+    "text": "sail",
+    "sentence": "The boat will sail across the ocean.",
+    "definition": "To travel on water in a ship or boat"
+  },
+  {
+    "text": "salt",
+    "sentence": "Please pass the salt and pepper.",
+    "definition": "A white substance used to flavor food"
+  },
+  {
+    "text": "same",
+    "sentence": "We are wearing the same shirt.",
+    "definition": "Identical; not different"
+  },
+  {
+    "text": "sand",
+    "sentence": "We built a castle in the sand at the beach.",
+    "definition": "Tiny grains of rock found on beaches"
+  },
+  {
+    "text": "sang",
+    "sentence": "We sang happy birthday to my friend.",
+    "definition": "Past tense of sing; made musical sounds with voice"
+  },
+  {
+    "text": "sat",
+    "sentence": "I sat on the chair to eat dinner.",
+    "definition": "Past tense of sit; rested on a seat"
+  },
+  {
+    "text": "saw",
+    "sentence": "I saw a beautiful bird in the tree.",
+    "definition": "Past tense of see; used eyes to look"
+  },
+  {
+    "text": "say",
+    "sentence": "Please say hello to your mother for me.",
+    "definition": "To speak words"
+  },
+  {
+    "text": "says",
+    "sentence": "The sign says 'Stop'.",
+    "definition": "Third person form of say; speaks or states"
+  },
+  {
+    "text": "scale",
+    "sentence": "I stepped on the scale to see how much I weigh.",
+    "definition": "A device for weighing things"
+  },
+  {
+    "text": "scare",
+    "sentence": "Do not scare the cat.",
+    "definition": "To frighten or make afraid"
+  },
+  {
+    "text": "school",
+    "sentence": "I learn math and reading at school.",
+    "definition": "A place where children go to learn"
+  },
+  {
+    "text": "science",
+    "sentence": "We did an experiment in science class.",
+    "definition": "The study of the natural world"
+  },
+  {
+    "text": "sea",
+    "sentence": "Ships sail on the deep blue sea.",
+    "definition": "The ocean; a large body of salt water"
+  },
+  {
+    "text": "season",
+    "sentence": "Summer is my favorite season.",
+    "definition": "One of the four parts of the year"
+  },
+  {
+    "text": "seat",
+    "sentence": "Please take a seat and listen.",
+    "definition": "Something you sit on, like a chair"
+  },
+  {
+    "text": "second",
+    "sentence": "Wait just one second.",
+    "definition": "A very short time; or coming after first"
+  },
+  {
+    "text": "section",
+    "sentence": "I read the sports section of the newspaper.",
+    "definition": "A part or division of something"
+  },
+  {
+    "text": "see",
+    "sentence": "I can see the moon in the sky.",
+    "definition": "To use eyes to look at something"
+  },
+  {
+    "text": "seem",
+    "sentence": "You seem happy today.",
+    "definition": "To appear to be something"
+  },
+  {
+    "text": "seen",
+    "sentence": "Have you seen my lost dog?",
+    "definition": "Past participle of see; looked at with eyes"
+  },
+  {
+    "text": "self",
+    "sentence": "I looked at my self in the mirror.",
+    "definition": "A person's essential being"
+  },
+  {
+    "text": "sell",
+    "sentence": "They sell candy at the store.",
+    "definition": "To give something in exchange for money"
+  },
+  {
+    "text": "send",
+    "sentence": "I will send a card to my grandma.",
+    "definition": "To cause to go or be taken to a place"
+  },
+  {
+    "text": "sending",
+    "sentence": "I am sending a package to my friend.",
+    "definition": "The act of causing something to go somewhere"
+  },
+  {
+    "text": "sense",
+    "sentence": "I used my sense of smell to find the cookies.",
+    "definition": "A way the body perceives things, like sight or smell"
+  },
+  {
+    "text": "sent",
+    "sentence": "I sent a thank you note yesterday.",
+    "definition": "Past tense of send; caused to go somewhere"
+  },
+  {
+    "text": "sentence",
+    "sentence": "Write a sentence using the word 'cat'.",
+    "definition": "A group of words that expresses a complete thought"
+  },
+  {
+    "text": "separate",
+    "sentence": "Keep the red blocks separate from the blue ones.",
+    "definition": "Apart; not joined or together"
+  },
+  {
+    "text": "set",
+    "sentence": "Please set the table for dinner.",
+    "definition": "To put something in a specific place"
+  },
+  {
+    "text": "seven",
+    "sentence": "There are seven days in a week.",
+    "definition": "The number 7"
+  },
+  {
+    "text": "seventh",
+    "sentence": "July is the seventh month of the year.",
+    "definition": "Number 7 in order"
+  },
+  {
+    "text": "several",
+    "sentence": "I have several books about dinosaurs.",
+    "definition": "More than two but not many"
+  },
+  {
+    "text": "sew",
+    "sentence": "I will sew a button on my shirt.",
+    "definition": "To join cloth together with a needle and thread"
+  },
+  {
+    "text": "shall",
+    "sentence": "We shall go to the park tomorrow.",
+    "definition": "A word used to say something will happen"
+  },
+  {
+    "text": "shape",
+    "sentence": "A circle is a round shape.",
+    "definition": "The form or outline of something"
+  },
+  {
+    "text": "sharp",
+    "sentence": "Be careful with the sharp knife.",
+    "definition": "Having a thin edge that can cut"
+  },
+  {
+    "text": "she",
+    "sentence": "She is my best friend.",
+    "definition": "A word used to talk about a girl or woman"
+  },
+  {
+    "text": "she'll",
+    "sentence": "She'll be here in five minutes.",
+    "definition": "She will"
+  },
+  {
+    "text": "sheep",
+    "sentence": "The sheep has soft white wool.",
+    "definition": "A farm animal with a thick wool coat"
+  },
+  {
+    "text": "sheet",
+    "sentence": "I put a clean sheet on my bed.",
+    "definition": "A large piece of cloth used on a bed"
+  },
+  {
+    "text": "shelf",
+    "sentence": "I put my books on the shelf.",
+    "definition": "A flat board used to hold things"
+  },
+  {
+    "text": "shell",
+    "sentence": "I found a seashell on the beach.",
+    "definition": "The hard outer covering of an animal or egg"
+  },
+  {
+    "text": "ship",
+    "sentence": "The large ship sailed across the sea.",
+    "definition": "A large boat"
+  },
+  {
+    "text": "shoe",
+    "sentence": "I tied my shoe before running.",
+    "definition": "What you wear on your foot"
+  },
+  {
+    "text": "shook",
+    "sentence": "The dog shook the water off its fur.",
+    "definition": "Past tense of shake; moved back and forth quickly"
+  },
+  {
+    "text": "shore",
+    "sentence": "We walked along the shore of the lake.",
+    "definition": "The land along the edge of a body of water"
+  },
+  {
+    "text": "short",
+    "sentence": "The short girl stood on her tiptoes.",
+    "definition": "Not tall or long"
+  },
+  {
+    "text": "shot",
+    "sentence": "He made a perfect shot into the basket.",
+    "definition": "The act of shooting or throwing"
+  },
+  {
+    "text": "should",
+    "sentence": "You should brush your teeth every day.",
+    "definition": "Used to say what is the right thing to do"
+  },
+  {
+    "text": "shoulder",
+    "sentence": "I carried my backpack on my shoulder.",
+    "definition": "The body part between the neck and arm"
+  },
+  {
+    "text": "show",
+    "sentence": "Please show me your drawing.",
+    "definition": "To let someone see something"
+  },
+  {
+    "text": "shown",
+    "sentence": "He has shown me how to play the game.",
+    "definition": "Past participle of show; displayed or explained"
+  },
+  {
+    "text": "sick",
+    "sentence": "I stayed home from school because I was sick.",
+    "definition": "Not feeling well; ill"
+  },
+  {
+    "text": "side",
+    "sentence": "Please stand by my side.",
+    "definition": "A position next to something"
+  },
+  {
+    "text": "sight",
+    "sentence": "The sunset was a beautiful sight.",
+    "definition": "The ability to see or something seen"
+  },
+  {
+    "text": "sign",
+    "sentence": "The sign said 'No Parking'.",
+    "definition": "A board with information or a warning"
+  },
+  {
+    "text": "silver",
+    "sentence": "The coin is made of silver.",
+    "definition": "A shiny gray metal"
+  },
+  {
+    "text": "similar",
+    "sentence": "These two shirts are similar but not the same.",
+    "definition": "Almost the same"
+  },
+  {
+    "text": "simple",
+    "sentence": "The math problem was simple to solve.",
+    "definition": "Easy to understand or do"
+  },
+  {
+    "text": "since",
+    "sentence": "I have been waiting since noon.",
+    "definition": "From a time in the past until now"
+  },
+  {
+    "text": "sing",
+    "sentence": "I like to sing songs in music class.",
+    "definition": "To make musical sounds with your voice"
+  },
+  {
+    "text": "single",
+    "sentence": "I ate a single cookie.",
+    "definition": "Only one"
+  },
+  {
+    "text": "sister",
+    "sentence": "My sister is two years older than me.",
+    "definition": "A girl or woman who has the same parents as you"
+  },
+  {
+    "text": "sit",
+    "sentence": "Please sit down on the chair.",
+    "definition": "To rest on your bottom"
+  },
+  {
+    "text": "sitting",
+    "sentence": "He is sitting on the bench.",
+    "definition": "Resting on your bottom"
+  },
+  {
+    "text": "sixth",
+    "sentence": "June is the sixth month of the year.",
+    "definition": "Number 6 in order"
+  },
+  {
+    "text": "size",
+    "sentence": "What size shoe do you wear?",
+    "definition": "How big or small something is"
+  },
+  {
+    "text": "skin",
+    "sentence": "Sunscreen protects your skin from the sun.",
+    "definition": "The outer covering of the body"
+  },
+  {
+    "text": "sky",
+    "sentence": "The sky is blue with white clouds.",
+    "definition": "The space above the earth"
+  },
+  {
+    "text": "sled",
+    "sentence": "We rode our sled down the snowy hill.",
+    "definition": "A vehicle for moving over snow or ice"
+  },
+  {
+    "text": "sleep",
+    "sentence": "I go to sleep at eight o'clock.",
+    "definition": "To rest with your eyes closed"
+  },
+  {
+    "text": "slept",
+    "sentence": "The baby slept all night.",
+    "definition": "Past tense of sleep; rested with eyes closed"
+  },
+  {
+    "text": "slow",
+    "sentence": "The turtle is very slow.",
+    "definition": "Not fast; taking a long time"
+  },
+  {
+    "text": "slowly",
+    "sentence": "The snail moved slowly across the leaf.",
+    "definition": "At a slow speed"
+  },
+  {
+    "text": "small",
+    "sentence": "The ant is a very small insect.",
+    "definition": "Little in size; not big"
+  },
+  {
+    "text": "smoke",
+    "sentence": "Smoke rose from the chimney.",
+    "definition": "A cloud of gray gas from a fire"
+  },
+  {
+    "text": "snow",
+    "sentence": "We built a snowman in the snow.",
+    "definition": "Soft white ice flakes that fall from the sky"
+  },
+  {
+    "text": "so",
+    "sentence": "I was tired, so I went to bed.",
+    "definition": "To a great degree; or therefore"
+  },
+  {
+    "text": "soft",
+    "sentence": "The kitten's fur is very soft.",
+    "definition": "Not hard; pleasant to touch"
+  },
+  {
+    "text": "soil",
+    "sentence": "Plants grow in rich soil.",
+    "definition": "The top layer of earth where plants grow"
+  },
+  {
+    "text": "sold",
+    "sentence": "The store sold all the toys.",
+    "definition": "Past tense of sell; exchanged for money"
+  },
+  {
+    "text": "solution",
+    "sentence": "The solution to the puzzle was simple.",
+    "definition": "The answer to a problem"
+  },
+  {
+    "text": "solve",
+    "sentence": "Can you solve this riddle?",
+    "definition": "To find the answer to something"
+  },
+  {
+    "text": "some",
+    "sentence": "Can I have some popcorn?",
+    "definition": "An amount or number that is not known"
+  },
+  {
+    "text": "someone",
+    "sentence": "Someone knocked on the door.",
+    "definition": "A person who is not known"
+  },
+  {
+    "text": "something",
+    "sentence": "I saw something moving in the bushes.",
+    "definition": "A thing that is not known"
+  },
+  {
+    "text": "sometime",
+    "sentence": "Let's play together sometime.",
+    "definition": "At a time that is not known"
+  },
+  {
+    "text": "son",
+    "sentence": "He is his father's son.",
+    "definition": "A male child"
+  },
+  {
+    "text": "song",
+    "sentence": "We learned a new song in school.",
+    "definition": "A piece of music with words"
+  },
+  {
+    "text": "soon",
+    "sentence": "I will see you soon.",
+    "definition": "In a short time"
+  },
+  {
+    "text": "sort",
+    "sentence": "Please sort the laundry by color.",
+    "definition": "To arrange things in groups"
+  },
+  {
+    "text": "south",
+    "sentence": "Birds fly south for the winter.",
+    "definition": "The direction opposite to north"
+  },
+  {
+    "text": "southern",
+    "sentence": "We visited the southern part of the state.",
+    "definition": "Located in or toward the south"
+  },
+  {
+    "text": "space",
+    "sentence": "Astronauts travel into outer space.",
+    "definition": "The area beyond the earth's atmosphere"
+  },
+  {
+    "text": "speak",
+    "sentence": "Can you speak louder please?",
+    "definition": "To say words; talk"
+  },
+  {
+    "text": "special",
+    "sentence": "My birthday is a special day.",
+    "definition": "Different from what is normal; important"
+  },
+  {
+    "text": "speech",
+    "sentence": "The president gave a speech on TV.",
+    "definition": "A formal talk given to an audience"
+  },
+  {
+    "text": "speed",
+    "sentence": "The car drove at a high speed.",
+    "definition": "How fast something moves"
+  },
+  {
+    "text": "spell",
+    "sentence": "I can spell my name.",
+    "definition": "To write or say the letters of a word"
+  },
+  {
+    "text": "spelling",
+    "sentence": "I got an A on my spelling test.",
+    "definition": "Forming words with the correct letters"
+  },
+  {
+    "text": "spend",
+    "sentence": "I will spend my allowance on a new toy.",
+    "definition": "To use money to buy something"
+  },
+  {
+    "text": "spent",
+    "sentence": "I spent all day playing outside.",
+    "definition": "Past tense of spend; used time or money"
+  },
+  {
+    "text": "spoke",
+    "sentence": "She spoke clearly to the class.",
+    "definition": "Past tense of speak; talked"
+  },
+  {
+    "text": "sport",
+    "sentence": "Soccer is my favorite sport.",
+    "definition": "A game played for exercise and fun"
+  },
+  {
+    "text": "spot",
+    "sentence": "The dog has a brown spot on its back.",
+    "definition": "A mark or stain"
+  },
+  {
+    "text": "spread",
+    "sentence": "I spread butter on my toast.",
+    "definition": "To cover a surface with something"
+  },
+  {
+    "text": "spring",
+    "sentence": "Flowers bloom in the spring.",
+    "definition": "The season after winter and before summer"
+  },
+  {
+    "text": "square",
+    "sentence": "A box is usually a square shape.",
+    "definition": "A shape with four equal sides"
+  },
+  {
+    "text": "stage",
+    "sentence": "The actors stood on the stage.",
+    "definition": "A raised platform for performances"
+  },
+  {
+    "text": "stairs",
+    "sentence": "I walked up the stairs to my room.",
+    "definition": "Steps for going up and down"
+  },
+  {
+    "text": "stand",
+    "sentence": "Please stand up for the pledge.",
+    "definition": "To be on your feet"
+  },
+  {
+    "text": "star",
+    "sentence": "I saw a bright star in the night sky.",
+    "definition": "A bright point of light in the sky"
+  },
+  {
+    "text": "start",
+    "sentence": "The race will start soon.",
+    "definition": "To begin"
+  },
+  {
+    "text": "state",
+    "sentence": "I live in the state of California.",
+    "definition": "A part of a country with its own government"
+  },
+  {
+    "text": "statement",
+    "sentence": "The police took a statement from the witness.",
+    "definition": "Something that is said or written"
+  },
+  {
+    "text": "station",
+    "sentence": "The fire station has red trucks.",
+    "definition": "A place where a service is provided"
+  },
+  {
+    "text": "stay",
+    "sentence": "Please stay here until I come back.",
+    "definition": "To remain in the same place"
+  },
+  {
+    "text": "steam",
+    "sentence": "Steam rose from the hot soup.",
+    "definition": "Water in the form of gas"
+  },
+  {
+    "text": "steel",
+    "sentence": "The bridge is made of strong steel.",
+    "definition": "A hard, strong metal"
+  },
+  {
+    "text": "step",
+    "sentence": "Take one step forward.",
+    "definition": "A movement made by lifting your foot"
+  },
+  {
+    "text": "stick",
+    "sentence": "The dog found a stick in the woods.",
+    "definition": "A thin piece of wood from a tree"
+  },
+  {
+    "text": "still",
+    "sentence": "Please sit still.",
+    "definition": "Not moving"
+  },
+  {
+    "text": "stone",
+    "sentence": "I threw a stone into the water.",
+    "definition": "A hard solid non-metallic mineral matter"
+  },
+  {
+    "text": "stood",
+    "sentence": "She stood up to speak.",
+    "definition": "Past tense of stand; was on feet"
+  },
+  {
+    "text": "stop",
+    "sentence": "The bus will stop here.",
+    "definition": "To come to an end; cease moving"
+  },
+  {
+    "text": "stopped",
+    "sentence": "The rain stopped and the sun came out.",
+    "definition": "Past tense of stop; ceased moving or happening"
+  },
+  {
+    "text": "store",
+    "sentence": "We went to the store to buy milk.",
+    "definition": "A place where things are sold"
+  },
+  {
+    "text": "stories",
+    "sentence": "I like to read stories about animals.",
+    "definition": "Tales told or read"
+  },
+  {
+    "text": "storm",
+    "sentence": "A big storm brought rain and thunder.",
+    "definition": "Bad weather with strong winds"
+  },
+  {
+    "text": "story",
+    "sentence": "Grandma told me a bedtime story.",
+    "definition": "A tale about events or people"
+  },
+  {
+    "text": "straight",
+    "sentence": "Draw a straight line with a ruler.",
+    "definition": "Without curves or bends"
+  },
+  {
+    "text": "strange",
+    "sentence": "I heard a strange noise in the attic.",
+    "definition": "Unusual or surprising"
+  },
+  {
+    "text": "stream",
+    "sentence": "We crossed a small stream in the woods.",
+    "definition": "A small, narrow river"
+  },
+  {
+    "text": "street",
+    "sentence": "Look both ways before crossing the street.",
+    "definition": "A public road in a city or town"
+  },
+  {
+    "text": "strength",
+    "sentence": "He used all his strength to lift the box.",
+    "definition": "The quality of being strong"
+  },
+  {
+    "text": "string",
+    "sentence": "I tied the package with a piece of string.",
+    "definition": "A thin cord or thread"
+  },
+  {
+    "text": "strong",
+    "sentence": "The ant is strong for its size.",
+    "definition": "Having great power or force"
+  },
+  {
+    "text": "student",
+    "sentence": "The student raised her hand in class.",
+    "definition": "A person who is studying at a school"
+  },
+  {
+    "text": "study",
+    "sentence": "I need to study for my spelling test.",
+    "definition": "To learn about a subject"
+  },
+  {
+    "text": "subject",
+    "sentence": "My favorite subject in school is math.",
+    "definition": "A topic you study in school"
+  },
+  {
+    "text": "such",
+    "sentence": "I have never seen such a big dog.",
+    "definition": "Of that kind or degree"
+  },
+  {
+    "text": "sudden",
+    "sentence": "There was a sudden noise outside.",
+    "definition": "Happening quickly and unexpectedly"
+  },
+  {
+    "text": "suddenly",
+    "sentence": "Suddenly, it started to rain.",
+    "definition": "Quickly and without warning"
+  },
+  {
+    "text": "sugar",
+    "sentence": "I like sugar in my tea.",
+    "definition": "A sweet substance used in food"
+  },
+  {
+    "text": "suit",
+    "sentence": "My dad wore a suit to the wedding.",
+    "definition": "A set of clothes with a jacket and pants"
+  },
+  {
+    "text": "summer",
+    "sentence": "We go swimming in the summer.",
+    "definition": "The warmest season of the year"
+  },
+  {
+    "text": "sun",
+    "sentence": "The sun gives us light and heat.",
+    "definition": "The star that shines in the day"
+  },
+  {
+    "text": "supper",
+    "sentence": "We ate supper at six o'clock.",
+    "definition": "The evening meal; dinner"
+  },
+  {
+    "text": "supply",
+    "sentence": "I need to buy school supplies like pencils and paper.",
+    "definition": "An amount of something available for use"
+  },
+  {
+    "text": "suppose",
+    "sentence": "I suppose it will rain later.",
+    "definition": "To think something is true"
+  },
+  {
+    "text": "sure",
+    "sentence": "Are you sure you locked the door?",
+    "definition": "Certain; having no doubt"
+  },
+  {
+    "text": "surface",
+    "sentence": "The table has a smooth surface.",
+    "definition": "The outside part or top layer"
+  },
+  {
+    "text": "surprise",
+    "sentence": "My friends gave me a surprise party.",
+    "definition": "Something unexpected"
+  },
+  {
+    "text": "swim",
+    "sentence": "I like to swim in the pool.",
+    "definition": "To move through water"
+  },
+  {
+    "text": "swimming",
+    "sentence": "We go swimming in the summer.",
+    "definition": "Moving through water using your body"
+  },
+  {
+    "text": "symbol",
+    "sentence": "A heart is a symbol of love.",
+    "definition": "A sign or shape that stands for something else"
+  },
+  {
+    "text": "system",
+    "sentence": "The solar system has eight planets.",
+    "definition": "A group of parts that work together"
+  },
+  {
+    "text": "table",
+    "sentence": "We eat dinner at the kitchen table.",
+    "definition": "Furniture with a flat top and legs"
+  },
+  {
+    "text": "tail",
+    "sentence": "The dog wagged its tail happily.",
+    "definition": "The part at the back of an animal's body"
+  },
+  {
+    "text": "take",
+    "sentence": "Please take one cookie from the jar.",
+    "definition": "To get or hold with your hands"
+  },
+  {
+    "text": "taken",
+    "sentence": "Someone has taken my pencil.",
+    "definition": "Past participle of take; removed or grabbed"
+  },
+  {
+    "text": "taking",
+    "sentence": "I am taking my dog for a walk.",
+    "definition": "The act of getting or carrying something"
+  },
+  {
+    "text": "talk",
+    "sentence": "I like to talk to my friends on the phone.",
+    "definition": "To say words to someone"
+  },
+  {
+    "text": "tall",
+    "sentence": "The giraffe is a very tall animal.",
+    "definition": "High in height; not short"
+  },
+  {
+    "text": "teach",
+    "sentence": "My mom will teach me how to bake cookies.",
+    "definition": "To help someone learn something"
+  },
+  {
+    "text": "teacher",
+    "sentence": "My teacher helps me learn to read.",
+    "definition": "A person who teaches students"
+  },
+  {
+    "text": "team",
+    "sentence": "I play on a soccer team.",
+    "definition": "A group of people playing or working together"
+  },
+  {
+    "text": "teeth",
+    "sentence": "I brush my teeth every morning and night.",
+    "definition": "Hard white parts in the mouth used for biting"
+  },
+  {
+    "text": "television",
+    "sentence": "We watched a movie on the television.",
+    "definition": "A device with a screen for watching shows"
+  },
+  {
+    "text": "tell",
+    "sentence": "Please tell me a story.",
+    "definition": "To say or communicate information"
+  },
+  {
+    "text": "temperature",
+    "sentence": "The temperature outside is very hot.",
+    "definition": "How hot or cold something is"
+  },
+  {
+    "text": "ten",
+    "sentence": "I have ten fingers.",
+    "definition": "The number 10"
+  },
+  {
+    "text": "term",
+    "sentence": "We learned a new math term today.",
+    "definition": "A word or phrase used to describe something"
+  },
+  {
+    "text": "test",
+    "sentence": "I have a spelling test on Friday.",
+    "definition": "A set of questions to see what you know"
+  },
+  {
+    "text": "than",
+    "sentence": "My brother is taller than me.",
+    "definition": "Used to compare two things"
+  },
+  {
+    "text": "thank",
+    "sentence": "I want to thank you for the gift.",
+    "definition": "To tell someone you are grateful"
+  },
+  {
+    "text": "that",
+    "sentence": "Look at that bird in the tree.",
+    "definition": "Used to point out a specific person or thing"
+  },
+  {
+    "text": "that's",
+    "sentence": "That's a very pretty picture.",
+    "definition": "That is"
+  },
+  {
+    "text": "the",
+    "sentence": "The dog barked at the mailman.",
+    "definition": "Used to point to a specific noun"
+  },
+  {
+    "text": "their",
+    "sentence": "The students opened their books.",
+    "definition": "Belonging to them"
+  },
+  {
+    "text": "them",
+    "sentence": "I gave the cookies to them.",
+    "definition": "Used to refer to a group of people or things"
+  },
+  {
+    "text": "themselves",
+    "sentence": "They made the cake themselves.",
+    "definition": "Used to refer to the same people mentioned before"
+  },
+  {
+    "text": "then",
+    "sentence": "We ate dinner, and then we watched a movie.",
+    "definition": "At that time or next"
+  },
+  {
+    "text": "there",
+    "sentence": "Put the book over there on the shelf.",
+    "definition": "In or at that place"
+  },
+  {
+    "text": "therefore",
+    "sentence": "I was hungry; therefore, I ate a snack.",
+    "definition": "For that reason; so"
+  },
+  {
+    "text": "these",
+    "sentence": "These shoes are mine.",
+    "definition": "Used to point to things nearby"
+  },
+  {
+    "text": "they",
+    "sentence": "They are playing tag in the yard.",
+    "definition": "Used to refer to two or more people or things"
+  },
+  {
+    "text": "they're",
+    "sentence": "They're going to the park today.",
+    "definition": "They are"
+  },
+  {
+    "text": "thick",
+    "sentence": "The book is very thick with many pages.",
+    "definition": "Not thin; having a large distance between sides"
+  },
+  {
+    "text": "thin",
+    "sentence": "The paper is very thin.",
+    "definition": "Not thick; having a small distance between sides"
+  },
+  {
+    "text": "thing",
+    "sentence": "What is that thing on the table?",
+    "definition": "An object that is not a person"
+  },
+  {
+    "text": "think",
+    "sentence": "I think it will rain today.",
+    "definition": "To use your mind to have ideas"
+  },
+  {
+    "text": "thinking",
+    "sentence": "I am thinking about what to draw.",
+    "definition": "Using your mind to consider something"
+  },
+  {
+    "text": "third",
+    "sentence": "I came in third place in the race.",
+    "definition": "Number 3 in order"
+  },
+  {
+    "text": "this",
+    "sentence": "This is my favorite book.",
+    "definition": "Used to point to a specific person or thing nearby"
+  },
+  {
+    "text": "those",
+    "sentence": "Those shoes are too big for me.",
+    "definition": "Used to point to things far away"
+  },
+  {
+    "text": "though",
+    "sentence": "I like cake, though I prefer ice cream.",
+    "definition": "Even if; although"
+  },
+  {
+    "text": "thought",
+    "sentence": "I thought about the answer carefully.",
+    "definition": "Past tense of think; had an idea"
+  },
+  {
+    "text": "thousand",
+    "sentence": "There are one thousand ants in the hill.",
+    "definition": "The number 1,000"
+  },
+  {
+    "text": "three",
+    "sentence": "A triangle has three sides.",
+    "definition": "The number 3"
+  },
+  {
+    "text": "threw",
+    "sentence": "He threw the ball to me.",
+    "definition": "Past tense of throw; sent through the air"
+  },
+  {
+    "text": "through",
+    "sentence": "The train went through the tunnel.",
+    "definition": "Moving in one side and out the other"
+  },
+  {
+    "text": "throughout",
+    "sentence": "It rained throughout the night.",
+    "definition": "During the whole time or in every part"
+  },
+  {
+    "text": "throw",
+    "sentence": "Throw the ball to the dog.",
+    "definition": "To send something through the air with your hand"
+  },
+  {
+    "text": "thus",
+    "sentence": "He studied hard, and thus got an A.",
+    "definition": "Therefore; as a result"
+  },
+  {
+    "text": "tie",
+    "sentence": "Can you help me tie my shoes?",
+    "definition": "To fasten with a knot"
+  },
+  {
+    "text": "till",
+    "sentence": "Wait till I am ready.",
+    "definition": "Until; up to the time of"
+  },
+  {
+    "text": "time",
+    "sentence": "What time is it?",
+    "definition": "Something measured in minutes, hours, and days"
+  },
+  {
+    "text": "tiny",
+    "sentence": "The baby bird was very tiny.",
+    "definition": "Very small"
+  },
+  {
+    "text": "tired",
+    "sentence": "I was tired after playing all day.",
+    "definition": "Needing rest or sleep"
+  },
+  {
+    "text": "to",
+    "sentence": "I am going to the park.",
+    "definition": "Used to show direction or destination"
+  },
+  {
+    "text": "today",
+    "sentence": "Today is Monday.",
+    "definition": "This present day"
+  },
+  {
+    "text": "together",
+    "sentence": "We played together in the sandbox.",
+    "definition": "With each other"
+  },
+  {
+    "text": "told",
+    "sentence": "She told me a secret.",
+    "definition": "Past tense of tell; said to someone"
+  },
+  {
+    "text": "tomorrow",
+    "sentence": "Tomorrow is my birthday.",
+    "definition": "The day after today"
+  },
+  {
+    "text": "tonight",
+    "sentence": "We are watching a movie tonight.",
+    "definition": "The night of this present day"
+  },
+  {
+    "text": "too",
+    "sentence": "I want to go to the park too.",
+    "definition": "Also; in addition"
+  },
+  {
+    "text": "took",
+    "sentence": "He took the last cookie.",
+    "definition": "Past tense of take; got or grabbed"
+  },
+  {
+    "text": "top",
+    "sentence": "The bird sat on top of the tree.",
+    "definition": "The highest part or point"
+  },
+  {
+    "text": "total",
+    "sentence": "The total cost was five dollars.",
+    "definition": "The whole number or amount"
+  },
+  {
+    "text": "touch",
+    "sentence": "Do not touch the hot stove.",
+    "definition": "To feel with your hand or body"
+  },
+  {
+    "text": "toward",
+    "sentence": "The dog ran toward me.",
+    "definition": "In the direction of"
+  },
+  {
+    "text": "town",
+    "sentence": "We live in a small town.",
+    "definition": "A place where people live, smaller than a city"
+  },
+  {
+    "text": "track",
+    "sentence": "The train ran on the track.",
+    "definition": "A path or rails for a train"
+  },
+  {
+    "text": "trade",
+    "sentence": "I will trade my apple for your orange.",
+    "definition": "To give something and get something else"
+  },
+  {
+    "text": "train",
+    "sentence": "The train chugged down the tracks.",
+    "definition": "A line of connected vehicles on rails"
+  },
+  {
+    "text": "travel",
+    "sentence": "We will travel to the beach by car.",
+    "definition": "To go from one place to another"
+  },
+  {
+    "text": "tree",
+    "sentence": "The squirrel climbed the tall tree.",
+    "definition": "A tall plant with a trunk and branches"
+  },
+  {
+    "text": "tried",
+    "sentence": "I tried to lift the heavy box.",
+    "definition": "Past tense of try; made an effort"
+  },
+  {
+    "text": "trip",
+    "sentence": "We are going on a trip to the zoo.",
+    "definition": "A journey to a place"
+  },
+  {
+    "text": "trouble",
+    "sentence": "He got in trouble for breaking the vase.",
+    "definition": "Problems or difficulty"
+  },
+  {
+    "text": "truck",
+    "sentence": "The big truck carried a heavy load.",
+    "definition": "A large vehicle for carrying things"
+  },
+  {
+    "text": "true",
+    "sentence": "Is it true that you have a pet snake?",
+    "definition": "Correct; not false"
+  },
+  {
+    "text": "truly",
+    "sentence": "I am truly sorry for my mistake.",
+    "definition": "Really; sincerely"
+  },
+  {
+    "text": "try",
+    "sentence": "I will try to finish my homework early.",
+    "definition": "To make an effort to do something"
+  },
+  {
+    "text": "trying",
+    "sentence": "I am trying to tie my shoes.",
+    "definition": "Making an effort"
+  },
+  {
+    "text": "turn",
+    "sentence": "Please turn the page.",
+    "definition": "To move around or change direction"
+  },
+  {
+    "text": "turtle",
+    "sentence": "The turtle carries its house on its back.",
+    "definition": "A reptile with a hard shell"
+  },
+  {
+    "text": "twelve",
+    "sentence": "There are twelve eggs in a dozen.",
+    "definition": "The number 12"
+  },
+  {
+    "text": "twenty",
+    "sentence": "I counted to twenty.",
+    "definition": "The number 20"
+  },
+  {
+    "text": "twice",
+    "sentence": "I checked my work twice.",
+    "definition": "Two times"
+  },
+  {
+    "text": "two",
+    "sentence": "I have two hands.",
+    "definition": "The number 2"
+  },
+  {
+    "text": "type",
+    "sentence": "What type of ice cream do you like?",
+    "definition": "A kind or sort of something"
+  },
+  {
+    "text": "uncle",
+    "sentence": "My uncle is my dad's brother.",
+    "definition": "The brother of your mother or father"
+  },
+  {
+    "text": "under",
+    "sentence": "The dog is sleeping under the table.",
+    "definition": "Below or beneath something"
+  },
+  {
+    "text": "understand",
+    "sentence": "Do you understand the question?",
+    "definition": "To know the meaning of something"
+  },
+  {
+    "text": "unit",
+    "sentence": "We are studying a unit on plants.",
+    "definition": "A single thing or a part of a larger group"
+  },
+  {
+    "text": "United States",
+    "sentence": "I live in the United States of America.",
+    "definition": "A country in North America"
+  },
+  {
+    "text": "unless",
+    "sentence": "You cannot watch TV unless you finish your homework.",
+    "definition": "Except if"
+  },
+  {
+    "text": "until",
+    "sentence": "Wait here until the bus comes.",
+    "definition": "Up to the time that"
+  },
+  {
+    "text": "up",
+    "sentence": "The balloon floated up into the sky.",
+    "definition": "Toward a higher place"
+  },
+  {
+    "text": "upon",
+    "sentence": "Once upon a time, there lived a princess.",
+    "definition": "On or onto something"
+  },
+  {
+    "text": "us",
+    "sentence": "Mom took us to the park.",
+    "definition": "Used to refer to yourself and others"
+  },
+  {
+    "text": "use",
+    "sentence": "I use a pencil to write.",
+    "definition": "To do something with an object"
+  },
+  {
+    "text": "useful",
+    "sentence": "A map is useful when you are lost.",
+    "definition": "Helpful for doing something"
+  },
+  {
+    "text": "usual",
+    "sentence": "I ate my usual breakfast of cereal.",
+    "definition": "Done or happening most of the time"
+  },
+  {
+    "text": "usually",
+    "sentence": "I usually walk to school.",
+    "definition": "Most of the time; commonly"
+  },
+  {
+    "text": "valley",
+    "sentence": "The river flows through the green valley.",
+    "definition": "Low land between hills or mountains"
+  },
+  {
+    "text": "value",
+    "sentence": "The gold coin has great value.",
+    "definition": "How much something is worth"
+  },
+  {
+    "text": "various",
+    "sentence": "There are various colors of apples.",
+    "definition": "Many different kinds"
+  },
+  {
+    "text": "verb",
+    "sentence": "Run, jump, and play are verbs.",
+    "definition": "A word that shows action"
+  },
+  {
+    "text": "very",
+    "sentence": "It is very cold outside today.",
+    "definition": "To a high degree; extremely"
+  },
+  {
+    "text": "village",
+    "sentence": "The people lived in a small village.",
+    "definition": "A small community of houses"
+  },
+  {
+    "text": "visit",
+    "sentence": "We will visit my aunt this weekend.",
+    "definition": "To go to see a person or place"
+  },
+  {
+    "text": "voice",
+    "sentence": "She has a beautiful singing voice.",
+    "definition": "The sound made when speaking or singing"
+  },
+  {
+    "text": "vowel",
+    "sentence": "The letter A is a vowel.",
+    "definition": "A letter representing a speech sound like a, e, i, o, u"
+  },
+  {
+    "text": "wagon",
+    "sentence": "I pulled my toys in a red wagon.",
+    "definition": "A vehicle with four wheels for carrying things"
+  },
+  {
+    "text": "wait",
+    "sentence": "Please wait for me at the corner.",
+    "definition": "To stay in one place until something happens"
+  },
+  {
+    "text": "walk",
+    "sentence": "We walk to school every morning.",
+    "definition": "To move on foot at a slow pace"
+  },
+  {
+    "text": "walking",
+    "sentence": "He is walking down the street.",
+    "definition": "Moving on foot"
+  },
+  {
+    "text": "wall",
+    "sentence": "I hung a picture on the wall.",
+    "definition": "The side of a room or building"
+  },
+  {
+    "text": "want",
+    "sentence": "I want a new bicycle.",
+    "definition": "To wish for or desire something"
+  },
+  {
+    "text": "war",
+    "sentence": "The soldiers fought in the war.",
+    "definition": "A fight between countries"
+  },
+  {
+    "text": "warm",
+    "sentence": "The sun feels warm on my face.",
+    "definition": "Having some heat; not cold"
+  },
+  {
+    "text": "was",
+    "sentence": "I was late for school yesterday.",
+    "definition": "Past tense of be; existed"
+  },
+  {
+    "text": "wash",
+    "sentence": "I need to wash my hands before dinner.",
+    "definition": "To clean with water and soap"
+  },
+  {
+    "text": "wasn't",
+    "sentence": "I wasn't hungry, so I didn't eat.",
+    "definition": "Was not"
+  },
+  {
+    "text": "watch",
+    "sentence": "I like to watch cartoons on Saturday.",
+    "definition": "To look at carefully"
+  },
+  {
+    "text": "water",
+    "sentence": "I drink a glass of water when I am thirsty.",
+    "definition": "A clear liquid essential for life"
+  },
+  {
+    "text": "wave",
+    "sentence": "I watched the big wave crash on the beach.",
+    "definition": "A moving ridge of water; or to move your hand"
+  },
+  {
+    "text": "way",
+    "sentence": "Do you know the way to the library?",
+    "definition": "A path or direction"
+  },
+  {
+    "text": "we",
+    "sentence": "We are going to the movies.",
+    "definition": "Used to refer to yourself and others"
+  },
+  {
+    "text": "we'll",
+    "sentence": "We'll be there in five minutes.",
+    "definition": "We will"
+  },
+  {
+    "text": "we're",
+    "sentence": "We're going to have a lot of fun.",
+    "definition": "We are"
+  },
+  {
+    "text": "weak",
+    "sentence": "I felt weak when I was sick.",
+    "definition": "Not strong"
+  },
+  {
+    "text": "wear",
+    "sentence": "I like to wear my blue shirt.",
+    "definition": "To have clothing on your body"
+  },
+  {
+    "text": "weather",
+    "sentence": "The weather is sunny and warm today.",
+    "definition": "The condition of the air outside"
+  },
+  {
+    "text": "week",
+    "sentence": "There are seven days in a week.",
+    "definition": "A period of seven days"
+  },
+  {
+    "text": "weight",
+    "sentence": "The weight of the box is heavy.",
+    "definition": "How heavy something is"
+  },
+  {
+    "text": "well",
+    "sentence": "I hope you feel well soon.",
+    "definition": "In good health; or in a good way"
+  },
+  {
+    "text": "went",
+    "sentence": "We went to the store yesterday.",
+    "definition": "Past tense of go; moved to a place"
+  },
+  {
+    "text": "were",
+    "sentence": "They were playing outside.",
+    "definition": "Past tense of are"
+  },
+  {
+    "text": "west",
+    "sentence": "The sun sets in the west.",
+    "definition": "The direction opposite to east"
+  },
+  {
+    "text": "wet",
+    "sentence": "My shoes got wet in the rain.",
+    "definition": "Covered or soaked with water"
+  },
+  {
+    "text": "what",
+    "sentence": "What is your name?",
+    "definition": "Used to ask for information"
+  },
+  {
+    "text": "wheat",
+    "sentence": "Bread is made from wheat.",
+    "definition": "A grain used to make flour"
+  },
+  {
+    "text": "wheel",
+    "sentence": "The bike has two wheels.",
+    "definition": "A round object that turns"
+  },
+  {
+    "text": "when",
+    "sentence": "When is your birthday?",
+    "definition": "At what time"
+  },
+  {
+    "text": "where",
+    "sentence": "Where is my backpack?",
+    "definition": "In what place"
+  },
+  {
+    "text": "whether",
+    "sentence": "I don't know whether to go or stay.",
+    "definition": "Used to introduce a choice"
+  },
+  {
+    "text": "which",
+    "sentence": "Which color do you like best?",
+    "definition": "Used to ask for a choice"
+  },
+  {
+    "text": "while",
+    "sentence": "I listened to music while I cleaned my room.",
+    "definition": "During the time that"
+  },
+  {
+    "text": "white",
+    "sentence": "Snow is white.",
+    "definition": "The color of milk or snow"
+  },
+  {
+    "text": "who",
+    "sentence": "Who is knocking at the door?",
+    "definition": "What person"
+  },
+  {
+    "text": "whole",
+    "sentence": "I ate the whole apple.",
+    "definition": "All of something; complete"
+  },
+  {
+    "text": "whose",
+    "sentence": "Whose shoes are these?",
+    "definition": "Belonging to which person"
+  },
+  {
+    "text": "why",
+    "sentence": "Why are you crying?",
+    "definition": "For what reason"
+  },
+  {
+    "text": "wide",
+    "sentence": "The river is very wide.",
+    "definition": "Broad; having a large distance from side to side"
+  },
+  {
+    "text": "wife",
+    "sentence": "The king and his wife lived in a castle.",
+    "definition": "A married woman"
+  },
+  {
+    "text": "wild",
+    "sentence": "Lions are wild animals.",
+    "definition": "Living in nature; not tame"
+  },
+  {
+    "text": "will",
+    "sentence": "I will go to school tomorrow.",
+    "definition": "Used to say what is going to happen"
+  },
+  {
+    "text": "win",
+    "sentence": "I want to win the race.",
+    "definition": "To be the best or first in a contest"
+  },
+  {
+    "text": "wind",
+    "sentence": "The wind blew the leaves off the tree.",
+    "definition": "Moving air"
+  },
+  {
+    "text": "window",
+    "sentence": "I looked out the window at the rain.",
+    "definition": "An opening in a wall to let in light"
+  },
+  {
+    "text": "wing",
+    "sentence": "The bird flapped its wing.",
+    "definition": "The part of a bird used for flying"
+  },
+  {
+    "text": "winter",
+    "sentence": "It snows in the winter.",
+    "definition": "The coldest season of the year"
+  },
+  {
+    "text": "wipe",
+    "sentence": "Please wipe your feet on the mat.",
+    "definition": "To clean or dry by rubbing"
+  },
+  {
+    "text": "wire",
+    "sentence": "The electricity flows through a wire.",
+    "definition": "A thin, flexible thread of metal"
+  },
+  {
+    "text": "wise",
+    "sentence": "The owl is a wise animal.",
+    "definition": "Having knowledge and good judgment"
+  },
+  {
+    "text": "wish",
+    "sentence": "I made a wish on a shooting star.",
+    "definition": "To want something to happen"
+  },
+  {
+    "text": "with",
+    "sentence": "I went to the park with my mom.",
+    "definition": "Together or accompanied by"
+  },
+  {
+    "text": "within",
+    "sentence": "Stay within the lines when you color.",
+    "definition": "Inside something"
+  },
+  {
+    "text": "without",
+    "sentence": "I cannot see without my glasses.",
+    "definition": "Not having or including"
+  },
+  {
+    "text": "woke",
+    "sentence": "I woke up early this morning.",
+    "definition": "Past tense of wake; stopped sleeping"
+  },
+  {
+    "text": "woman",
+    "sentence": "A woman sat next to me on the bus.",
+    "definition": "An adult female person"
+  },
+  {
+    "text": "women",
+    "sentence": "The women talked together at lunch.",
+    "definition": "More than one woman"
+  },
+  {
+    "text": "won",
+    "sentence": "Our team won the game.",
+    "definition": "Past tense of win; came in first"
+  },
+  {
+    "text": "won't",
+    "sentence": "I won't be able to go to the party.",
+    "definition": "Will not"
+  },
+  {
+    "text": "wonder",
+    "sentence": "I wonder what is inside the box.",
+    "definition": "To think about something with curiosity"
+  },
+  {
+    "text": "wood",
+    "sentence": "The table is made of wood.",
+    "definition": "The hard material from trees"
+  },
+  {
+    "text": "wooden",
+    "sentence": "I have a wooden toy train.",
+    "definition": "Made of wood"
+  },
+  {
+    "text": "wool",
+    "sentence": "My sweater is made of warm wool.",
+    "definition": "The soft hair of sheep"
+  },
+  {
+    "text": "word",
+    "sentence": "I learned a new word today.",
+    "definition": "A meaningful sound or written mark"
+  },
+  {
+    "text": "work",
+    "sentence": "My dad goes to work every day.",
+    "definition": "Activity done to reach a goal or earn money"
+  },
+  {
+    "text": "working",
+    "sentence": "The machine is working properly.",
+    "definition": "Functioning or doing a job"
+  },
+  {
+    "text": "world",
+    "sentence": "We live in a big world.",
+    "definition": "The earth and all people and things on it"
+  },
+  {
+    "text": "would",
+    "sentence": "Would you like some ice cream?",
+    "definition": "Used to ask a question or talk about the future"
+  },
+  {
+    "text": "wouldn't",
+    "sentence": "I wouldn't do that if I were you.",
+    "definition": "Would not"
+  },
+  {
+    "text": "write",
+    "sentence": "I write my name on my paper.",
+    "definition": "To make letters or words with a pen or pencil"
+  },
+  {
+    "text": "writing",
+    "sentence": "I am writing a letter to my friend.",
+    "definition": "The act of making words on paper"
+  },
+  {
+    "text": "written",
+    "sentence": "The rules are written on the board.",
+    "definition": "Past participle of write"
+  },
+  {
+    "text": "wrong",
+    "sentence": "That is the wrong answer.",
+    "definition": "Not correct"
+  },
+  {
+    "text": "wrote",
+    "sentence": "I wrote a story in class.",
+    "definition": "Past tense of write; made words on paper"
+  },
+  {
+    "text": "yard",
+    "sentence": "We played in the back yard.",
+    "definition": "An area of land next to a house"
+  },
+  {
+    "text": "year",
+    "sentence": "There are twelve months in a year.",
+    "definition": "A period of 365 days"
+  },
+  {
+    "text": "yell",
+    "sentence": "Please do not yell inside.",
+    "definition": "To shout loudly"
+  },
+  {
+    "text": "yellow",
+    "sentence": "The sun is yellow.",
+    "definition": "The color of lemons"
+  },
+  {
+    "text": "yes",
+    "sentence": "I said yes to the cookie.",
+    "definition": "Used to give an affirmative answer"
+  },
+  {
+    "text": "yesterday",
+    "sentence": "Yesterday was Sunday.",
+    "definition": "The day before today"
+  },
+  {
+    "text": "yet",
+    "sentence": "I haven't finished my homework yet.",
+    "definition": "Up until now"
+  },
+  {
+    "text": "you",
+    "sentence": "You are my friend.",
+    "definition": "Used to refer to the person being spoken to"
+  },
+  {
+    "text": "you'll",
+    "sentence": "You'll like this book.",
+    "definition": "You will"
+  },
+  {
+    "text": "you're",
+    "sentence": "You're doing a great job.",
+    "definition": "You are"
+  },
+  {
+    "text": "you've",
+    "sentence": "You've grown so tall.",
+    "definition": "You have"
+  },
+  {
+    "text": "young",
+    "sentence": "The young puppy played with a ball.",
+    "definition": "Having lived for a short time; not old"
+  },
+  {
+    "text": "your",
+    "sentence": "Is this your book?",
+    "definition": "Belonging to you"
+  },
+  {
+    "text": "yourself",
+    "sentence": "You can do it yourself.",
+    "definition": "Used to refer to you"
+  },
+  {
+    "text": "zip",
+    "sentence": "Please zip up your coat.",
+    "definition": "To close with a zipper"
+  },
+  {
+    "text": "zoo",
+    "sentence": "We saw lions and tigers at the zoo.",
+    "definition": "A place where wild animals are kept for people to see"
+  }
+]
