@@ -4,10 +4,10 @@ import Foundation
 class AgentService {
     // Change this to your actual server URL
     // For local development: http://localhost:3000
-    // For production: https://your-server.com
+    // For production: https://spellbound-production.up.railway.app
     private let baseURL: String
 
-    init(baseURL: String = "http://localhost:3000") {
+    init(baseURL: String = "https://spellbound-production.up.railway.app") {
         self.baseURL = baseURL
     }
 

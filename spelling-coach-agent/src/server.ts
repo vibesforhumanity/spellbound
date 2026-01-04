@@ -3,7 +3,11 @@ import cors from "cors";
 import { generatePatternQuestion, analyzePracticeSession } from "./agent.js";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT || '3000', 10);
+
+// Log startup info
+console.log(`🔧 Node environment: ${process.env.NODE_ENV || 'development'}`);
+console.log(`🔧 Port: ${PORT}`);
 
 // Middleware
 app.use(cors());
@@ -138,10 +142,10 @@ app.post("/api/analyze-session", async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`\n🎓 Spelling Coach Agent API running on http://localhost:${PORT}`);
-  console.log(`   Health check: http://localhost:${PORT}/health`);
-  console.log(`   Generate question: POST http://localhost:${PORT}/api/generate-question`);
-  console.log(`   Analyze session: POST http://localhost:${PORT}/api/analyze-session`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`\n🎓 Spelling Coach Agent API running on port ${PORT}`);
+  console.log(`   Health check: /health`);
+  console.log(`   Generate question: POST /api/generate-question`);
+  console.log(`   Analyze session: POST /api/analyze-session`);
   console.log(`\n⚡ Using Claude Agent SDK with model: claude-sonnet-4-5-20250929\n`);
 });
