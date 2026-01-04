@@ -1,4 +1,4 @@
-import { query } from "@anthropic-ai/claude-agent-sdk";
+import Anthropic from "@anthropic-ai/sdk";
 import SPELLING_COACH_SYSTEM_PROMPT from "./systemPrompt.js";
 import {
   loadSession,
@@ -11,8 +11,11 @@ import {
 interface AgentOptions {
   sessionId?: string;
   model?: string;
-  allowedTools?: string[];
 }
+
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
 
 /**
  * Generate a unique session ID
@@ -24,123 +27,98 @@ function generateSessionId(): string {
 }
 
 /**
- * Initialize and run the spelling coach agent
+ * Generate a multiple choice question for pattern reinforcement
  *
- * This function is designed to be model-agnostic. For migration to Kimi K2:
- * 1. Replace the `query` import with your Kimi K2 client
- * 2. Update the model parameter handling
- * 3. Adjust the message streaming logic to match Kimi K2's API
- * 4. Keep the session management and system prompt logic unchanged
+ * Used when student struggles with a pattern - generates adaptive questions
+ * until pattern is mastered (max 3 attempts)
  */
-export async function runSpellingCoachAgent(
-  userPrompt: string,
-  options: AgentOptions = {}
+export async function generatePatternQuestion(
+  sessionId: string,
+  incorrectWord: string,
+  userAttempt: string,
+  pattern: string,
+  previousAttempts: number = 0
 ) {
-  const {
-    sessionId = generateSessionId(),
-    model = "claude-sonnet-4-5-20250929", // Using Sonnet 4.5 for cost efficiency
-    allowedTools = ["Read", "WebSearch"],
-  } = options;
+  const questionPrompt = `
+The student just misspelled "${incorrectWord}" as "${userAttempt}". They're struggling with the "${pattern}" pattern.
 
-  // Load or create session context
-  let sessionContext = await loadSession(sessionId);
-  if (!sessionContext) {
-    sessionContext = createSessionContext(sessionId);
-  }
+${previousAttempts > 0 ? `This is attempt ${previousAttempts + 1} of 3 to master this pattern.` : ""}
 
-  // Build the complete system prompt with session context
-  const sessionContextMessage = buildSessionContextMessage(sessionContext);
-  const systemPrompt = `${SPELLING_COACH_SYSTEM_PROMPT}\n\n${sessionContextMessage}`;
+Generate a multiple choice question to help them practice identifying the correct spelling of words with the "${pattern}" pattern.
 
-  console.log(`\n🎓 Starting spelling coach session: ${sessionId}`);
-  console.log(`🤖 Model: ${model}\n`);
+IMPORTANT: Respond with ONLY valid JSON, no markdown formatting, no code blocks. Just the raw JSON object.
 
-  let newSessionId: string | null = null;
-  let fullResponse = "";
-
-  // Stream the agent response
-  for await (const message of query({
-    prompt: userPrompt,
-    options: {
-      model,
-      systemPrompt,
-      allowedTools,
-      permissionMode: "acceptEdits",
-    },
-  })) {
-    // Capture the session ID from the system init message
-    if (message.type === "system" && message.subtype === "init") {
-      newSessionId = message.session_id;
-      console.log(`[System] Session initialized: ${newSessionId}`);
-    }
-
-    // Log assistant responses
-    if (message.type === "assistant" && message.message?.content) {
-      for (const block of message.message.content) {
-        if ("text" in block) {
-          console.log(`\n[Coach Spark] ${block.text}`);
-          fullResponse += block.text + "\n";
-        } else if ("name" in block) {
-          console.log(`[Tool] Using: ${block.name}`);
-        }
-      }
-    }
-
-    // Log results
-    if (message.type === "result") {
-      console.log(`\n[Result] Session complete`);
-      console.log(`⏱️  Duration: ${message.duration_ms}ms`);
-      console.log(`💰 Cost: $${message.total_cost_usd.toFixed(6)}`);
-
-      if (message.is_error) {
-        console.error(`[Error] Session failed`);
-      }
-    }
-  }
-
-  // Update and save session context
-  if (newSessionId) {
-    sessionContext.sessionId = newSessionId;
-  }
-
-  // Add response to notes
-  if (fullResponse.trim()) {
-    sessionContext.notes.push(`[${new Date().toISOString()}] ${userPrompt.substring(0, 100)}...`);
-  }
-
-  await saveSession(sessionContext);
-
-  return {
-    sessionContext,
-    response: fullResponse,
-  };
+{
+  "question": "Which word is spelled INCORRECTLY?",
+  "options": ["a) [correct word]", "b) [correct word]", "c) [misspelled word]", "d) [correct word]"],
+  "correctAnswer": "c) [misspelled word]",
+  "explanation": "Brief, kid-friendly explanation of the pattern and why the incorrect option is wrong"
 }
 
-/**
- * Resume a previous session with the coach
- */
-export async function resumeSpellingCoachSession(
-  sessionId: string,
-  userPrompt: string,
-  model = "claude-sonnet-4-5-20250929"
-) {
-  // Load session context
-  const sessionContext = await loadSession(sessionId);
-  if (!sessionContext) {
-    throw new Error(`Session not found: ${sessionId}`);
+Requirements:
+- Include 3 correctly spelled words and 1 incorrectly spelled word
+- The incorrect option should use common misspelling patterns (like 'shun' instead of 'tion', 'ea' vs 'ee', etc.)
+- Keep it age-appropriate for elementary students
+- Make it clear and simple
+- The explanation should be 1-2 sentences maximum
+`;
+
+  try {
+    const message = await anthropic.messages.create({
+      model: "claude-sonnet-4-5-20250929",
+      max_tokens: 1024,
+      system: SPELLING_COACH_SYSTEM_PROMPT,
+      messages: [
+        {
+          role: "user",
+          content: questionPrompt,
+        },
+      ],
+    });
+
+    const response = message.content[0].type === "text" ? message.content[0].text : "";
+
+    // Try to extract JSON from response
+    try {
+      // Remove markdown code blocks if present
+      let cleanResponse = response.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+
+      // Find JSON object
+      const jsonMatch = cleanResponse.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        const question = JSON.parse(jsonMatch[0]);
+
+        // Validate structure
+        if (
+          question.question &&
+          Array.isArray(question.options) &&
+          question.options.length === 4 &&
+          question.correctAnswer &&
+          question.explanation
+        ) {
+          return {
+            success: true,
+            question,
+          };
+        }
+      }
+
+      throw new Error("Invalid question format");
+    } catch (error) {
+      console.error("Failed to parse question:", error);
+      return {
+        success: false,
+        error: "Failed to generate question",
+        rawResponse: response,
+      };
+    }
+  } catch (error) {
+    console.error("API error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Unknown error",
+    };
   }
-
-  const sessionContextMessage = buildSessionContextMessage(sessionContext);
-  const systemPrompt = `${SPELLING_COACH_SYSTEM_PROMPT}\n\n${sessionContextMessage}`;
-
-  console.log(`\n🔄 Resuming spelling coach session: ${sessionId}`);
-  console.log(`👤 Student: ${sessionContext.studentName || "Unknown"}\n`);
-
-  // Continue conversation
-  return runSpellingCoachAgent(userPrompt, {
-    sessionId,
-    model,
-  });
 }
 
 /**
@@ -196,6 +174,7 @@ export async function analyzePracticeSession(
   await saveSession(sessionContext);
 
   // Build prompt for coach analysis
+  const sessionContextMessage = buildSessionContextMessage(sessionContext);
   const analysisPrompt = `
 Hi Coach Spark! I just finished a practice session. Here's how I did:
 
@@ -216,87 +195,36 @@ ${studentQuestion ? `\nI also have a question: ${studentQuestion}` : ""}
 Can you help me understand what I should focus on and give me some tips?
 `;
 
-  return runSpellingCoachAgent(analysisPrompt, { sessionId });
-}
-
-/**
- * Generate a multiple choice question for pattern reinforcement
- *
- * Used when student struggles with a pattern - generates adaptive questions
- * until pattern is mastered (max 3 attempts)
- */
-export async function generatePatternQuestion(
-  sessionId: string,
-  incorrectWord: string,
-  userAttempt: string,
-  pattern: string,
-  previousAttempts: number = 0
-) {
-  const questionPrompt = `
-The student just misspelled "${incorrectWord}" as "${userAttempt}". They're struggling with the "${pattern}" pattern.
-
-${previousAttempts > 0 ? `This is attempt ${previousAttempts + 1} of 3 to master this pattern.` : ""}
-
-Generate a multiple choice question to help them practice identifying the correct spelling of words with the "${pattern}" pattern.
-
-IMPORTANT: Respond with ONLY valid JSON, no markdown formatting, no code blocks. Just the raw JSON object.
-
-{
-  "question": "Which word is spelled INCORRECTLY?",
-  "options": ["a) [correct word]", "b) [correct word]", "c) [misspelled word]", "d) [correct word]"],
-  "correctAnswer": "c) [misspelled word]",
-  "explanation": "Brief, kid-friendly explanation of the pattern and why the incorrect option is wrong"
-}
-
-Requirements:
-- Include 3 correctly spelled words and 1 incorrectly spelled word
-- The incorrect option should use common misspelling patterns (like 'shun' instead of 'tion', 'ea' vs 'ee', etc.)
-- Keep it age-appropriate for elementary students
-- Make it clear and simple
-- The explanation should be 1-2 sentences maximum
-`;
-
-  const { response } = await runSpellingCoachAgent(questionPrompt, { sessionId });
-
-  // Try to extract JSON from response
   try {
-    // Remove markdown code blocks if present
-    let cleanResponse = response.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    const message = await anthropic.messages.create({
+      model: "claude-sonnet-4-5-20250929",
+      max_tokens: 2048,
+      system: `${SPELLING_COACH_SYSTEM_PROMPT}\n\n${sessionContextMessage}`,
+      messages: [
+        {
+          role: "user",
+          content: analysisPrompt,
+        },
+      ],
+    });
 
-    // Find JSON object
-    const jsonMatch = cleanResponse.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      const question = JSON.parse(jsonMatch[0]);
+    const response = message.content[0].type === "text" ? message.content[0].text : "";
 
-      // Validate structure
-      if (
-        question.question &&
-        Array.isArray(question.options) &&
-        question.options.length === 4 &&
-        question.correctAnswer &&
-        question.explanation
-      ) {
-        return {
-          success: true,
-          question,
-        };
-      }
-    }
+    // Update session notes
+    sessionContext.notes.push(`[${new Date().toISOString()}] ${analysisPrompt.substring(0, 100)}...`);
+    await saveSession(sessionContext);
 
-    throw new Error("Invalid question format");
-  } catch (error) {
-    console.error("Failed to parse question:", error);
     return {
-      success: false,
-      error: "Failed to generate question",
-      rawResponse: response,
+      sessionContext,
+      response,
     };
+  } catch (error) {
+    console.error("API error:", error);
+    throw error;
   }
 }
 
 export default {
-  runSpellingCoachAgent,
-  resumeSpellingCoachSession,
-  analyzePracticeSession,
   generatePatternQuestion,
+  analyzePracticeSession,
 };
