@@ -5,11 +5,13 @@ FastAPI server for the spelling coach agent.
 """
 
 import os
+import json
 from typing import Dict, List, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from openai import OpenAI
 
 from .agent import run_coach_spark
 from .storage import get_or_create_progress, save_progress, load_progress
@@ -327,7 +329,6 @@ Return ONLY a JSON object with this exact structure:
 }}"""
 
         # Use a simple OpenAI call for question generation
-        from openai import OpenAI
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
         response = client.chat.completions.create(
@@ -343,7 +344,6 @@ Return ONLY a JSON object with this exact structure:
             response_format={"type": "json_object"}
         )
 
-        import json
         question_data = json.loads(response.choices[0].message.content)
 
         question = MultipleChoiceQuestion(**question_data)
