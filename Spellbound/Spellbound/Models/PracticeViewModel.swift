@@ -27,7 +27,7 @@ class PracticeViewModel: ObservableObject {
     let ttsService: TTSService
     private let storageService: StorageService
     private let adaptiveService: AdaptiveSelectionService
-    private let agentService: AgentService
+    let agentService: AgentService
 
     private let wordsPerSession = 15
     private let maxPatternReinforcementAttempts = 3
