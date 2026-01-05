@@ -16,7 +16,12 @@ app.use(express.json());
 
 // Health check endpoint
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", service: "spelling-coach-agent" });
+  const hasApiKey = !!process.env.ANTHROPIC_API_KEY;
+  res.json({
+    status: "ok",
+    service: "spelling-coach-agent",
+    apiKeyConfigured: hasApiKey
+  });
 });
 
 /**
