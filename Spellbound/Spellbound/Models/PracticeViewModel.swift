@@ -69,7 +69,7 @@ class PracticeViewModel: ObservableObject {
         if !sessionWords.isEmpty {
             currentWord = sessionWords[0]
             currentIndex = 0
-            speakCurrentWord()
+            // Don't auto-speak - wait for user to tap speaker button
         }
     }
 
