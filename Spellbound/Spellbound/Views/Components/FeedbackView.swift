@@ -6,7 +6,15 @@ struct FeedbackView: View {
     let correctWord: String?
     let incorrectPatterns: [DetectedPattern]
     let ttsService: TTSService
+    let sessionId: String
+    let studentId: String
+    let agentService: AgentService
     let onNext: () -> Void
+
+    @State private var agentFeedback: String?
+    @State private var isLoadingFeedback: Bool = false
+    @State private var showAskQuestion: Bool = false
+    @State private var userQuestion: String = ""
 
     var body: some View {
         ZStack {
@@ -73,38 +81,70 @@ struct FeedbackView: View {
                     .background(Color.black.opacity(0.3))
                     .cornerRadius(15)
 
-                    // Pattern tips section
+                    // Agent feedback section
                     if !incorrectPatterns.isEmpty {
                         VStack(spacing: 12) {
                             HStack {
-                                Text("💡 Spelling Tip:")
+                                Text("💡 Coach Spark says:")
                                     .font(.system(size: 24, weight: .bold, design: .rounded))
                                     .foregroundColor(.white)
                                 Spacer()
                             }
 
-                            ForEach(Array(incorrectPatterns.prefix(2)), id: \.type) { pattern in
-                                HStack {
-                                    Text(pattern.type.tipMessage)
-                                        .font(.system(size: 20, weight: .medium, design: .rounded))
+                            if isLoadingFeedback {
+                                ProgressView()
+                                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                                    .scaleEffect(1.5)
+                            } else if let feedback = agentFeedback {
+                                VStack(spacing: 12) {
+                                    HStack {
+                                        Text(feedback)
+                                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .multilineTextAlignment(.leading)
+                                        Spacer()
+                                    }
+                                    .padding(12)
+                                    .background(Color.blue.opacity(0.3))
+                                    .cornerRadius(10)
+
+                                    // Ask Coach Spark button
+                                    Button {
+                                        showAskQuestion = true
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "questionmark.circle.fill")
+                                            Text("Ask Coach Spark")
+                                        }
+                                        .font(.system(size: 18, weight: .semibold, design: .rounded))
                                         .foregroundColor(.white)
-                                        .multilineTextAlignment(.leading)
-                                    Spacer()
+                                        .padding(.horizontal, 20)
+                                        .padding(.vertical, 10)
+                                        .background(Color.purple.opacity(0.6))
+                                        .cornerRadius(10)
+                                    }
                                 }
-                                .padding(12)
-                                .background(Color.blue.opacity(0.3))
-                                .cornerRadius(10)
+                            } else {
+                                // Fallback to local pattern tips
+                                ForEach(Array(incorrectPatterns.prefix(2)), id: \.type) { pattern in
+                                    HStack {
+                                        Text(pattern.type.tipMessage)
+                                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .multilineTextAlignment(.leading)
+                                        Spacer()
+                                    }
+                                    .padding(12)
+                                    .background(Color.blue.opacity(0.3))
+                                    .cornerRadius(10)
+                                }
                             }
                         }
                         .padding(16)
                         .background(Color.black.opacity(0.3))
                         .cornerRadius(15)
                         .onAppear {
-                            // Auto-read tips aloud
-                            let tipsText = incorrectPatterns.prefix(2)
-                                .map { $0.type.tipMessage }
-                                .joined(separator: ". ")
-                            ttsService.speak(tipsText, type: .definition, word: correctWord ?? "")
+                            fetchAgentFeedback()
                         }
                     }
                     }
@@ -126,6 +166,206 @@ struct FeedbackView: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(30)
                 .shadow(color: .black.opacity(0.3), radius: 20)
+            }
+        }
+        .sheet(isPresented: $showAskQuestion) {
+            AskQuestionSheet(
+                sessionId: sessionId,
+                studentId: studentId,
+                agentService: agentService,
+                ttsService: ttsService,
+                onDismiss: { showAskQuestion = false }
+            )
+        }
+    }
+
+    // MARK: - Helper Methods
+
+    private func fetchAgentFeedback() {
+        guard let word = correctWord, let attempt = userAttempt else { return }
+
+        isLoadingFeedback = true
+
+        Task {
+            // Call agent API for feedback
+            let patternNames = incorrectPatterns.map { $0.type.displayName }
+
+            // Create request matching backend model
+            let endpoint = "\(agentService.baseURL)/api/get-feedback"
+            guard let url = URL(string: endpoint) else { return }
+
+            let requestBody: [String: Any] = [
+                "session_id": sessionId,
+                "student_id": studentId,
+                "incorrect_word": word,
+                "user_attempt": attempt,
+                "incorrect_patterns": patternNames
+            ]
+
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+
+                let (data, _) = try await URLSession.shared.data(for: request)
+
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let feedback = json["feedback"] as? String {
+
+                    await MainActor.run {
+                        agentFeedback = feedback
+                        isLoadingFeedback = false
+
+                        // Speak the agent's feedback
+                        ttsService.speak(feedback, type: .plain, word: nil)
+                    }
+                } else {
+                    // Fallback to local tips
+                    await MainActor.run {
+                        isLoadingFeedback = false
+                        speakLocalTips()
+                    }
+                }
+            } catch {
+                print("❌ Failed to fetch agent feedback: \(error)")
+                await MainActor.run {
+                    isLoadingFeedback = false
+                    speakLocalTips()
+                }
+            }
+        }
+    }
+
+    private func speakLocalTips() {
+        let tipsText = incorrectPatterns.prefix(2)
+            .map { $0.type.tipMessage }
+            .joined(separator: ". ")
+        ttsService.speak(tipsText, type: .plain, word: nil)
+    }
+}
+
+// MARK: - Ask Question Sheet
+
+struct AskQuestionSheet: View {
+    let sessionId: String
+    let studentId: String
+    let agentService: AgentService
+    let ttsService: TTSService
+    let onDismiss: () -> Void
+
+    @State private var userQuestion: String = ""
+    @State private var agentAnswer: String?
+    @State private var isLoading: Bool = false
+
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 20) {
+                Text("Ask Coach Spark")
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .padding(.top)
+
+                TextField("What do you want to know?", text: $userQuestion)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .font(.system(size: 20, design: .rounded))
+                    .padding()
+
+                Button {
+                    askQuestion()
+                } label: {
+                    Text("Ask")
+                        .font(.system(size: 24, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 50)
+                        .padding(.vertical, 15)
+                        .background(userQuestion.isEmpty ? Color.gray : Color.blue)
+                        .cornerRadius(15)
+                }
+                .disabled(userQuestion.isEmpty)
+
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .scaleEffect(2)
+                        .padding()
+                }
+
+                if let answer = agentAnswer {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("Coach Spark says:")
+                                .font(.system(size: 20, weight: .bold, design: .rounded))
+
+                            Text(answer)
+                                .font(.system(size: 18, weight: .medium, design: .rounded))
+                                .multilineTextAlignment(.leading)
+                        }
+                        .padding()
+                        .background(Color.blue.opacity(0.1))
+                        .cornerRadius(15)
+                        .padding()
+                    }
+                }
+
+                Spacer()
+
+                Button {
+                    onDismiss()
+                } label: {
+                    Text("Done")
+                        .font(.system(size: 20, weight: .semibold, design: .rounded))
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 12)
+                        .background(Color.green)
+                        .cornerRadius(12)
+                }
+                .padding(.bottom)
+            }
+            .navigationBarHidden(true)
+        }
+    }
+
+    private func askQuestion() {
+        isLoading = true
+
+        Task {
+            // Call agent API
+            let endpoint = "\(agentService.baseURL)/api/ask-question"
+            guard let url = URL(string: endpoint) else { return }
+
+            let requestBody: [String: Any] = [
+                "session_id": sessionId,
+                "student_id": studentId,
+                "question": userQuestion
+            ]
+
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+
+                let (data, _) = try await URLSession.shared.data(for: request)
+
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let message = json["message"] as? String {
+
+                    await MainActor.run {
+                        agentAnswer = message
+                        isLoading = false
+
+                        // Speak the answer
+                        ttsService.speak(message, type: .plain, word: nil)
+                    }
+                }
+            } catch {
+                print("❌ Failed to ask question: \(error)")
+                await MainActor.run {
+                    isLoading = false
+                }
             }
         }
     }

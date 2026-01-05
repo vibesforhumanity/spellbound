@@ -88,6 +88,40 @@ class EndSessionResponse(BaseModel):
     next_recommendation: Optional[Dict] = None
 
 
+class GenerateQuestionRequest(BaseModel):
+    session_id: str
+    incorrect_word: str
+    user_attempt: str
+    pattern: str
+    previous_attempts: int = 0
+
+
+class MultipleChoiceQuestion(BaseModel):
+    question: str
+    options: List[str]
+    correct_answer: str
+    explanation: str
+
+
+class GenerateQuestionResponse(BaseModel):
+    success: bool
+    question: Optional[MultipleChoiceQuestion] = None
+    error: Optional[str] = None
+
+
+class GetFeedbackRequest(BaseModel):
+    session_id: str
+    student_id: str
+    incorrect_word: str
+    user_attempt: str
+    incorrect_patterns: List[str]
+
+
+class GetFeedbackResponse(BaseModel):
+    feedback: str
+    pattern_tips: List[str]
+
+
 # ============================================================================
 # Endpoints
 # ============================================================================
@@ -264,6 +298,110 @@ async def get_progress(student_id: str):
         raise HTTPException(status_code=404, detail="Student not found")
 
     return {"progress": progress.model_dump()}
+
+
+@app.post("/api/generate-question", response_model=GenerateQuestionResponse)
+async def generate_question(request: GenerateQuestionRequest):
+    """Generate a multiple choice question based on student's misspelling"""
+    try:
+        # Create a prompt for the agent to generate a question
+        prompt = f"""Generate a multiple choice question to help the student learn the '{request.pattern}' pattern.
+
+The student misspelled '{request.incorrect_word}' as '{request.user_attempt}'.
+
+This is attempt {request.previous_attempts + 1} of 3.
+
+Create a question that:
+1. Tests understanding of the '{request.pattern}' pattern
+2. Incorporates the student's specific misspelling pattern (what they wrote vs. what was correct)
+3. Uses grade-appropriate vocabulary
+4. Has 4 options (a, b, c, d) with exactly one correct answer
+5. Includes an encouraging explanation
+
+Return ONLY a JSON object with this exact structure:
+{{
+    "question": "Which word is spelled INCORRECTLY?",
+    "options": ["a) word1", "b) word2", "c) word3", "d) word4"],
+    "correct_answer": "c) word3",
+    "explanation": "Brief encouraging explanation of the pattern"
+}}"""
+
+        # Use a simple OpenAI call for question generation
+        from openai import OpenAI
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are Coach Spark, an encouraging spelling coach. Generate educational multiple choice questions as JSON."
+                },
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            response_format={"type": "json_object"}
+        )
+
+        import json
+        question_data = json.loads(response.choices[0].message.content)
+
+        question = MultipleChoiceQuestion(**question_data)
+
+        return GenerateQuestionResponse(
+            success=True,
+            question=question,
+            error=None
+        )
+
+    except Exception as e:
+        print(f"❌ Error generating question: {str(e)}")
+        return GenerateQuestionResponse(
+            success=False,
+            question=None,
+            error=str(e)
+        )
+
+
+@app.post("/api/get-feedback", response_model=GetFeedbackResponse)
+async def get_feedback(request: GetFeedbackRequest):
+    """Get immediate coaching feedback for an incorrect answer"""
+    try:
+        # Load progress and conversation
+        progress = load_progress(request.student_id)
+        if not progress:
+            raise HTTPException(status_code=404, detail="Student not found")
+
+        history = conversations.get(request.session_id, [])
+
+        # Create coaching prompt
+        patterns_str = ", ".join(request.incorrect_patterns)
+        coaching_prompt = f"""I just spelled '{request.incorrect_word}' as '{request.user_attempt}' and got it wrong.
+The patterns I struggled with were: {patterns_str}
+
+Can you help me understand what I got wrong and give me a tip to remember it?"""
+
+        # Run agent to get feedback
+        message, updated_history, updated_progress = run_coach_spark(
+            coaching_prompt, history, progress
+        )
+
+        # Update storage
+        conversations[request.session_id] = updated_history
+        save_progress(updated_progress)
+
+        # Extract pattern tips from the response
+        pattern_tips = []
+        for pattern in request.incorrect_patterns[:2]:  # Max 2 tips
+            pattern_tips.append(f"Remember: {pattern}")
+
+        return GetFeedbackResponse(
+            feedback=message,
+            pattern_tips=pattern_tips
+        )
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":

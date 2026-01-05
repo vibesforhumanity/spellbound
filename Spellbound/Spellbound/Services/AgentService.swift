@@ -5,7 +5,7 @@ class AgentService {
     // Change this to your actual server URL
     // For local development: http://localhost:3000
     // For production: https://spellbound-production.up.railway.app
-    private let baseURL: String
+    let baseURL: String
 
     init(baseURL: String = "https://spellbound-production.up.railway.app") {
         self.baseURL = baseURL

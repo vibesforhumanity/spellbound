@@ -145,6 +145,9 @@ struct PracticeView: View {
                     correctWord: viewModel.isCorrect == false ? viewModel.currentWord?.text : nil,
                     incorrectPatterns: viewModel.incorrectPatterns,
                     ttsService: viewModel.ttsService,
+                    sessionId: viewModel.currentSession.id.uuidString,
+                    studentId: "default-student",  // Single-user app
+                    agentService: viewModel.agentService,
                     onNext: viewModel.nextWord
                 )
             }
