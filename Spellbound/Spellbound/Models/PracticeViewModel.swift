@@ -170,7 +170,7 @@ class PracticeViewModel: ObservableObject {
     func nextWord() {
         // Check if we need pattern reinforcement before moving to next word
         if checkIfNeedsPatternReinforcement() {
-            showFeedback = false
+            // Keep feedback showing while question generates to avoid UI flash
             generatePatternQuestion()
             return
         }
@@ -311,6 +311,7 @@ class PracticeViewModel: ObservableObject {
                 if let question = question {
                     // Agent successfully generated question
                     currentMultipleChoiceQuestion = question
+                    showFeedback = false  // Hide feedback now that question is ready
                     showMultipleChoice = true
                     patternReinforcementAttempts += 1
                 } else {
@@ -322,6 +323,7 @@ class PracticeViewModel: ObservableObject {
                         userAttempt: lastIncorrectAttempt
                     )
                     currentMultipleChoiceQuestion = localQuestion
+                    showFeedback = false  // Hide feedback now that question is ready
                     showMultipleChoice = true
                     patternReinforcementAttempts += 1
                 }
