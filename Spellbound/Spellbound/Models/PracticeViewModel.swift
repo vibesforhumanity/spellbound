@@ -343,7 +343,7 @@ class PracticeViewModel: ObservableObject {
 
             // Clear UI state immediately to avoid showing old input during transition
             userInput = ""
-            isCorrect = nil
+            self.isCorrect = nil
             showClue = false
             showFeedback = false
 
@@ -368,7 +368,7 @@ class PracticeViewModel: ObservableObject {
 
                 // Clear UI state immediately to avoid showing old input during transition
                 userInput = ""
-                isCorrect = nil
+                self.isCorrect = nil
                 showClue = false
                 showFeedback = false
                 incorrectPatterns = []

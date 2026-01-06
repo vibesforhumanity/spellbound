@@ -258,7 +258,7 @@ class PhonicsPatternService {
     }
 
     private func removeOverlaps(_ patterns: [DetectedPattern]) -> [DetectedPattern] {
-        var sorted = patterns.sorted { $0.position.lowerBound < $1.position.lowerBound }
+        let sorted = patterns.sorted { $0.position.lowerBound < $1.position.lowerBound }
         var result: [DetectedPattern] = []
 
         for pattern in sorted {
