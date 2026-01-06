@@ -85,6 +85,15 @@ class TTSService: NSObject, ObservableObject {
             player.stop()
         }
     }
+
+    func playAudioFile(at url: URL) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Failed to play audio file: \(error)")
+        }
+    }
 }
 
 extension TTSService: AVSpeechSynthesizerDelegate {

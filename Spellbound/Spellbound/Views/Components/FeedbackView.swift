@@ -218,8 +218,8 @@ struct FeedbackView: View {
                         agentFeedback = feedback
                         isLoadingFeedback = false
 
-                        // Speak the agent's feedback
-                        ttsService.speak(feedback, type: .plain, word: nil)
+                        // Use OpenAI's natural voice for agent feedback
+                        speakWithOpenAI(feedback)
                     }
                 } else {
                     // Fallback to local tips
@@ -243,6 +243,43 @@ struct FeedbackView: View {
             .map { $0.type.tipMessage }
             .joined(separator: ". ")
         ttsService.speak(tipsText, type: .plain, word: nil)
+    }
+
+    private func speakWithOpenAI(_ text: String) {
+        Task {
+            // Call OpenAI TTS endpoint
+            let endpoint = "\(agentService.baseURL)/api/text-to-speech"
+            guard let url = URL(string: endpoint) else { return }
+
+            let requestBody: [String: Any] = [
+                "text": text,
+                "voice": "nova"  // Kid-friendly voice
+            ]
+
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+
+                let (data, _) = try await URLSession.shared.data(for: request)
+
+                // Save to temp file and play
+                let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("agent-speech.mp3")
+                try data.write(to: tempURL)
+
+                await MainActor.run {
+                    ttsService.playAudioFile(at: tempURL)
+                }
+            } catch {
+                print("❌ OpenAI TTS failed, using fallback: \(error)")
+                // Fallback to local synthesis
+                await MainActor.run {
+                    ttsService.speak(text, type: .plain, word: nil)
+                }
+            }
+        }
     }
 }
 

@@ -124,6 +124,11 @@ class GetFeedbackResponse(BaseModel):
     pattern_tips: List[str]
 
 
+class TextToSpeechRequest(BaseModel):
+    text: str
+    voice: str = "nova"  # Options: alloy, echo, fable, onyx, nova, shimmer
+
+
 # ============================================================================
 # Endpoints
 # ============================================================================
@@ -306,26 +311,40 @@ async def get_progress(student_id: str):
 async def generate_question(request: GenerateQuestionRequest):
     """Generate a multiple choice question based on student's misspelling"""
     try:
-        # Create a prompt for the agent to generate a question
-        prompt = f"""Generate a multiple choice question to help the student learn the '{request.pattern}' pattern.
+        # Create a detailed prompt for context-aware question generation
+        prompt = f"""Generate a multiple choice question to help a student master the '{request.pattern}' pattern.
 
-The student misspelled '{request.incorrect_word}' as '{request.user_attempt}'.
+**What just happened:**
+The student tried to spell "{request.incorrect_word}" but wrote "{request.user_attempt}".
 
-This is attempt {request.previous_attempts + 1} of 3.
+**Error analysis:**
+- Correct pattern: {request.pattern} in "{request.incorrect_word}"
+- Student's error: They used "{request.user_attempt}" instead
+- This shows confusion about: {request.pattern}
 
-Create a question that:
-1. Tests understanding of the '{request.pattern}' pattern
-2. Incorporates the student's specific misspelling pattern (what they wrote vs. what was correct)
-3. Uses grade-appropriate vocabulary
-4. Has 4 options (a, b, c, d) with exactly one correct answer
-5. Includes an encouraging explanation
+**This is attempt {request.previous_attempts + 1} of 3.**
 
-Return ONLY a JSON object with this exact structure:
+**Your task:**
+Create a question that DIRECTLY addresses their specific confusion. The question should:
+
+1. **Focus on their exact error** - If they wrote "nune" instead of "noon", test their understanding of "-une" vs "-oon"
+2. **Include options that mirror their mistake** - Create wrong answers that use the student's error pattern
+3. **Build on the word they missed** - Use similar words or the same pattern
+4. **Be appropriate for elementary students** (ages 6-11)
+5. **Have exactly ONE correct answer** among 4 options
+
+**Example format:**
+If student wrote "nune" → "noon", your options might include:
+- Words with correct "-oon" pattern (moon, spoon, soon)
+- Words with the wrong "-une" pattern they used (tune, dune, june)
+- Make one of the "-une" words the INCORRECT answer to test if they now understand
+
+Return ONLY a JSON object:
 {{
     "question": "Which word is spelled INCORRECTLY?",
     "options": ["a) word1", "b) word2", "c) word3", "d) word4"],
-    "correct_answer": "c) word3",
-    "explanation": "Brief encouraging explanation of the pattern"
+    "correct_answer": "letter) wrong_word",
+    "explanation": "Great work! [Explain why the wrong one is wrong and reinforce the {request.pattern} pattern]"
 }}"""
 
         # Use a simple OpenAI call for question generation
@@ -374,12 +393,27 @@ async def get_feedback(request: GetFeedbackRequest):
 
         history = conversations.get(request.session_id, [])
 
-        # Create coaching prompt
+        # Create detailed coaching prompt
         patterns_str = ", ".join(request.incorrect_patterns)
-        coaching_prompt = f"""I just spelled '{request.incorrect_word}' as '{request.user_attempt}' and got it wrong.
-The patterns I struggled with were: {patterns_str}
 
-Can you help me understand what I got wrong and give me a tip to remember it?"""
+        # Analyze the specific error
+        error_analysis = f"I spelled '{request.user_attempt}' instead of '{request.incorrect_word}'"
+
+        coaching_prompt = f"""A student just made a spelling mistake and needs your supportive coaching!
+
+**What happened:**
+- Target word: "{request.incorrect_word}"
+- Student wrote: "{request.user_attempt}"
+- Patterns they struggled with: {patterns_str}
+
+**Your task:**
+1. Acknowledge their effort warmly and personally
+2. Explain EXACTLY what they got wrong (compare their spelling to the correct one)
+3. Teach them about the {request.incorrect_patterns[0] if request.incorrect_patterns else 'pattern'} in an encouraging way
+4. Give them a memorable tip, mnemonic, or fun fact to remember this pattern
+5. Connect it to other words they might know
+
+Be warm, encouraging, and make them feel excited to learn! Use their actual attempt ('{request.user_attempt}') in your explanation."""
 
         # Run agent to get feedback
         message, updated_history, updated_progress = run_coach_spark(
@@ -398,6 +432,37 @@ Can you help me understand what I got wrong and give me a tip to remember it?"""
         return GetFeedbackResponse(
             feedback=message,
             pattern_tips=pattern_tips
+        )
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/text-to-speech")
+async def text_to_speech(request: TextToSpeechRequest):
+    """Convert text to speech using OpenAI's natural voices"""
+    try:
+        from fastapi.responses import StreamingResponse
+        import io
+
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+        # Generate speech using OpenAI TTS
+        response = client.audio.speech.create(
+            model="tts-1",  # or "tts-1-hd" for higher quality
+            voice=request.voice,
+            input=request.text
+        )
+
+        # Stream the audio back
+        audio_stream = io.BytesIO(response.content)
+
+        return StreamingResponse(
+            audio_stream,
+            media_type="audio/mpeg",
+            headers={
+                "Content-Disposition": "inline; filename=speech.mp3"
+            }
         )
 
     except Exception as e:
