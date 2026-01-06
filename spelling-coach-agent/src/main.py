@@ -386,6 +386,11 @@ Return ONLY a JSON object:
 async def get_feedback(request: GetFeedbackRequest):
     """Get immediate coaching feedback for an incorrect answer"""
     try:
+        print(f"\n🎓 GET FEEDBACK REQUEST")
+        print(f"   Word: {request.incorrect_word}")
+        print(f"   Attempt: {request.user_attempt}")
+        print(f"   Patterns: {request.incorrect_patterns}")
+
         # Load progress and conversation
         progress = load_progress(request.student_id)
         if not progress:
@@ -398,6 +403,8 @@ async def get_feedback(request: GetFeedbackRequest):
 
         # Analyze the specific error
         error_analysis = f"I spelled '{request.user_attempt}' instead of '{request.incorrect_word}'"
+
+        print(f"🤖 Calling Coach Spark agent for personalized feedback...")
 
         coaching_prompt = f"""A student just made a spelling mistake and needs your supportive coaching!
 
@@ -419,6 +426,10 @@ Be warm, encouraging, and make them feel excited to learn! Use their actual atte
         message, updated_history, updated_progress = run_coach_spark(
             coaching_prompt, history, progress
         )
+
+        print(f"✅ Coach Spark response received:")
+        print(f"   Length: {len(message)} characters")
+        print(f"   Preview: {message[:100]}...")
 
         # Update storage
         conversations[request.session_id] = updated_history

@@ -317,6 +317,10 @@ def run_coach_spark(
     progress: CurriculumProgress,
 ) -> tuple[str, List[Dict], CurriculumProgress]:
     """Run Coach Spark agent with a user message"""
+    print(f"\n🎯 run_coach_spark() called")
+    print(f"   User message: {user_message[:100]}...")
+    print(f"   History length: {len(conversation_history)} messages")
+
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     # Build system prompt
@@ -328,10 +332,14 @@ def run_coach_spark(
     # Prepare messages
     messages = [{"role": "system", "content": system_prompt}, *conversation_history]
 
+    print(f"🤖 Calling OpenAI GPT-4o with {len(messages)} messages and {len(TOOLS)} tools...")
+
     # Call OpenAI with tools
     response = client.chat.completions.create(
         model="gpt-4o", messages=messages, tools=TOOLS, tool_choice="auto"
     )
+
+    print(f"📥 OpenAI response received. Finish reason: {response.choices[0].finish_reason}")
 
     # Handle tool calls
     while response.choices[0].finish_reason == "tool_calls":
@@ -375,5 +383,7 @@ def run_coach_spark(
     # Add final assistant message
     assistant_message = response.choices[0].message.content or ""
     conversation_history.append({"role": "assistant", "content": assistant_message})
+
+    print(f"✅ Agent complete. Response: {len(assistant_message)} chars")
 
     return (assistant_message, conversation_history, progress)
