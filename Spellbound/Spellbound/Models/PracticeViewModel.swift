@@ -341,6 +341,12 @@ class PracticeViewModel: ObservableObject {
             // Clear incorrect patterns since we've successfully addressed them
             incorrectPatterns = []
 
+            // Clear UI state immediately to avoid showing old input during transition
+            userInput = ""
+            isCorrect = nil
+            showClue = false
+            showFeedback = false
+
             // Continue to next word
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                 self?.nextWord()
@@ -349,17 +355,23 @@ class PracticeViewModel: ObservableObject {
             // Try again (up to max attempts)
             if patternReinforcementAttempts < maxPatternReinforcementAttempts {
                 print("❌ Incorrect. Generating another question (attempt \(patternReinforcementAttempts + 1)/\(maxPatternReinforcementAttempts))")
-                showMultipleChoice = false
+                // Keep multiple choice visible while next question generates
+                // It will be hidden when the new question is ready (in generatePatternQuestion)
 
-                // Generate next question
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-                    self?.generatePatternQuestion()
-                }
+                // Generate next question immediately
+                generatePatternQuestion()
             } else {
                 // Max attempts reached, move on
                 print("⏭️  Max attempts reached. Moving to next word.")
                 resetPatternReinforcement()
                 showMultipleChoice = false
+
+                // Clear UI state immediately to avoid showing old input during transition
+                userInput = ""
+                isCorrect = nil
+                showClue = false
+                showFeedback = false
+                incorrectPatterns = []
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                     self?.nextWord()
