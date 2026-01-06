@@ -246,10 +246,17 @@ struct FeedbackView: View {
     }
 
     private func speakWithOpenAI(_ text: String) {
+        print("🎤 Attempting OpenAI TTS for: \(text.prefix(50))...")
+
         Task {
             // Call OpenAI TTS endpoint
             let endpoint = "\(agentService.baseURL)/api/text-to-speech"
-            guard let url = URL(string: endpoint) else { return }
+            guard let url = URL(string: endpoint) else {
+                print("❌ Invalid TTS URL")
+                return
+            }
+
+            print("📡 Calling OpenAI TTS: \(endpoint)")
 
             let requestBody: [String: Any] = [
                 "text": text,
@@ -263,12 +270,22 @@ struct FeedbackView: View {
             do {
                 request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
 
-                let (data, _) = try await URLSession.shared.data(for: request)
+                let (data, response) = try await URLSession.shared.data(for: request)
+
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("📥 TTS Response status: \(httpResponse.statusCode)")
+
+                    guard httpResponse.statusCode == 200 else {
+                        print("❌ TTS failed with status \(httpResponse.statusCode)")
+                        throw NSError(domain: "TTS", code: httpResponse.statusCode, userInfo: nil)
+                    }
+                }
 
                 // Save to temp file and play
                 let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("agent-speech.mp3")
                 try data.write(to: tempURL)
 
+                print("✅ OpenAI TTS audio saved, playing...")
                 await MainActor.run {
                     ttsService.playAudioFile(at: tempURL)
                 }
@@ -394,8 +411,8 @@ struct AskQuestionSheet: View {
                         agentAnswer = message
                         isLoading = false
 
-                        // Speak the answer
-                        ttsService.speak(message, type: .plain, word: nil)
+                        // Use OpenAI TTS for the answer
+                        speakWithOpenAI(message)
                     }
                 }
             } catch {
