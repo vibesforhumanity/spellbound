@@ -15,6 +15,7 @@ struct FeedbackView: View {
     @State private var isLoadingFeedback: Bool = false
     @State private var showAskQuestion: Bool = false
     @State private var userQuestion: String = ""
+    @State private var thinkingDots: String = ""
 
     var body: some View {
         ZStack {
@@ -92,9 +93,33 @@ struct FeedbackView: View {
                             }
 
                             if isLoadingFeedback {
-                                ProgressView()
-                                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                                    .scaleEffect(1.5)
+                                // Animated "thinking" message
+                                VStack(spacing: 8) {
+                                    HStack {
+                                        Text("Coach Spark is thinking\(thinkingDots)")
+                                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                                            .foregroundColor(.white.opacity(0.9))
+                                        Spacer()
+                                    }
+
+                                    if let attempt = userAttempt, let correct = correctWord {
+                                        HStack {
+                                            Text("Analyzing: '\(attempt)' → '\(correct)'")
+                                                .font(.system(size: 16, design: .rounded))
+                                                .foregroundColor(.white.opacity(0.7))
+                                            Spacer()
+                                        }
+                                    }
+                                }
+                                .padding(12)
+                                .background(Color.purple.opacity(0.3))
+                                .cornerRadius(10)
+                                .onAppear {
+                                    startThinkingAnimation()
+                                }
+                                .onDisappear {
+                                    thinkingDots = ""
+                                }
                             } else if let feedback = agentFeedback {
                                 VStack(spacing: 12) {
                                     HStack {
@@ -180,6 +205,29 @@ struct FeedbackView: View {
     }
 
     // MARK: - Helper Methods
+
+    private func startThinkingAnimation() {
+        thinkingDots = ""
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            if !isLoadingFeedback {
+                timer.invalidate()
+                thinkingDots = ""
+                return
+            }
+
+            // Cycle through "", ".", "..", "..."
+            switch thinkingDots {
+            case "":
+                thinkingDots = "."
+            case ".":
+                thinkingDots = ".."
+            case "..":
+                thinkingDots = "..."
+            default:
+                thinkingDots = ""
+            }
+        }
+    }
 
     private func fetchAgentFeedback() {
         guard let word = correctWord, let attempt = userAttempt else { return }
@@ -313,6 +361,7 @@ struct AskQuestionSheet: View {
     @State private var userQuestion: String = ""
     @State private var agentAnswer: String?
     @State private var isLoading: Bool = false
+    @State private var thinkingDots: String = ""
 
     var body: some View {
         NavigationView {
@@ -340,10 +389,24 @@ struct AskQuestionSheet: View {
                 .disabled(userQuestion.isEmpty)
 
                 if isLoading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle())
-                        .scaleEffect(2)
-                        .padding()
+                    VStack(spacing: 12) {
+                        Text("Coach Spark is thinking\(thinkingDots)")
+                            .font(.system(size: 22, weight: .medium, design: .rounded))
+                            .foregroundColor(.purple)
+
+                        Text("Answering your question...")
+                            .font(.system(size: 16, design: .rounded))
+                            .foregroundColor(.gray)
+                    }
+                    .padding()
+                    .background(Color.purple.opacity(0.1))
+                    .cornerRadius(15)
+                    .onAppear {
+                        startThinkingAnimation()
+                    }
+                    .onDisappear {
+                        thinkingDots = ""
+                    }
                 }
 
                 if let answer = agentAnswer {
@@ -421,6 +484,29 @@ struct AskQuestionSheet: View {
                 await MainActor.run {
                     isLoading = false
                 }
+            }
+        }
+    }
+
+    private func startThinkingAnimation() {
+        thinkingDots = ""
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            if !isLoading {
+                timer.invalidate()
+                thinkingDots = ""
+                return
+            }
+
+            // Cycle through "", ".", "..", "..."
+            switch thinkingDots {
+            case "":
+                thinkingDots = "."
+            case ".":
+                thinkingDots = ".."
+            case "..":
+                thinkingDots = "..."
+            default:
+                thinkingDots = ""
             }
         }
     }
