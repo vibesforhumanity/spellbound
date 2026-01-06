@@ -336,6 +336,9 @@ class PracticeViewModel: ObservableObject {
             resetPatternReinforcement()
             showMultipleChoice = false
 
+            // Clear incorrect patterns since we've successfully addressed them
+            incorrectPatterns = []
+
             // Continue to next word
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                 self?.nextWord()

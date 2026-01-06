@@ -36,11 +36,11 @@ class AgentService {
         }
 
         let requestBody: [String: Any] = [
-            "sessionId": sessionId,
-            "incorrectWord": incorrectWord,
-            "userAttempt": userAttempt,
+            "session_id": sessionId,
+            "incorrect_word": incorrectWord,
+            "user_attempt": userAttempt,
             "pattern": pattern,
-            "previousAttempts": previousAttempts
+            "previous_attempts": previousAttempts
         ]
 
         var request = URLRequest(url: url)
