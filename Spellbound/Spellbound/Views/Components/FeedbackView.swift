@@ -242,7 +242,8 @@ struct FeedbackView: View {
         let tipsText = incorrectPatterns.prefix(2)
             .map { $0.type.tipMessage }
             .joined(separator: ". ")
-        ttsService.speak(tipsText, type: .plain, word: nil)
+        // Use OpenAI TTS even for local fallback tips
+        speakWithOpenAI(tipsText)
     }
 
     private func speakWithOpenAI(_ text: String) {
@@ -419,6 +420,60 @@ struct AskQuestionSheet: View {
                 print("❌ Failed to ask question: \(error)")
                 await MainActor.run {
                     isLoading = false
+                }
+            }
+        }
+    }
+
+    private func speakWithOpenAI(_ text: String) {
+        print("🎤 [AskQuestion] Attempting OpenAI TTS for: \(text.prefix(50))...")
+
+        Task {
+            // Call OpenAI TTS endpoint
+            let endpoint = "\(agentService.baseURL)/api/text-to-speech"
+            guard let url = URL(string: endpoint) else {
+                print("❌ [AskQuestion] Invalid TTS URL")
+                return
+            }
+
+            print("📡 [AskQuestion] Calling OpenAI TTS: \(endpoint)")
+
+            let requestBody: [String: Any] = [
+                "text": text,
+                "voice": "nova"  // Kid-friendly voice
+            ]
+
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+
+                let (data, response) = try await URLSession.shared.data(for: request)
+
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("📥 [AskQuestion] TTS Response status: \(httpResponse.statusCode)")
+
+                    guard httpResponse.statusCode == 200 else {
+                        print("❌ [AskQuestion] TTS failed with status \(httpResponse.statusCode)")
+                        throw NSError(domain: "TTS", code: httpResponse.statusCode, userInfo: nil)
+                    }
+                }
+
+                // Save to temp file and play
+                let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("agent-question-speech.mp3")
+                try data.write(to: tempURL)
+
+                print("✅ [AskQuestion] OpenAI TTS audio saved, playing...")
+                await MainActor.run {
+                    ttsService.playAudioFile(at: tempURL)
+                }
+            } catch {
+                print("❌ [AskQuestion] OpenAI TTS failed, using fallback: \(error)")
+                // Fallback to local synthesis
+                await MainActor.run {
+                    ttsService.speak(text, type: .plain, word: nil)
                 }
             }
         }
