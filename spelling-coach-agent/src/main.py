@@ -188,10 +188,11 @@ async def start_session(request: StartSessionRequest):
 async def submit_answer(request: SubmitAnswerRequest):
     """Submit a spelling answer"""
     try:
-        # Load progress and conversation
+        # Load or create progress
         progress = load_progress(request.student_id)
         if not progress:
-            raise HTTPException(status_code=404, detail="Student not found")
+            print(f"⚠️  No progress found for {request.student_id}, creating default student (grade 3)")
+            progress = get_or_create_progress(request.student_id, grade=3)
 
         history = conversations.get(request.session_id, [])
 
@@ -217,10 +218,11 @@ async def submit_answer(request: SubmitAnswerRequest):
 async def ask_question(request: AskQuestionRequest):
     """Ask Coach Spark a question"""
     try:
-        # Load progress and conversation
+        # Load or create progress
         progress = load_progress(request.student_id)
         if not progress:
-            raise HTTPException(status_code=404, detail="Student not found")
+            print(f"⚠️  No progress found for {request.student_id}, creating default student (grade 3)")
+            progress = get_or_create_progress(request.student_id, grade=3)
 
         history = conversations.get(request.session_id, [])
 
@@ -246,10 +248,11 @@ async def ask_question(request: AskQuestionRequest):
 async def end_session(request: EndSessionRequest):
     """End a coaching session and get next recommendation"""
     try:
-        # Load progress and conversation
+        # Load or create progress
         progress = load_progress(request.student_id)
         if not progress:
-            raise HTTPException(status_code=404, detail="Student not found")
+            print(f"⚠️  No progress found for {request.student_id}, creating default student (grade 3)")
+            progress = get_or_create_progress(request.student_id, grade=3)
 
         history = conversations.get(request.session_id, [])
 
@@ -391,10 +394,11 @@ async def get_feedback(request: GetFeedbackRequest):
         print(f"   Attempt: {request.user_attempt}")
         print(f"   Patterns: {request.incorrect_patterns}")
 
-        # Load progress and conversation
+        # Load or create progress
         progress = load_progress(request.student_id)
         if not progress:
-            raise HTTPException(status_code=404, detail="Student not found")
+            print(f"⚠️  No progress found for {request.student_id}, creating default student (grade 3)")
+            progress = get_or_create_progress(request.student_id, grade=3)
 
         history = conversations.get(request.session_id, [])
 
