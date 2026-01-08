@@ -159,6 +159,7 @@ struct PracticeView: View {
                     question: question,
                     onAnswer: viewModel.handleMultipleChoiceAnswer
                 )
+                .id(question.question) // Force view to reinitialize when question changes
             }
         }
     }
