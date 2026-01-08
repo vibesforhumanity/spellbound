@@ -230,7 +230,15 @@ struct FeedbackView: View {
     }
 
     private func fetchAgentFeedback() {
-        guard let word = correctWord, let attempt = userAttempt else { return }
+        guard let word = correctWord, let attempt = userAttempt else {
+            print("❌ Missing word or attempt")
+            return
+        }
+
+        print("\n🎓 FETCHING AGENT FEEDBACK")
+        print("   Correct word: \(word)")
+        print("   User attempt: \(attempt)")
+        print("   Incorrect patterns: \(incorrectPatterns.map { $0.type.displayName })")
 
         isLoadingFeedback = true
 
@@ -240,7 +248,12 @@ struct FeedbackView: View {
 
             // Create request matching backend model
             let endpoint = "\(agentService.baseURL)/api/get-feedback"
-            guard let url = URL(string: endpoint) else { return }
+            guard let url = URL(string: endpoint) else {
+                print("❌ Invalid endpoint URL: \(endpoint)")
+                return
+            }
+
+            print("📡 Calling endpoint: \(endpoint)")
 
             let requestBody: [String: Any] = [
                 "session_id": sessionId,
@@ -250,6 +263,8 @@ struct FeedbackView: View {
                 "incorrect_patterns": patternNames
             ]
 
+            print("📤 Request body: \(requestBody)")
+
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -257,20 +272,44 @@ struct FeedbackView: View {
             do {
                 request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
 
-                let (data, _) = try await URLSession.shared.data(for: request)
+                print("⏳ Waiting for agent response...")
+                let (data, response) = try await URLSession.shared.data(for: request)
 
-                if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let feedback = json["feedback"] as? String {
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("📥 Response status: \(httpResponse.statusCode)")
+                }
 
-                    await MainActor.run {
-                        agentFeedback = feedback
-                        isLoadingFeedback = false
+                // Log raw response for debugging
+                if let rawResponse = String(data: data, encoding: .utf8) {
+                    print("📄 Raw response: \(rawResponse)")
+                }
 
-                        // Use OpenAI's natural voice for agent feedback
-                        speakWithOpenAI(feedback)
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                    print("✅ Parsed JSON successfully")
+                    print("   Keys: \(json.keys)")
+
+                    if let feedback = json["feedback"] as? String {
+                        print("✅ Got agent feedback (\(feedback.count) chars)")
+                        print("   Preview: \(feedback.prefix(100))...")
+
+                        await MainActor.run {
+                            agentFeedback = feedback
+                            isLoadingFeedback = false
+
+                            // Use OpenAI's natural voice for agent feedback
+                            speakWithOpenAI(feedback)
+                        }
+                    } else {
+                        print("❌ No 'feedback' field in response")
+                        print("   JSON: \(json)")
+                        // Fallback to local tips
+                        await MainActor.run {
+                            isLoadingFeedback = false
+                            speakLocalTips()
+                        }
                     }
                 } else {
-                    // Fallback to local tips
+                    print("❌ Failed to parse JSON response")
                     await MainActor.run {
                         isLoadingFeedback = false
                         speakLocalTips()
@@ -278,6 +317,7 @@ struct FeedbackView: View {
                 }
             } catch {
                 print("❌ Failed to fetch agent feedback: \(error)")
+                print("   Error details: \(error.localizedDescription)")
                 await MainActor.run {
                     isLoadingFeedback = false
                     speakLocalTips()
