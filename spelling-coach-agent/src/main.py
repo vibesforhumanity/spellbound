@@ -314,41 +314,46 @@ async def get_progress(student_id: str):
 async def generate_question(request: GenerateQuestionRequest):
     """Generate a multiple choice question based on student's misspelling"""
     try:
+        print(f"\n🎯 GENERATE PATTERN QUESTION REQUEST")
+        print(f"   Pattern: {request.pattern}")
+        print(f"   Incorrect word: {request.incorrect_word}")
+        print(f"   User attempt: {request.user_attempt}")
+        print(f"   Attempt #: {request.previous_attempts + 1}/3")
+
         # Create a detailed prompt for context-aware question generation
         prompt = f"""Generate a multiple choice question to help a student master the '{request.pattern}' pattern.
 
 **What just happened:**
 The student tried to spell "{request.incorrect_word}" but wrote "{request.user_attempt}".
 
+**CRITICAL: Create pattern-specific words**
+❌ DO NOT use generic words like "cat", "dog", "run", "go"
+✅ DO use words that specifically test the {request.pattern} pattern
+
 **Error analysis:**
 - Correct pattern: {request.pattern} in "{request.incorrect_word}"
 - Student's error: They used "{request.user_attempt}" instead
 - This shows confusion about: {request.pattern}
 
-**This is attempt {request.previous_attempts + 1} of 3.**
-
 **Your task:**
-Create a question that DIRECTLY addresses their specific confusion. The question should:
+Create a question with 4 words that ALL relate to the {request.pattern} pattern:
 
-1. **Focus on their exact error** - If they wrote "nune" instead of "noon", test their understanding of "-une" vs "-oon"
-2. **Include options that mirror their mistake** - Create wrong answers that use the student's error pattern
-3. **Build on the word they missed** - Use similar words or the same pattern
-4. **Be appropriate for elementary students** (ages 6-11)
-5. **Have exactly ONE correct answer** among 4 options
+1. **Find 3-4 words with the CORRECT pattern** (e.g., if pattern is "OU vowel team": about, shout, cloud, found)
+2. **Intentionally misspell ONE of them** to test understanding (e.g., "clownd" instead of "cloud")
+3. **Make it similar to their error** (if they wrote "abowt", misspell with same mistake pattern)
+4. **Keep words elementary-level** (ages 6-11)
 
-**Example format:**
-If student wrote "nune" → "noon", your options might include:
-- Words with correct "-oon" pattern (moon, spoon, soon)
-- Words with the wrong "-une" pattern they used (tune, dune, june)
-- Make one of the "-une" words the INCORRECT answer to test if they now understand
-
-Return ONLY a JSON object:
+**Example:**
+Student wrote "abowt" → "about" (confused about OU pattern)
+Your question:
 {{
     "question": "Which word is spelled INCORRECTLY?",
-    "options": ["a) word1", "b) word2", "c) word3", "d) word4"],
-    "correct_answer": "letter) wrong_word",
-    "explanation": "Great work! [Explain why the wrong one is wrong and reinforce the {request.pattern} pattern]"
-}}"""
+    "options": ["a) shout", "b) clownd", "c) found", "d) around"],
+    "correct_answer": "b) clownd",
+    "explanation": "Great work! 'Cloud' uses the OU vowel team, just like about, shout, and found!"
+}}
+
+Return ONLY a JSON object following this format."""
 
         # Use a simple OpenAI call for question generation
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -369,6 +374,11 @@ Return ONLY a JSON object:
         question_data = json.loads(response.choices[0].message.content)
 
         question = MultipleChoiceQuestion(**question_data)
+
+        print(f"✅ Generated question successfully")
+        print(f"   Question: {question.question}")
+        print(f"   Options: {question.options}")
+        print(f"   Correct: {question.correct_answer}")
 
         return GenerateQuestionResponse(
             success=True,

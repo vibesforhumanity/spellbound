@@ -74,6 +74,9 @@ class AgentService {
 
             if apiResponse.success, let question = apiResponse.question {
                 print("✅ Agent generated question successfully")
+                print("   Question: \(question.question)")
+                print("   Options: \(question.options)")
+                print("   Correct: \(question.correctAnswer)")
                 return question
             } else {
                 print("❌ Agent failed: \(apiResponse.error ?? "Unknown error")")
