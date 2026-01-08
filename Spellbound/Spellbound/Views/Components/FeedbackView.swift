@@ -178,7 +178,7 @@ struct FeedbackView: View {
                     Button {
                         onNext()
                     } label: {
-                        Text("Next Word")
+                        Text("Got it!")
                             .font(.system(size: 28, weight: .bold, design: .rounded))
                             .foregroundColor(.white)
                             .padding(.horizontal, 50)
