@@ -88,6 +88,22 @@ struct MultipleChoiceView: View {
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
+
+                        // Continue button
+                        Button {
+                            if let answer = selectedAnswer {
+                                onAnswer(answer, isCorrect)
+                            }
+                        } label: {
+                            Text(isCorrect ? "Continue" : "Try Again")
+                                .font(.system(size: 22, weight: .bold, design: .rounded))
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 40)
+                                .padding(.vertical, 15)
+                                .background(isCorrect ? Color.green : Color.orange)
+                                .cornerRadius(15)
+                        }
+                        .padding(.top, 8)
                     }
                     .padding(20)
                     .background(Color.black.opacity(0.3))
