@@ -410,21 +410,15 @@ async def get_feedback(request: GetFeedbackRequest):
 
         print(f"🤖 Calling Coach Spark agent for personalized feedback...")
 
-        coaching_prompt = f"""A student just made a spelling mistake and needs your supportive coaching!
+        coaching_prompt = f"""A student spelled "{request.incorrect_word}" as "{request.user_attempt}".
 
-**What happened:**
-- Target word: "{request.incorrect_word}"
-- Student wrote: "{request.user_attempt}"
-- Patterns they struggled with: {patterns_str}
+Provide encouraging feedback in UNDER 40 WORDS that:
+1. Acknowledges their attempt warmly
+2. Explains what they got wrong (compare "{request.user_attempt}" to "{request.incorrect_word}")
+3. Shares ONE sentence about the etymology/origin of the {request.incorrect_patterns[0] if request.incorrect_patterns else 'pattern'} pattern
+4. Lists 2-3 similar example words using the same pattern
 
-**Your task:**
-1. Acknowledge their effort warmly and personally
-2. Explain EXACTLY what they got wrong (compare their spelling to the correct one)
-3. Teach them about the {request.incorrect_patterns[0] if request.incorrect_patterns else 'pattern'} in an encouraging way
-4. Give them a memorable tip, mnemonic, or fun fact to remember this pattern
-5. Connect it to other words they might know
-
-Be warm, encouraging, and make them feel excited to learn! Use their actual attempt ('{request.user_attempt}') in your explanation."""
+Keep it concise, warm, and helpful!"""
 
         # Run agent to get feedback
         message, updated_history, updated_progress = run_coach_spark(
