@@ -356,7 +356,17 @@ Your question:
 Return ONLY a JSON object following this format."""
 
         # Use a simple OpenAI call for question generation
-        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            print(f"❌ OPENAI_API_KEY not found in environment")
+            return GenerateQuestionResponse(
+                success=False,
+                question=None,
+                error="OpenAI API key not configured"
+            )
+
+        client = OpenAI(api_key=api_key)
+        print(f"🤖 Calling OpenAI GPT-4o to generate question...")
 
         response = client.chat.completions.create(
             model="gpt-4o",
@@ -387,7 +397,10 @@ Return ONLY a JSON object following this format."""
         )
 
     except Exception as e:
+        import traceback
         print(f"❌ Error generating question: {str(e)}")
+        print(f"   Full traceback:")
+        traceback.print_exc()
         return GenerateQuestionResponse(
             success=False,
             question=None,
