@@ -1,4 +1,5 @@
 import SwiftUI
+import AudioToolbox
 
 struct MultipleChoiceQuestion: Codable {
     let question: String
@@ -46,6 +47,11 @@ struct MultipleChoiceView: View {
                                 selectedAnswer = option
                                 isCorrect = option == question.correctAnswer
                                 showResult = true
+
+                                // Play success sound for correct answer
+                                if isCorrect {
+                                    AudioServicesPlaySystemSound(1057) // Pleasant "ding" sound
+                                }
 
                                 // Delay callback to show feedback
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

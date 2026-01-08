@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 import Combine
+import AudioToolbox
 
 // Timer for auto-progression
 import Dispatch
@@ -107,6 +108,11 @@ class PracticeViewModel: ObservableObject {
 
         let correct = userInput.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) == word.text.lowercased()
         isCorrect = correct
+
+        // Play success sound for correct answer
+        if correct {
+            AudioServicesPlaySystemSound(1057) // Pleasant "ding" sound
+        }
 
         // Save incorrect attempt for feedback display
         if !correct {
