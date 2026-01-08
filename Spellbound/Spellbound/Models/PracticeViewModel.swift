@@ -355,11 +355,14 @@ class PracticeViewModel: ObservableObject {
             // Try again (up to max attempts)
             if patternReinforcementAttempts < maxPatternReinforcementAttempts {
                 print("❌ Incorrect. Generating another question (attempt \(patternReinforcementAttempts + 1)/\(maxPatternReinforcementAttempts))")
-                // Keep multiple choice visible while next question generates
-                // It will be hidden when the new question is ready (in generatePatternQuestion)
 
-                // Generate next question immediately
-                generatePatternQuestion()
+                // Hide current question to reset state before generating new one
+                showMultipleChoice = false
+
+                // Generate next question after brief delay to allow view to dismiss
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+                    self?.generatePatternQuestion()
+                }
             } else {
                 // Max attempts reached, move on
                 print("⏭️  Max attempts reached. Moving to next word.")
